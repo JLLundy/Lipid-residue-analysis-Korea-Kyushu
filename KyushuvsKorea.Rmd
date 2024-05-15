@@ -1,0 +1,507 @@
+---
+title: "Korea_Kyushu_analysis"
+author: "OEC"
+date: "27/02/2024"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r}
+#define theme_pub to apply to all 
+setwd("/Users/olcraig/Desktop/KorKyu_project/R_script")
+theme_Pub <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(),
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "right",
+               legend.direction = "vertical",
+               legend.key.size= unit(0.2, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title = element_text(face="bold"),
+               plot.margin=unit(c(10,5,5,5),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+
+}
+
+```
+```{r}
+# @title
+# Read data from INTERNET
+library('googlesheets4')
+ #gs4_deauth() # if needed
+ gs4_auth(email='oliver.craig@york.ac.uk') # only if needed
+# gs4_auth(email='jasmine.lundy@york.ac.uk') # only if needed
+Data <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="Data") |> as.data.frame()
+library(dplyr)
+
+
+```
+
+
+#1. Preservation and summary statisitcs
+#1a. Preservation by site
+
+```{r}
+library(dplyr)
+#Grouped by site
+Conc_site <- Data %>% 
+  group_by(Site_code) %>% 
+  summarize(n = n(), mean.conc = mean(Concentration),
+            sd.conc = sd(Concentration), n_lipid = sum(Concentration >=5))%>%
+  mutate("%interp"= n_lipid/n*100)
+Conc_site <- Conc_site %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
+Conc_site
+write.csv (Conc_site,"Conc.csv")
+
+#Grouped by country
+#Data %>% 
+ # group_by(Country) %>% 
+  #summarize(median.conc = median(Concentration),
+           # mean.conc = mean(Concentration),
+           # sd.conc = sd(Concentration),
+            #n.conc = n())%>%
+  #group_modify(~as.data.frame(t(quantile(.$Concentration))))
+
+  #mutate(se.conc = sd.conc / sqrt(n.conc),
+         #lower.ci.conc = mean.conc - qt(1 - (0.05 / 2), n.conc - 1) * se.conc,
+         #upper.ci.conc = mean.conc + qt(1 - (0.05 / 2), n.conc - 1) * se.conc)
+```
+  
+#1b. Preservation by Country
+
+```{r}
+Region <-Data %>% 
+ group_by(Country) %>% 
+  summarize(n = n(), median.conc = median(Concentration),
+           mean.conc = mean(Concentration),
+           sd.conc = sd(Concentration), n_lipid = sum(Concentration >=5)) %>%
+  mutate("%interp"= n_lipid/n*100)
+Region
+ write.csv (Region,"Region_preservation.csv")
+#%>%
+ # group_modify(~as.data.frame(t(quantile(.$Concentration))))%>%
+  #mutate(se.conc = sd.conc / sqrt(n),
+   #      lower.ci.conc = mean.conc - qt(1 - (0.05 / 2), n.conc - 1) * se.conc,
+    #     upper.ci.conc = mean.conc + qt(1 - (0.05 / 2), n.conc - 1) * se.conc)
+
+```
+  
+#2.Millet identification by site by interpretable lipid
+
+```{r}
+Inter_lipid <- Data %>%filter (Concentration >=5)
+Millet <-Inter_lipid %>% group_by(Site_code) %>% 
+  summarize (n = n(), n_millet = sum (Millet == "yes"))%>%
+  mutate("%millet"= n_millet/n*100)
+Millet <- Millet %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
+Millet
+write.csv (Millet,"Millet_preservation.csv")
+```
+
+
+
+
+
+#3. Isotope data overview and analysis
+
+
+```{r}
+#Plot d13C16:0 agains d13C18:0
+library("ggplot2")
+Iso_data <- Data %>% filter(d13C16 < 0)
+p <-ggplot()+
+  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
+  scale_x_continuous(limits=c(-35,-20))+
+  scale_y_continuous(limits=c(-35,-20))+
+  geom_point(data = Iso_data, aes(y=d13C18, x=d13C16, fill=Phase, size=Concentration), colour="black", pch=21)+
+  coord_fixed(ratio = 1)+
+  theme_Pub()+
+  facet_wrap(~Country)
+p
+```
+Obtain data for isotope references and concentations
+```{r}
+#Otain data for reference fats
+library(dplyr)
+Iso_ref <- read_sheet(ss = "https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0", sheet = "Iso_ref")|> as.data.frame()
+Conc_ref <- read_sheet(ss = "https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0", sheet = "Conc_ref")|> as.data.frame()
+```
+
+Find means and ranges of isotope and concentrations values
+```{r}
+Iso_sum <- Iso_ref %>% group_by(Category) %>% summarize (Meand13C16 = mean(d13C16), SDd13C16 = sd(d13C16), Meand13C18 = mean(d13C18), SDd13C18 = sd(d13C18), n = n())
+Conc_sum <- Conc_ref %>% group_by(Category) %>% summarize (Concd13C16 = mean(Ab_Percent_C16), SDC16 = sd(Ab_Percent_C16), Concd13C18 = mean(Ab_Percent_C18), SDC18 = sd(Ab_Percent_C18), n_conc = n())
+Iso_sum
+Conc_sum
+```
+```{r}
+#Find Mean Values for 16:0  and 18:0 fatty acids in different sources
+Rice_I16 <- as.numeric(Iso_sum [5,2])
+Rice_I18 <- as.numeric(Iso_sum [5,4]) 
+Millet_I16 <- as.numeric(Iso_sum [4,2]) 
+Millet_I18 <- as.numeric(Iso_sum [4,4])
+Marine_I16 <- as.numeric(Iso_sum [3,2])
+Marine_I18 <- as.numeric(Iso_sum [3,4])
+Rum_I16 <- as.numeric(Iso_sum [7,2])
+Rum_I18 <- as.numeric(Iso_sum [7,4])
+
+```
+
+```{r}
+#Find Mean Values for concentrations in different sources
+Rice_C16 <- as.numeric(Conc_sum [3,2])
+Rice_C18 <- as.numeric(Conc_sum [3,4]) 
+Millet_C16 <- as.numeric(Conc_sum [2,2]) 
+Millet_C18 <- as.numeric(Conc_sum [2,4])
+Marine_C16 <- as.numeric(Conc_sum [1,2])
+Marine_C18 <- as.numeric(Conc_sum [1,4])
+Rum_C16 <- as.numeric(Conc_sum [4,2])
+Rum_C18<- as.numeric(Conc_sum [4,4])
+
+```
+```{r}
+#specify the 1st contribution
+contribution_Rice <- seq(0, 1, length.out = 11)
+#the millet contribution is 1- first
+contribution_Millet <- 1-contribution_Rice
+#calculate mixed 16:0 value
+contribution_Rice*Rice_I16
+```
+
+Calculate the isotope values values for incremental mixing of millet and rice. 
+```{r}
+#calculate mixed 15:0 value
+final_16 <- ((contribution_Rice*Rice_I16*Rice_C16) +(contribution_Millet*Millet_I16*Millet_C16))/(contribution_Rice*Rice_C16 + contribution_Millet*Millet_C16)
+#calculate mixed 18:0 value
+final_18 <-((contribution_Rice*Rice_I18*Rice_C18) + (contribution_Millet*Millet_I18*Millet_C18))/(contribution_Rice*Rice_C18 + contribution_Millet*Millet_C18)
+#calculate big delta
+
+big_delta <-final_18 - final_16
+ax <- contribution_Millet
+ay <- big_delta
+az <- final_16
+aa <- final_18
+
+```
+
+Calculate the isotope values values for incremental mixing of millet and rumunant. 
+```{r}
+#specify the 1st contribution
+contribution_Milleta <- seq(0, 1, length.out = 11)
+#the millet contribution is 1- first
+contribution_Rum <- 1-contribution_Milleta
+
+#calculate mixed 15:0 value
+final_16a <- ((contribution_Rum*Rum_I16*Rum_C16) +(contribution_Milleta*Millet_I16*Millet_C16))/(contribution_Rum*Rum_C16 + contribution_Milleta*Millet_C16)
+#calculate mixed 18:0 value
+final_18a <-((contribution_Rum*Rum_I18*Rum_C18) + (contribution_Milleta*Millet_I18*Millet_C18))/(contribution_Rum*Rum_C18 + contribution_Milleta*Millet_C18)
+
+#calculate big delta
+big_deltaa <-final_18a - final_16a
+bx <- contribution_Millet
+by <- big_deltaa
+bz <- final_16a
+ba <- final_18a
+
+
+```
+
+
+
+```{r}
+#Plot d13C16:0 against d13C18:0 for pots and refs
+Kor <- Iso_data %>% 
+  filter(Country == "Korea") 
+Kyu <- Iso_data %>% 
+  filter(Country == "Japan") 
+#Iso_ref <-Iso_ref %>% filter(Category == "Rice" | Category == "Millet"| Category == "Wild ruminant"| Category == "Marine"|Category == "Wild non-ruminant")
+
+p <-ggplot()+
+  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
+  scale_x_continuous(limits=c(-37,-15))+
+  scale_y_continuous(limits=c(-37,-15))+
+  geom_point(data=Kor, aes(y=d13C18, x=d13C16,  fill= Biomarker), size=3, pch= 21,  colour="black")+
+  scale_fill_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
+  stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.2,
+               aes (x = d13C16, y = d13C18, group = Category),
+              level = 0.68)+
+annotate("text", label = "C4/millet", x = -20, y = -17, size = 4, colour = "black")+ 
+  annotate("text", label = "Marine", x = -25, y = -22, size = 4, colour = "black")+ 
+  annotate("text", label = "Freshwater", x = -31, y = -29, size = 4, colour = "black")+ 
+  annotate("text", label = "Wild boar", x = -30, y = -27, size = 4, colour = "black")+ 
+  annotate("text", label = "Ruminant", x = -29, y = -35, size = 4, colour = "black")+ 
+  annotate("text", label = "C3 nuts", x = -35, y = -33, size = 4, colour = "black")+
+  annotate("text", label = "Rice", x = -34, y = -34, size = 4, colour = "black")+ 
+  coord_fixed(ratio = 1)+
+  theme_Pub()
+p
+
+p1 <-ggplot()+
+  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
+  scale_x_continuous(limits=c(-37,-15))+
+  scale_y_continuous(limits=c(-37,-15))+
+  geom_point(data=Kyu, aes(y=d13C18, x=d13C16, fill= Biomarker), size=3, pch= 21, colour="black")+
+  scale_fill_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
+  stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.2,
+               aes (x = d13C16, y = d13C18, group = Category),
+              level = 0.68)+
+  annotate("text", label = "C4/millet", x = -20, y = -17, size = 4, colour = "black")+ 
+  annotate("text", label = "Marine", x = -25, y = -22, size = 4, colour = "black")+ 
+  annotate("text", label = "Freshwater", x = -31, y = -29, size = 4, colour = "black")+ 
+  annotate("text", label = "Wild boar", x = -30, y = -27, size = 4, colour = "black")+ 
+  annotate("text", label = "Ruminant", x = -29, y = -35, size = 4, colour = "black")+ 
+  annotate("text", label = "C3 nuts", x = -35, y = -33, size = 4, colour = "black")+
+  annotate("text", label = "Rice", x = -34, y = -34, size = 4, colour = "black")+ 
+  coord_fixed(ratio = 1)+
+  theme_Pub()
+p1
+
+```
+```{r}
+p <- p +  
+  geom_line(aes(x=az, y=aa), linetype = "dashed") +
+  geom_point (aes(x=az, y=aa), size = 1) +
+  geom_line(aes(x=bz, y=ba), linetype = "dashed") +
+  geom_point (aes(x=bz, y=ba), size = 1) 
+p
+```
+
+#4. Create a mixing model with MixSiar
+
+
+Load the consumer data
+```{r}
+#remotes::install_github("brianstock/MixSIAR")
+library(MixSIAR)
+
+
+mix <- Data %>% filter(d13C16 < 0) %>% select(Sample_ID, Site_name, Region, Phase_2, d13C16, d13C18)
+write.csv (mix,"/Users/olcraig/Desktop/KorKyu_project/R_script/pots.csv")
+mix <- load_mix_data (filename="/Users/olcraig/Desktop/KorKyu_project/R_script/pots.csv", 
+                     iso_names=c("d13C16", "d13C18"), 
+                     factors="Sample_ID",
+                     fac_random=FALSE, 
+                     fac_nested=FALSE, 
+                     cont_effects=NULL)
+mix
+```
+
+Start by 
+
+```{r}
+#Install the latest version of MixSIAR from github!
+remotes::install_github("brianstock/MixSIAR",  auth_token = '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', force = TRUE,
+                        dependencies=T) 
+```
+
+Load the source data
+
+
+```{r}
+library(MixSIAR)
+Iso_sum1 <- Iso_sum %>% filter(Category == "Rice" | Category == "Millet")
+Conc_sum1 <- Conc_sum %>% filter(Category == "Rice" | Category == "Millet") 
+Source <- inner_join(Conc_sum1, Iso_sum1, 
+           by = c("Category"))
+Source <- Source %>% mutate ("Sources"= Category) %>%select(Sources, Meand13C16, Meand13C18, Concd13C16, Concd13C18, SDd13C16, SDd13C18, n) 
+Source
+write.csv (Source,"/Users/olcraig/Desktop/KorKyu_project/R_script/source.csv", row.names=FALSE)
+source <- load_source_data (filename="/Users/olcraig/Desktop/KorKyu_project/R_script/source.csv", 
+                           source_factors=NULL,
+                             conc_dep=TRUE, 
+                           data_type="means", 
+                           mix)
+source
+```
+```{r}
+# Load the discrimination/TDF data
+discr <- load_discr_data(filename="/Users/olcraig/Desktop/KorKyu_project/R_script/Discr.csv", mix)
+discr
+```
+```{r, eval=FALSE}
+# Make an isospace plot
+plot_data(filename="isospace_plot", plot_save_pdf=TRUE, plot_save_png=FALSE, mix,source,discr)
+```
+```{r}
+# Calculate the convex hull area, standardized by source variance
+calc_area(source=source,mix=mix,discr=discr)
+```
+
+```{r, eval=FALSE}
+# default "UNINFORMATIVE" / GENERALIST prior (alpha = 1)
+#plot_prior(alpha.prior=1,source)
+```
+
+```{r, eval=FALSE}
+# Write the JAGS model file
+model_filename <- "MixSIAR_model.txt"   # Name of the JAGS model file
+resid_err <- FALSE
+process_err <- TRUE
+write_JAGS_model(model_filename, resid_err, process_err, mix, source)
+```
+```{r, eval=FALSE}
+#run <- list(chainLength=200000, burn=150000, thin=50, chains=3, calcDIC=TRUE)
+```
+```{r, eval=FALSE}
+jags.1 <- run_model(run="test", mix, source, discr, model_filename)
+```
+```{r, eval=FALSE}
+jags.1 <- run_model(run="normal", mix, source, discr, model_filename)
+```
+
+```{r, eval=FALSE}
+output_options <- list(summary_save = NULL,
+                       summary_name = "summary_statistics",
+                       sup_post = NULL,
+                       plot_post_save_pdf = NULL,
+                       plot_post_name = "posterior_density",
+                       sup_pairs = FALSE,
+                       plot_pairs_save_pdf = TRUE,
+                       plot_pairs_name = "pairs_plot",
+                       sup_xy = TRUE,
+                       plot_xy_save_pdf = TRUE,
+                       plot_xy_name = "xy_plot",
+                       gelman = TRUE,
+                       heidel = FALSE,
+                       geweke = TRUE,
+                       diag_save = TRUE,
+                       diag_name = "diagnostics",
+                       indiv_effect = FALSE,
+                       plot_post_save_png = TRUE,
+                       plot_pairs_save_png = FALSE,
+                       plot_xy_save_png = FALSE,
+                       diag_save_ggmcmc = FALSE)
+```
+
+```{r, eval=FALSE}
+for (i in seq_along(dev.list())) dev.off()
+dev.list()
+```
+
+
+```{r}
+#output_JAGS (jags.1, mix, source, output_options)
+diag <- output_diagnostics(jags.1, mix, source, output_options)
+df.stats <- output_stats(jags.1, mix, source, output_options)
+
+```
+
+```{r}
+dev.list()
+```
+
+
+
+
+```{r}
+# Get posterior chains into one tidy data frame
+library(R2jags)
+
+summary(jags.1)
+attach.jags(jags.1)
+
+# Call, p.fac1[draws, level, source]
+Sample1 <- data.frame(Sample_ID = "Sample1", millet = p.fac1[,1,1], rice = p.fac1[,1,2])
+Sample2 <- data.frame(Sample_ID = "Sample2", millet = p.fac1[,2,1], rice = p.fac1[,2,2])
+output_JAGS(jags.1, mix, source, output_options)
+diag <- output_diagnostics(jags.1, mix, source, output_options)
+df.stats <- output_stats(jags.1, mix, source, output_options)
+df.stats
+```
+
+
+
+
+
+#5 Plot sites spatially
+
+
+
+```{r}
+#Plot site location on map. Install packages and draw base map
+#install.packages("sf", type = "source", configure.args = "--with-proj-lib=$(brew --prefix)/lib/")
+library(devtools)
+library(sf)
+library(elevatr)
+library(marmap)
+devtools::install_github("ropensci/rnaturalearthhires",auth_token = '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', force = TRUE)
+library("rnaturalearth")
+library(ggplot2)
+library(raster)
+library(gridExtra)
+library(progress)
+```
+
+
+```{r}
+#Draw basemap
+win  <- ne_countries(continent = 'asia',scale=10,returnclass='sf')
+japan <- ne_states(country = "japan",returnclass='sf')
+elevation <- get_elev_raster(locations = win, z = 5,clip = "locations",src='aws')
+dem <- as.data.frame(elevation, xy = T) |> na.omit()
+colnames(dem)[3] <- "elevation"
+dem$elevation[which(dem$elevation < 0)] = 0
+sites.sf  <- st_as_sf(Data,coords=c('Longitude','Lattitude'),crs=4326)
+```
+
+
+```{r}
+plot <- ggplot() +
+	geom_tile(data=dem,aes(x=x,y=y,fill=elevation)) +
+	scale_fill_etopo() +
+	geom_sf(data=sites.sf,size=3,col='darkred',pch=20) +
+  #geom_sf_text(data=Data, aes(label = Site_code))+
+#annotate('text',x=131.5,y=33.4,label='RMM',size=3) +
+#annotate('text',x=131.2,y=33.4,label='SHC, SAS', size=3) +
+#annotate('text',x=128.2,y=36.9,label='DPR',size=3) +
+#annotate('text',x=127.5,y=36.4,label='JKR',size=3) +
+#annotate('text',x=127.6,y=36.5,label='KCR',size=3) +
+#annotate('text',x=128.3,y=37.0,label='MJR',size=3) +
+#annotate('text',x=128.2,y=37.5,label='MSR',size=3) +
+#annotate('text',x=128.2,y=36.5,label='SDR',size=3) +
+	xlim(125,135) +
+	ylim(30,40) +
+	xlab('Longitude') +
+	ylab('Latitude') +
+	theme(legend.position = "none")
+plot
+```
+
+
+```{r}
+#Plot site location on map. Install packages and draw base map
+library (dplyr)
+points <-Data %>% select(Site_name, Phase, Phase_2, Lattitude,Longitude)
+points <-st_as_sf(points, coords=c('Longitude','Lattitude'),crs=4326)
+
+g1 <- ggplot() +
+	geom_tile(data=dem,aes(x=x,y=y,fill=elevation)) +
+	scale_fill_etopo() +
+	#geom_sf(data=points,size=3,col='black',pch=21,fill='red') +
+	geom_sf(data=points, aes(colour=Phase_2), pch= 21, size=3) +
+	xlim(125,135)+
+  ylim(30,40)+
+  theme_Pub()
+	#annotate('text',label='Late Jomon to Final Jomon',x=132,y=40)
+g1
+```
+
+
