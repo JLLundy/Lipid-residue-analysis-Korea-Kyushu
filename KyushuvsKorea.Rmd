@@ -641,22 +641,7 @@ plot
 ```
 
 ```{r}
-nc <- sf::st_read("Bone.sf", quiet = TRUE)
 
-# use only first three elements
-nc3 <- nc[1:3, ]
-
-# choose a point on the surface of each geometry
-nc3_points <- sf::st_point_on_surface(nc3)
-
-# retrieve the coordinates
-nc3_coords <- as.data.frame(sf::st_coordinates(nc3_points))
-nc3_coords$NAME <- nc3$NAME
-
-nc3_coords
-ggplot() +
-  geom_sf(data = nc3, aes(fill = AREA)) +
-  geom_text(data = nc3_coords, aes(X, Y, label = NAME), colour = "white")
 
 ```
 
