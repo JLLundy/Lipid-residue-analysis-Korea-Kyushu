@@ -29,11 +29,11 @@ theme_Pub <- function(base_size=14, base_family="helvetica") {
                panel.grid.major = element_line(colour="#f0f0f0"),
                panel.grid.minor = element_blank(),
                legend.key = element_rect(colour = NA),
-               legend.position = "right",
-               legend.direction = "vertical",
+               legend.position = "bottom",
+               legend.direction = "horizontal",
                legend.key.size= unit(0.2, "cm"),
                legend.margin = unit(0, "cm"),
-               legend.title = element_text(face="bold"),
+               legend.title = element_text(NULL),
                plot.margin=unit(c(10,5,5,5),"mm"),
                strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
                strip.text = element_text(face="bold")
@@ -49,7 +49,7 @@ library('googlesheets4')
  #gs4_deauth() # if needed
  gs4_auth(email='oliver.craig@york.ac.uk') # only if needed
 # gs4_auth(email='jasmine.lundy@york.ac.uk') # only if needed
-
+Data <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="Data") |> as.data.frame()
 library(dplyr)
 
 
@@ -67,7 +67,7 @@ Conc_site <- Data %>%
   summarize(n = n(), mean.conc = mean(Concentration),
             sd.conc = sd(Concentration), n_lipid = sum(Concentration >=5))%>%
   mutate("%interp"= n_lipid/n*100)
-Conc_site <- Conc_site %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
+Conc_site <- Conc_site %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS','NBK', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
 Conc_site
 write.csv (Conc_site,"Conc.csv")
 
@@ -104,19 +104,26 @@ Region
 
 ```
   
-#2.Millet identification by site by interpretable lipid
+#2a.Millet identification by site by interpretable lipid
 
 ```{r}
 Inter_lipid <- Data %>%filter (Concentration >=5)
-Millet <-Inter_lipid %>% group_by(Site_code) %>% 
-  summarize (n = n(), n_millet = sum (Millet == "yes"))%>%
-  mutate("%millet"= n_millet/n*100)
-Millet <- Millet %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
-Millet
-write.csv (Millet,"Millet_preservation.csv")
+Biomarker <-Inter_lipid %>% group_by(Site_code) %>% 
+  summarize (n = n(), n_millet = sum (Millet == "yes"), n_aquatic = sum (Aquatic == "yes")) %>%
+  mutate("%millet"= n_millet/n*100, "%aqatiuc"= n_aquatic/n*100)
+Biomarker <- Biomarker %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
+Biomarker
+write.csv (Millet,"Biomarker_preservation.csv")
 ```
 
 
+#2b.Aquatic identification by site by interpretable lipid
+```{r}
+
+Millet <- Millet %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'NBK', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
+Millet
+write.csv (Millet,"Marine_preservation.csv")
+```
 
 
 
@@ -125,6 +132,11 @@ write.csv (Millet,"Millet_preservation.csv")
 
 ```{r}
 #Plot d13C16:0 agains d13C18:0
+plot(Iso_data$d13C16, Iso_data$d13C18)
+```
+
+
+```{r}
 library("ggplot2")
 Iso_data <- Data %>% filter(d13C16 < 0)
 p <-ggplot()+
@@ -225,65 +237,22 @@ ba <- final_18a
 ```
 
 
-
 ```{r}
 #Plot d13C16:0 against d13C18:0 for pots and refs
 Kor <- Iso_data %>% 
   filter(Country == "Korea") 
 Kyu <- Iso_data %>% 
   filter(Country == "Japan") 
-Kyu <- Kyu %>% mutate(across(Phase_2, ~factor(., levels=c("Late/Final Jomon", "Initial Yayoi"))))
-                      
 #Iso_ref <-Iso_ref %>% filter(Category == "Rice" | Category == "Millet"| Category == "Wild ruminant"| Category == "Marine"|Category == "Wild non-ruminant")
 
-p <-ggplot()+
-  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
-  scale_x_continuous(limits=c(-37,-15))+
-  scale_y_continuous(limits=c(-37,-15))+
-  geom_point(data=Kor, aes(y=d13C18, x=d13C16,  fill= Biomarker), size=3, pch= 21,  colour="black")+
-  stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.2,
-               aes (x = d13C16, y = d13C18, group = Category),
-              level = 0.68)+
-annotate("text", label = "C4/millet", x = -20, y = -17, size = 4, colour = "black")+ 
-  annotate("text", label = "Marine", x = -25, y = -22, size = 4, colour = "black")+ 
-  annotate("text", label = "Freshwater", x = -31, y = -29, size = 4, colour = "black")+ 
-  annotate("text", label = "Wild boar", x = -30, y = -27, size = 4, colour = "black")+ 
-  annotate("text", label = "Ruminant", x = -29, y = -35, size = 4, colour = "black")+ 
-  annotate("text", label = "C3 nuts", x = -35, y = -33, size = 4, colour = "black")+
-  annotate("text", label = "Rice", x = -34, y = -34, size = 4, colour = "black")+ 
-  coord_fixed(ratio = 1)+
-  theme_Pub()
-p
-
-p1 <-ggplot()+
-  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
-  scale_x_continuous(limits=c(-37,-15))+
-  scale_y_continuous(limits=c(-37,-15))+
-  geom_point(data=Kor, aes(y=d13C18, x=d13C16,  fill= Biomarker), size=3, pch= 21,  colour="black")+
-  scale_fill_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
-  stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.2,
-               aes (x = d13C16, y = d13C18, group = Category),
-              level = 0.68)+
-annotate("text", label = "C4/millet", x = -20, y = -17, size = 4, colour = "black")+ 
-  annotate("text", label = "Marine", x = -25, y = -22, size = 4, colour = "black")+ 
-  annotate("text", label = "Freshwater", x = -31, y = -29, size = 4, colour = "black")+ 
-  annotate("text", label = "Wild boar", x = -30, y = -27, size = 4, colour = "black")+ 
-  annotate("text", label = "Ruminant", x = -29, y = -35, size = 4, colour = "black")+ 
-  annotate("text", label = "C3 nuts", x = -35, y = -33, size = 4, colour = "black")+
-  annotate("text", label = "Rice", x = -34, y = -34, size = 4, colour = "black")+ 
-  coord_fixed(ratio = 1)+
-  theme_Pub()
-p1
-
-```
-```{r}
 library(ggstar)
 p <-ggplot()+
   labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
   scale_x_continuous(limits=c(-37,-15))+
   scale_y_continuous(limits=c(-37,-15))+
   geom_star (data= subset(Kor, Millet=="yes"), aes(y=d13C18, x=d13C16, ),  fill= "#F0E442", size=3, colour="black")+
-  geom_point(data=subset(Kor,Millet=='no'), aes(y=d13C18,x=d13C16), shape=21, fill="grey", size=3, colour ="black")+ 
+  geom_point(data=subset(Kor, Millet=='no'), aes(y=d13C18,x=d13C16), shape=21, fill="grey", size=3, colour ="black")+ 
+  geom_point(data=subset(Kor, Millet=='n/a'), aes(y=d13C18,x=d13C16), shape=21, fill="black", size=1, colour ="black")+ 
   stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.2,
                aes (x = d13C16, y = d13C18, group = Category),
               level = 0.68)+
@@ -321,13 +290,16 @@ p+ facet_wrap (~Phase_2)
 
 ```
 
+
 ```{r}
+
+
 p <-ggplot()+
   labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
   scale_x_continuous(limits=c(-37,-15))+
   scale_y_continuous(limits=c(-37,-15))+
-  geom_point(data=Kor, aes(y=d13C18, x=d13C16,  fill= Biomarker), size=3, pch= 21,  colour="black")+
-  scale_fill_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
+  geom_point(data=Kor, aes(y=d13C18, x=d13C16,  colour= Biomarker, shape=Phase_2), size=3)+
+  scale_colour_manual(name = "", breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
   stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.2,
                aes (x = d13C16, y = d13C18, group = Category),
               level = 0.68)+
@@ -340,14 +312,14 @@ annotate("text", label = "C4/millet", x = -20, y = -17, size = 4, colour = "blac
   annotate("text", label = "Rice", x = -34, y = -34, size = 4, colour = "black")+ 
   coord_fixed(ratio = 1)+
   theme_Pub()
-p
+p 
 
 p1 <-ggplot()+
   labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
   scale_x_continuous(limits=c(-37,-15))+
   scale_y_continuous(limits=c(-37,-15))+
-  geom_point(data=Kyu, aes(y=d13C18, x=d13C16, fill= Biomarker), size=3, pch= 21, colour="black")+
-  scale_fill_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
+  geom_point(data=Kyu, aes(y=d13C18, x=d13C16, colour= Biomarker, shape=Phase_2), size=3)+
+  scale_colour_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
   stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.2,
                aes (x = d13C16, y = d13C18, group = Category),
               level = 0.68)+
@@ -360,12 +332,9 @@ p1 <-ggplot()+
   annotate("text", label = "Rice", x = -34, y = -34, size = 4, colour = "black")+ 
   coord_fixed(ratio = 1)+
   theme_Pub()
-p1
+  p
+
 ```
-
-
-
-
 ```{r}
 p <- p +  
   geom_line(aes(x=az, y=aa), linetype = "dashed") +
@@ -384,8 +353,8 @@ Load the consumer data
 library(MixSIAR)
 
 
-mix <- Data %>% filter(d13C16 < 0) %>% select(Sample_ID, Site_name, Region, Phase_2, d13C16, d13C18)
-write.csv (mix,"/Users/olcraig/Desktop/KorKyu_project/R_script/pots.csv")
+Pots <- Data %>% filter(d13C16 < 0) %>% select(Sample_ID, Site_name, Region, Phase_2, d13C16, d13C18)
+write.csv (Pots,"/Users/olcraig/Desktop/KorKyu_project/R_script/pots.csv")
 mix <- load_mix_data (filename="/Users/olcraig/Desktop/KorKyu_project/R_script/pots.csv", 
                      iso_names=c("d13C16", "d13C18"), 
                      factors="Sample_ID",
@@ -395,12 +364,10 @@ mix <- load_mix_data (filename="/Users/olcraig/Desktop/KorKyu_project/R_script/p
 mix
 ```
 
-Start by 
 
 ```{r}
 #Install the latest version of MixSIAR from github!
-remotes::install_github("brianstock/MixSIAR",  auth_token = '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', force = TRUE,
-                        dependencies=T) 
+#remotes::install_github("brianstock/MixSIAR",  auth_token = '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', force = TRUE,  dependencies=T) 
 ```
 
 Load the source data
@@ -408,8 +375,8 @@ Load the source data
 
 ```{r}
 library(MixSIAR)
-Iso_sum1 <- Iso_sum %>% filter(Category == "Rice" | Category == "Millet")
-Conc_sum1 <- Conc_sum %>% filter(Category == "Rice" | Category == "Millet") 
+Iso_sum1 <- Iso_sum %>% filter(Category == "Rice" | Category == "Millet" | Category == "Wild ruminant" | Category == "Marine")
+Conc_sum1 <- Conc_sum %>% filter(Category == "Rice" | Category == "Millet" | Category == "Wild ruminant" | Category == "Marine") 
 Source <- inner_join(Conc_sum1, Iso_sum1, 
            by = c("Category"))
 Source <- Source %>% mutate ("Sources"= Category) %>%select(Sources, Meand13C16, Meand13C18, Concd13C16, Concd13C18, SDd13C16, SDd13C18, n) 
@@ -459,46 +426,29 @@ jags.1 <- run_model(run="normal", mix, source, discr, model_filename)
 ```
 
 ```{r, eval=FALSE}
-output_options <- list(summary_save = NULL,
-                       summary_name = "summary_statistics",
-                       sup_post = NULL,
-                       plot_post_save_pdf = NULL,
+output_options <- list(summary_save = TRUE,
+                       summary_name = "summary_final",
+                       sup_post = TRUE,
+                       plot_post_save_pdf = TRUE,
                        plot_post_name = "posterior_density",
-                       sup_pairs = FALSE,
+                       sup_pairs = TRUE,
                        plot_pairs_save_pdf = TRUE,
                        plot_pairs_name = "pairs_plot",
                        sup_xy = TRUE,
                        plot_xy_save_pdf = TRUE,
                        plot_xy_name = "xy_plot",
                        gelman = TRUE,
-                       heidel = FALSE,
+                       heidel = TRUE,
                        geweke = TRUE,
                        diag_save = TRUE,
                        diag_name = "diagnostics",
                        indiv_effect = FALSE,
                        plot_post_save_png = TRUE,
-                       plot_pairs_save_png = FALSE,
-                       plot_xy_save_png = FALSE,
-                       diag_save_ggmcmc = FALSE)
+                       plot_pairs_save_png = TRUE,
+                       plot_xy_save_png = TRUE,
+                       diag_save_ggmcmc = FALSE,
+                       return_obj=TRUE)
 ```
-
-```{r, eval=FALSE}
-for (i in seq_along(dev.list())) dev.off()
-dev.list()
-```
-
-
-```{r}
-#output_JAGS (jags.1, mix, source, output_options)
-diag <- output_diagnostics(jags.1, mix, source, output_options)
-df.stats <- output_stats(jags.1, mix, source, output_options)
-
-```
-
-```{r}
-dev.list()
-```
-
 
 
 
@@ -508,22 +458,148 @@ library(R2jags)
 
 summary(jags.1)
 attach.jags(jags.1)
+```
+Run diagnostics and create a data frame with some summary stats. 
 
-# Call, p.fac1[draws, level, source]
-Sample1 <- data.frame(Sample_ID = "Sample1", millet = p.fac1[,1,1], rice = p.fac1[,1,2])
-Sample2 <- data.frame(Sample_ID = "Sample2", millet = p.fac1[,2,1], rice = p.fac1[,2,2])
-output_JAGS(jags.1, mix, source, output_options)
+```{r}
 diag <- output_diagnostics(jags.1, mix, source, output_options)
+head(diag$gelman)
 df.stats <- output_stats(jags.1, mix, source, output_options)
+rownames(df.stats)
+df.stats <- as.data.frame(df.stats)
+df.stats
+
+```
+
+
+```{r}
+df.stats <- cbind(Sample_category = rownames(df.stats), df.stats)
+rownames(df.stats) <- 1:nrow(df.stats)
 df.stats
 ```
 
 
+```{r}
+df.stats <- df.stats %>% separate_wider_delim (Sample_category, ".", names = c("number", "Sample_ID", "Category"))
+colnames(df.stats)[11] <- "p95"
+df.stats
+```
+
+
+Join with isotope data
+```{r}
+
+Data_pots <- inner_join(Iso_data, df.stats, 
+           by = c("Sample_ID"))
+Data_pots
+```
+
+```{r}
+library(scales)
+Rice_pots <-Data_pots %>% filter (Category == "Rice" )
+p <-ggplot()+
+  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
+  scale_x_continuous(limits=c(-35,-15))+
+  scale_y_continuous(limits=c(-35,-15))+
+  geom_point(data = Rice_pots, aes(y=d13C18, x=d13C16,fill=Mean),pch= 21, size=3)+   scale_fill_gradient (low="blue", high ="orange")+ 
+  labs(fill = "Mean Posterior (Rice)")+
+  coord_fixed(ratio = 1)+
+  #theme_Pub()+
+  facet_wrap( ~Country)
+p
+```
+```{r}
+library(scales)
+Rice_pots <-Data_pots %>% filter (Category == "Rice" )
+p <-ggplot()+
+  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
+  scale_x_continuous(limits=c(-35,-15))+
+  scale_y_continuous(limits=c(-35,-15))+
+  geom_point(data = Rice_pots, aes(y=d13C18, x=d13C16,fill=p95),pch= 21, size=3)+   scale_fill_gradient (low="blue", high ="orange")+ 
+  labs(fill = "95% Posterior (Rice)")+
+  coord_fixed(ratio = 1)+
+  #theme_Pub()+
+  facet_wrap( ~Country)
+p
+```
+
+
+```{r}
+library(scales)
+Millet_pots <-Data_pots %>% filter (Category == "Millet" )
+p <-ggplot()+
+  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
+  scale_x_continuous(limits=c(-35,-15))+
+  scale_y_continuous(limits=c(-35,-15))+
+  geom_point(data = Millet_pots, aes(y=d13C18, x=d13C16,fill=Mean),pch= 21, size=3)+   scale_fill_gradient (low="blue", high ="orange")+ 
+  labs(fill = "Mean Posterior (Millet)")+
+  coord_fixed(ratio = 1)+
+  #theme_Pub()+
+  facet_wrap( ~Country)
+p
+```
+
+```{r}
+library(scales)
+RUM_pots <-Data_pots %>% filter (Category == "Wild ruminant" )
+p <-ggplot()+
+  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
+  scale_x_continuous(limits=c(-35,-15))+
+  scale_y_continuous(limits=c(-35,-15))+
+  geom_point(data = RUM_pots, aes(y=d13C18, x=d13C16,fill=Mean),pch= 21, size=3)+   scale_fill_gradient (low="blue", high ="orange")+ 
+  labs(fill = "Mean Posterior (Deer)")+
+  coord_fixed(ratio = 1)+
+  #theme_Pub()+
+  facet_wrap( ~Country)
+p
+```
+
+```{r}
+library(scales)
+Marine_pots <-Data_pots %>% filter (Category == "Marine" )
+p <-ggplot()+
+  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
+  scale_x_continuous(limits=c(-35,-15))+
+  scale_y_continuous(limits=c(-35,-15))+
+  geom_point(data = Marine_pots, aes(y=d13C18, x=d13C16,fill=Mean),pch= 21, size=3)+   scale_fill_gradient (low="blue", high ="orange")+ 
+  labs(fill = "Mean Posterior (Deer)")+
+  coord_fixed(ratio = 1)+
+  #theme_Pub()+
+  facet_wrap( ~Country)
+p
+```
+
+```{r}
+g.post <- output_posteriors(jags.1, mix, source, output_options)
+g.post
+```
+
+
+#5 Plot human isotope data
+
+
+```{r}
+Hum <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="hum_isotopes") |> as.data.frame()
+```
+```{r}
+Data_hum <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="hum_isotopes") |> as.data.frame()
+
+```
+```{r}
+p <-ggplot()+
+  labs(y=expression(delta^{15}*N[collagen]*"(\u2030)"), x=expression(delta^{13}*C[collagen]*"(\u2030)"))+
+  scale_x_continuous(limits=c(-25,-10))+
+  scale_y_continuous(limits=c(0,15))+
+  geom_point(data=Data_hum, aes(y=d15N_coll, x=d13C_coll,  fill= Period_2), size=3, pch= 21,  colour="black")+
+  #scale_fill_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
+  theme_Pub()
+p
+
+```
 
 
 
-#5 Plot sites spatially
-
+#6 Plot sites spatially
 
 
 ```{r}
@@ -533,7 +609,7 @@ library(devtools)
 library(sf)
 library(elevatr)
 library(marmap)
-devtools::install_github("ropensci/rnaturalearthhires",auth_token = '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', force = TRUE)
+#devtools::install_github("ropensci/rnaturalearthhires",auth_token = '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', force = TRUE)
 library("rnaturalearth")
 library(ggplot2)
 library(raster)
@@ -577,47 +653,12 @@ plot
 ```
 
 
-```{r}
-#Plot site location on map. Install packages and draw base map
-library (dplyr)
-points <-Data %>% select(Site_name, Phase, Phase_2, Lattitude,Longitude)
-points <-st_as_sf(points, coords=c('Longitude','Lattitude'),crs=4326)
-
-g1 <- ggplot() +
-	geom_tile(data=dem,aes(x=x,y=y,fill=elevation)) +
-	scale_fill_etopo() +
-	#geom_sf(data=points,size=3,col='black',pch=21,fill='red') +
-	geom_sf(data=points, aes(colour=Phase_2), pch= 21, size=3) +
-	xlim(125,135)+
-  ylim(30,40)+
-  theme_Pub()
-	#annotate('text',label='Late Jomon to Final Jomon',x=132,y=40)
-g1
-```
-
-#6.Stable Isotope analysis of human remains
-
-```{r}
-Data_hum <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="hum_isotopes") |> as.data.frame()
-
-```
-```{r}
-p <-ggplot()+
-  labs(y=expression(delta^{15}*N[collagen]*"(\u2030)"), x=expression(delta^{13}*C[collagen]*"(\u2030)"))+
-  scale_x_continuous(limits=c(-25,-10))+
-  scale_y_continuous(limits=c(0,15))+
-  geom_point(data=Data_hum, aes(y=d15N_coll, x=d13C_coll,  fill= Period_2), size=3, pch= 21,  colour="black")+
-  #scale_fill_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
-  theme_Pub()
-p
-
-
-```
 
 Plot stable isotope locations
 Create a dataframe with the locations of each site with SI data in Korea and Kyhusu
 
 ```{r}
+
 Site <- c('Ohtomo', 'Hwangsok-ri', 'Jungdo', 'Maedun Cave','Yoshinogari' )
 Long <- c('129.54', '128.13', '127.50','128.68','130.23')
 Lat <- c('33.32', '37.02','37.68', '37.32','33.19')
@@ -640,8 +681,46 @@ plot <- ggplot() +
 plot
 ```
 
+
+Plot millet locations spatially. 
+
 ```{r}
+Millet_locations  <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="Botanical_AMS") |> as.data.frame()
+Millet_locations <- Millet_locations %>% filter (Period == "Mumun" | Period == "Yayoi"| Period == "Jomon")
+Panicum_locations <- Millet_locations %>% filter (PM == "Pa" )
+#taria_locations <- Millet_locations %>% filter(SI == "Se")
+Panicum.sf  <- st_as_sf(Panicum_locations,coords=c('Longitude','Latitude'),crs=4326)
+Setaria.sf  <- st_as_sf(Setaria_locations,coords=c('Longitude','Latitude'),crs=4326)
+Millet.sf  <- st_as_sf(Millet_locations,coords=c('Longitude','Latitude'),crs=4326)
+
+```
+
+```{r}
+plot <- ggplot() +
+	geom_tile(data=dem,aes(x=x,y=y,fill=elevation)) +
+	scale_fill_etopo() +
+	#geom_sf(data=Panicum.sf, size=2,col='black',pch=20) +
+  #geom_sf(data=Panicum.sf, size=2,col='black',pch=20) +
+  geom_sf(data=Millet.sf, size=2,pch=20, fill=Millet) +
+	xlim(125,135) +
+	ylim(30,40) +
+	xlab('Longitude') +
+	ylab('Latitude') +
+	theme(legend.position = "none")
+plot
+```
 
 
+plot <- ggplot() +
+	geom_tile(data=dem,aes(x=x,y=y,fill=elevation)) +
+	scale_fill_etopo() +
+	geom_sf(data=Bone.sf,size=4,col='black',pch=20) +
+  geom_sf_label(data=Bone.sf, aes(label = Site), hjust="left", nudge_x = 0.2, size=3, check_overlap= TRUE, colour = "black")+
+	xlim(125,135) +
+	ylim(30,40) +
+	xlab('Longitude') +
+	ylab('Latitude') +
+	theme(legend.position = "none")
+plot
 ```
 
