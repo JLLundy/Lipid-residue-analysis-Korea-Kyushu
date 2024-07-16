@@ -113,27 +113,22 @@ Biomarker <-Inter_lipid %>% group_by(Site_code) %>%
   mutate("%millet"= n_millet/n*100, "%aqatiuc"= n_aquatic/n*100)
 Biomarker <- Biomarker %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
 Biomarker
-write.csv (Millet,"Biomarker_preservation.csv")
+write.csv (Biomarker,"Biomarker_preservation.csv")
 ```
 
 
 #2b.Aquatic identification by site by interpretable lipid
 ```{r}
 
-Millet <- Millet %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'NBK', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
+Millet <- Biomarker %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'NBK', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
 Millet
 write.csv (Millet,"Marine_preservation.csv")
 ```
 
 
 
-#3. Isotope data overview and analysis
+#3a. Isotope data overview and analysis
 
-
-```{r}
-#Plot d13C16:0 agains d13C18:0
-plot(Iso_data$d13C16, Iso_data$d13C18)
-```
 
 
 ```{r}
@@ -149,6 +144,9 @@ p <-ggplot()+
   facet_wrap(~Country)
 p
 ```
+
+#3b.Isootpic Reference data
+
 Obtain data for isotope references and concentations
 ```{r}
 #Otain data for reference fats
@@ -164,8 +162,12 @@ Conc_sum <- Conc_ref %>% group_by(Category) %>% summarize (Concd13C16 = mean(Ab_
 Iso_sum
 Conc_sum
 ```
+
+#3c.Create concentration dependent mixing lines for plot in case needed. 
+
+
+Find Mean Values for 16:0  and 18:0 fatty acids in different sources
 ```{r}
-#Find Mean Values for 16:0  and 18:0 fatty acids in different sources
 Rice_I16 <- as.numeric(Iso_sum [5,2])
 Rice_I18 <- as.numeric(Iso_sum [5,4]) 
 Millet_I16 <- as.numeric(Iso_sum [4,2]) 
@@ -236,6 +238,9 @@ ba <- final_18a
 
 ```
 
+#3d.Plot isotope data from pots against reference ranges
+
+
 
 ```{r}
 #Plot d13C16:0 against d13C18:0 for pots and refs
@@ -245,8 +250,12 @@ Kyu <- Iso_data %>%
   filter(Country == "Japan") 
 #Iso_ref <-Iso_ref %>% filter(Category == "Rice" | Category == "Millet"| Category == "Wild ruminant"| Category == "Marine"|Category == "Wild non-ruminant")
 
+```
+
+
+```{r}
 library(ggstar)
-p <-ggplot()+
+p_Kor <-ggplot()+
   labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
   scale_x_continuous(limits=c(-37,-15))+
   scale_y_continuous(limits=c(-37,-15))+
@@ -265,42 +274,18 @@ annotate("text", label = "C4/millet", x = -20, y = -17, size = 4, colour = "blac
   annotate("text", label = "Rice", x = -34, y = -34, size = 4, colour = "black")+ 
   coord_fixed(ratio = 1)+
   theme_Pub()
-p+ facet_wrap (~Phase_2)
-
-p <-ggplot()+
-  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
-  scale_x_continuous(limits=c(-37,-15))+
-  scale_y_continuous(limits=c(-37,-15))+
-  geom_point (data= subset(Kyu, Aquatic =="yes"), aes(y=d13C18, x=d13C16), shape=21, fill= "blue", size=3, colour="black")+
-geom_point (data= subset(Kyu, Aquatic =="Part"), aes(y=d13C18, x=d13C16), shape=21,  fill= "lightblue", size=3, colour="black")+
-  geom_point(data=subset(Kyu, Aquatic=='no'), aes(y=d13C18,x=d13C16), shape=21, fill="grey", size=3, colour ="black")+ 
-  stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.2,
-               aes (x = d13C16, y = d13C18, group = Category),
-              level = 0.68)+
-annotate("text", label = "C4/millet", x = -20, y = -17, size = 4, colour = "black")+ 
-  annotate("text", label = "Marine", x = -25, y = -22, size = 4, colour = "black")+ 
-  annotate("text", label = "Freshwater", x = -31, y = -29, size = 4, colour = "black")+ 
-  annotate("text", label = "Wild boar", x = -30, y = -27, size = 4, colour = "black")+ 
-  annotate("text", label = "Ruminant", x = -29, y = -35, size = 4, colour = "black")+ 
-  annotate("text", label = "C3 nuts", x = -35, y = -33, size = 4, colour = "black")+
-  annotate("text", label = "Rice", x = -34, y = -34, size = 4, colour = "black")+ 
-  coord_fixed(ratio = 1)+
-  theme_Pub()
-p+ facet_wrap (~Phase_2)
-
+p_Kor + facet_wrap (~Phase_2)
 ```
-
 
 ```{r}
-
-
-p <-ggplot()+
+p_Kyu <-ggplot()+
   labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
   scale_x_continuous(limits=c(-37,-15))+
   scale_y_continuous(limits=c(-37,-15))+
-  geom_point(data=Kor, aes(y=d13C18, x=d13C16,  colour= Biomarker, shape=Phase_2), size=3)+
-  scale_colour_manual(name = "", breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
-  stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.2,
+  geom_star (data= subset(Kyu, Aquatic =="yes"), aes(y=d13C18, x=d13C16), shape=21, fill= "blue", size=3, colour="black")+
+geom_star (data= subset(Kyu, Aquatic =="Part"), aes(y=d13C18, x=d13C16), shape=21,  fill= "lightblue", size=3, colour="black")+
+  geom_point(data=subset(Kyu, Aquatic=='no'), aes(y=d13C18,x=d13C16), shape=21, fill="grey", size=3, colour ="black")+ 
+  stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.1,
                aes (x = d13C16, y = d13C18, group = Category),
               level = 0.68)+
 annotate("text", label = "C4/millet", x = -20, y = -17, size = 4, colour = "black")+ 
@@ -312,29 +297,11 @@ annotate("text", label = "C4/millet", x = -20, y = -17, size = 4, colour = "blac
   annotate("text", label = "Rice", x = -34, y = -34, size = 4, colour = "black")+ 
   coord_fixed(ratio = 1)+
   theme_Pub()
-p 
-
-p1 <-ggplot()+
-  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
-  scale_x_continuous(limits=c(-37,-15))+
-  scale_y_continuous(limits=c(-37,-15))+
-  geom_point(data=Kyu, aes(y=d13C18, x=d13C16, colour= Biomarker, shape=Phase_2), size=3)+
-  scale_colour_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
-  stat_ellipse(geom= "polygon", data=Iso_ref, alpha=0.2,
-               aes (x = d13C16, y = d13C18, group = Category),
-              level = 0.68)+
-  annotate("text", label = "C4/millet", x = -20, y = -17, size = 4, colour = "black")+ 
-  annotate("text", label = "Marine", x = -25, y = -22, size = 4, colour = "black")+ 
-  annotate("text", label = "Freshwater", x = -31, y = -29, size = 4, colour = "black")+ 
-  annotate("text", label = "Wild boar", x = -30, y = -27, size = 4, colour = "black")+ 
-  annotate("text", label = "Ruminant", x = -29, y = -35, size = 4, colour = "black")+ 
-  annotate("text", label = "C3 nuts", x = -35, y = -33, size = 4, colour = "black")+
-  annotate("text", label = "Rice", x = -34, y = -34, size = 4, colour = "black")+ 
-  coord_fixed(ratio = 1)+
-  theme_Pub()
-  p
+p_Kyu + facet_wrap (~Phase_2)
 
 ```
+
+
 ```{r}
 p <- p +  
   geom_line(aes(x=az, y=aa), linetype = "dashed") +
@@ -568,6 +535,7 @@ p <-ggplot()+
   facet_wrap( ~Country)
 p
 ```
+Output posteriors 
 
 ```{r}
 g.post <- output_posteriors(jags.1, mix, source, output_options)

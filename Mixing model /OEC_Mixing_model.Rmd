@@ -1,0 +1,208 @@
+---
+title: "OEC_Mixing model"
+author: "OEC"
+date: "27/02/2024"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+Using MixSIAR package to estimate the contribution of differnet sources to pottery based on the fatty acid isotope data
+
+
+Obtain pot CSIA measruments 
+```{r}
+# @title
+# Read data from INTERNET
+library('googlesheets4')
+library(dplyr)
+ #gs4_deauth() # if needed
+gs4_auth(email='oliver.craig@york.ac.uk') # only if needed
+Data <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="Data") |> as.data.frame()
+
+
+
+```
+
+
+Obtain data for isotope references and concentations
+```{r}
+#Otain data for reference fats
+library(dplyr)
+Iso_ref <- read_sheet(ss = "https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0", sheet = "Iso_ref")|> as.data.frame()
+Conc_ref <- read_sheet(ss = "https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0", sheet = "Conc_ref")|> as.data.frame()
+```
+
+Find means and ranges of isotope and concentrations values and check
+```{r}
+Iso_sum <- Iso_ref %>% group_by(Category) %>% summarize (Meand13C16 = mean(d13C16), SDd13C16 = sd(d13C16), Meand13C18 = mean(d13C18), SDd13C18 = sd(d13C18), n = n())
+Conc_sum <- Conc_ref %>% group_by(Category) %>% summarize (Concd13C16 = mean(Ab_Percent_C16), SDC16 = sd(Ab_Percent_C16), Concd13C18 = mean(Ab_Percent_C18), SDC18 = sd(Ab_Percent_C18), n_conc = n())
+Conc_sum 
+Iso_sum 
+```
+
+
+Create a mixing model with MixSiar
+Load the consumer data
+```{r}
+#remotes::install_github("brianstock/MixSIAR")
+library(MixSIAR)
+
+
+mix <- Data %>% filter(d13C16 < 0) %>% select(Sample_ID, Site_name, Region, Phase_2, d13C16, d13C18, Biomarker)
+mix <-mix %>% filter(Biomarker == "Millet")
+write.csv (mix,"/Users/olcraig/Desktop/KorKyu_project/R_script/pots.csv")
+mix <- load_mix_data (filename="/Users/olcraig/Desktop/KorKyu_project/R_script/pots.csv", 
+                     iso_names=c("d13C16", "d13C18"), 
+                     factors="Sample_ID",
+                     fac_random=FALSE, 
+                     fac_nested=FALSE, 
+                     cont_effects=NULL)
+mix
+```
+
+Intstall latest github version of MixSIAR with new tools in (no CRAN version)
+
+```{r}
+#Install the latest version of MixSIAR from github!
+#remotes::install_github("brianstock/MixSIAR",  auth_token = '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', force = TRUE,
+                        #dependencies=T) 
+```
+
+Organsie and load the correct source data (rice and millet for this model)
+
+
+```{r}
+library(MixSIAR)
+Iso_sum1 <- Iso_sum %>% filter(Category == "Rice" | Category == "Millet"| Category == "Wild ruminant"| Category == "Marine")
+Conc_sum1 <- Conc_sum %>% filter(Category == "Rice" | Category == "Millet"| Category == "Wild ruminant"| Category == "Marine") 
+Source <- inner_join(Conc_sum1, Iso_sum1, 
+           by = c("Category"))
+Source <- Source %>% mutate ("Sources"= Category) %>%select(Sources, Meand13C16, Meand13C18, Concd13C16, Concd13C18, SDd13C16, SDd13C18, n) 
+Source
+write.csv (Source,"/Users/olcraig/Desktop/KorKyu_project/R_script/source.csv", row.names=FALSE)
+source <- load_source_data (filename="/Users/olcraig/Desktop/KorKyu_project/R_script/source.csv", 
+                           source_factors=NULL,
+                             conc_dep=TRUE, 
+                           data_type="means", 
+                           mix)
+source
+```
+
+Load the discrimination/TDF data - null values for pottery residues 
+
+```{r}
+# Load the discrimination/TDF data
+Sources <- Source %>%  pull(Sources)
+Meand13C16 <- c(0,0,0,0)
+SDd13C16 <- c(0,0,0,0)
+Meand13C18 <- c(0,0,0,0)
+SDd13C18 <- c(0,0,0,0)
+discr <- data.frame(Sources, Meand13C16, SDd13C16,Meand13C18,SDd13C18)
+write.csv (discr,"/Users/olcraig/Desktop/KorKyu_project/R_script/discr.csv", row.names=FALSE)
+discr <- load_discr_data(filename="/Users/olcraig/Desktop/KorKyu_project/R_script/discr.csv", mix)
+discr
+```
+Plot the isoscape
+
+```{r, eval=FALSE}
+# Make an isospace plot
+plot_data(filename="isospace_plot", plot_save_pdf=TRUE, plot_save_png=FALSE, mix,source,discr)
+```
+```{r}
+# Calculate the convex hull area, standardized by source variance
+calc_area(source=source,mix=mix,discr=discr)
+```
+
+```{r, eval=FALSE}
+# default "UNINFORMATIVE" / GENERALIST prior (alpha = 1)
+#plot_prior(alpha.prior=1,source)
+```
+
+Write the JAGS file. Specify residual error see here - https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.1517 - specific process_err to be most conservative. 
+
+```{r, eval=FALSE}
+# Write the JAGS model file
+model_filename <- "MixSIAR_model.txt"   # Name of the JAGS model file
+resid_err <- FALSE
+process_err <- TRUE
+write_JAGS_model(model_filename, resid_err, process_err, mix, source)
+```
+
+
+```{r, eval=FALSE}
+#run <- list(chainLength=200000, burn=150000, thin=50, chains=3, calcDIC=TRUE)
+```
+
+Test the model 
+
+```{r, eval=FALSE}
+jags.1 <- run_model(run="test", mix, source, discr, model_filename)
+```
+
+Run the model 
+```{r, eval=FALSE}
+jags.1 <- run_model(run="normal", mix, source, discr, model_filename)
+summary(jags.1)
+```
+
+Create output options
+
+```{r, eval=FALSE}
+output_options <- list(summary_save = TRUE,                 
+                       summary_name = "summary_statistics", 
+                       sup_post = TRUE,                    
+                       plot_post_save_pdf = FALSE,           
+                       plot_post_name = "posterior_density",
+                       sup_pairs = TRUE,             
+                       plot_pairs_save_pdf = TRUE,    
+                       plot_pairs_name = "pairs_plot",
+                       sup_xy = TRUE,           
+                       plot_xy_save_pdf = TRUE,
+                       plot_xy_name = "xy_plot",
+                       gelman = TRUE,
+                       heidel = FALSE,  
+                       geweke = TRUE,   
+                       diag_save = TRUE,
+                       diag_name = "diagnostics",
+                       indiv_effect = FALSE,       
+                       plot_post_save_png = FALSE, 
+                       plot_pairs_save_png = FALSE,
+                       plot_xy_save_png = FALSE,
+                       diag_save_ggmcmc = FALSE,
+                       return_obj = TRUE)
+```
+
+Run diagnostics and create a data frame with some summary stats. 
+```{r}
+#output_JAGS (jags.1, mix, source, output_options)
+diag <- output_diagnostics(jags.1, mix, source, output_options)
+head(diag$gelman)
+df.stats <- output_stats(jags.1, mix, source, output_options)
+rownames(df.stats)
+#g.post <- output_posteriors(jags.1, mix, source, output_options)
+#g.post
+```
+```{r}
+df.stats <- output_stats(jags.1, mix, source, output_options)
+print(df.stats)
+write.csv(df.stats, "/Users/olcraig/Desktop/KorKyu_project/R_script/summary.csv")
+```
+
+
+
+Extract individual markov chains - need better way. 
+```{r}
+# Get posterior chains into one tidy data frame
+library(R2jags)
+
+
+attach.jags(jags.1)
+
+# Call, p.fac1[draws, level, source]
+Sample1 <- data.frame(Sample_ID = "Sample1", millet = p.fac1[,1,1], rice = p.fac1[,1,2])
+Sample2 <- data.frame(Sample_ID = "Sample2", millet = p.fac1[,2,1], rice = p.fac1[,2,2])
+```
+
+
+
