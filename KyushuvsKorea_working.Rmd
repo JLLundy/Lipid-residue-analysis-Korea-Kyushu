@@ -596,7 +596,11 @@ p <-ggplot()+
   scale_x_continuous(limits=c(-25,-10))+
   scale_y_continuous(limits=c(0,15))+
   geom_point(data=Data_hum, aes(y=d15N_coll, x=d13C_coll,  fill= Period_2), size=3, pch= 21,  colour="black")+
-  #scale_fill_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
+```
+
+
+```{r}
+#scale_fill_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
   theme_Pub()
 p
 
