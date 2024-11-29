@@ -1,14 +1,26 @@
 # Load Library and Posteriors ----
 library(here)
 library(coda)
+library(rcarbon)
 
-load(here('scripts','ricearrival_res.RData'))
-load(here('scripts','milletsarrival_res.RData'))
-load(here('scripts','setariaarrival_res.RData'))
-load(here('scripts','panicumarrival_res.RData'))
+d <- read.csv(here('arrivalestimates','combined_final.csv')) |> subset(!Exclude=='YES')
+d$med <- medCal(calibrate(d$CRA,d$CRAError))
+d.korea.rice  <- subset(d,Region=='South Korea'&Material=='rice')
+d.japan.rice <- subset(d,Region=='Japan'&Material=='rice')
+d.korea.setaria  <- subset(d,Region=='South Korea'&Material=='foxtail millet')
+d.japan.setaria <- subset(d,Region=='Japan'&Material=='foxtail millet')
+d.korea.panicum  <- subset(d,Region=='South Korea'&Material=='broomcorn millet')
+d.japan.panicum <- subset(d,Region=='Japan'&Material=='broomcorn millet')
+d.korea.millets  <- subset(d,Region=='South Korea'&Material!='rice')
+d.japan.millets <- subset(d,Region=='Japan'&Material!='rice')
+
+load(here('arrivalestimates','ricearrival_res.RData'))
+load(here('arrivalestimates','milletsarrival_res.RData'))
+load(here('arrivalestimates','setariaarrival_res.RData'))
+load(here('arrivalestimates','panicumarrival_res.RData'))
 
 # Utility function ----
-posterior.bar <- function(x,y,width=0.4,prob1=0.5,prob2=0.9,fill='grey',alpha=0.5)
+posterior.bar <- function(x,y,width=0.4,prob1=0.5,prob2=0.9,fill='grey',lcol='black',alpha=0.5)
 {
 	x.lo1 <- HPDinterval(mcmc(x),prob=prob1)[1]
 	x.hi1 <- HPDinterval(mcmc(x),prob=prob1)[2]
@@ -18,6 +30,7 @@ posterior.bar <- function(x,y,width=0.4,prob1=0.5,prob2=0.9,fill='grey',alpha=0.
 	rect(xleft=x.lo1,xright=x.hi1,ybottom=y-width/2,ytop=y+width/2,border=NA,col=fill)
 	rect(xleft=x.lo2,xright=x.lo1,ybottom=y-width/2,ytop=y+width/2,border=NA,col=adjustcolor(fill,alpha))
 	rect(xleft=x.hi1,xright=x.hi2,ybottom=y-width/2,ytop=y+width/2,border=NA,col=adjustcolor(fill,alpha))
+	lines(x=c(med,med),y=c(y-width/2,y+width/2),lwd=2,col=lcol)
 # 	points(x=med,y=y,pch=20,cex=cex)
 }
 
@@ -34,36 +47,45 @@ posterior.plot <- function(x,prob=0.9,bw='SJ',hpd.col='lightblue',line.col='dark
 	lines(dens,col=line.col)
 }
 
-posterior.bar <- function(x,prob=0.9,calendar='BCAD',yp=0.8,ys=0.05)
-{
-	require(rcarbon)
-	ygap  <- c(par('usr')[4]-par('usr')[3])*yp
-	ygap2  <- c(par('usr')[4]-par('usr')[3])*(yp+ys)
-	x.lo <- HPDinterval(mcmc(x),prob=prob)[1]
-	x.hi <- HPDinterval(mcmc(x),prob=prob)[2]
-	lines(c(x.lo,x.hi),c(ygap,ygap))
-	points(c(x.lo,x.hi),c(ygap,ygap),pch=20)
-	labs <- c(x.hi,x.lo) |> round()
-	if(calendar=='BCAD'){labs <- abs(BPtoBCAD(labs))}
-	text(c(x.hi,x.lo),c(ygap2,ygap2),labels=labs)
-}
+# posterior.bar <- function(x,prob=0.9,calendar='BCAD',yp=0.8,ys=0.05)
+# {
+# 	require(rcarbon)
+# 	ygap  <- c(par('usr')[4]-par('usr')[3])*yp
+# 	ygap2  <- c(par('usr')[4]-par('usr')[3])*(yp+ys)
+# 	x.lo <- HPDinterval(mcmc(x),prob=prob)[1]
+# 	x.hi <- HPDinterval(mcmc(x),prob=prob)[2]
+# 	lines(c(x.lo,x.hi),c(ygap,ygap))
+# 	points(c(x.lo,x.hi),c(ygap,ygap),pch=20)
+# 	labs <- c(x.hi,x.lo) |> round()
+# 	if(calendar=='BCAD'){labs <- abs(BPtoBCAD(labs))}
+# 	text(c(x.hi,x.lo),c(ygap2,ygap2),labels=labs)
+# }
 
 
 col1='#2081f9'
 col2='#f99820'
 width=0.3
-pdf('test.pdf',width=8,height=3)
+pdf('arrival_estimates.pdf',width=8,height=3)
 layout(matrix(1:2,nrow=1,ncol=2),width=c(0.6,0.4))
 par(mar=c(3,0,0,0))
 plot(NULL,xlim=c(8000,2500),ylim=c(0.5,4.5),xlab='',ylab='',axes=F)
 posterior.bar(x=post.rice[,'a[1]'],y=4.2,fill=col1,width=width)
+points(d.japan.rice$med,y=rep(4.2,nrow(d.japan.rice)),pch=18,col=adjustcolor('black',0.2))
 posterior.bar(x=post.rice[,'a[2]'],y=3.8,fill=col2,width=width)
+points(d.korea.rice$med,y=rep(3.8,nrow(d.korea.rice)),pch=18,col=adjustcolor('black',0.2))
 posterior.bar(x=post.millets[,'a[1]'],y=3.2,fill=col1,width=width)
+points(d.japan.millets$med,y=rep(3.2,nrow(d.japan.millets)),pch=18,col=adjustcolor('black',0.2))
 posterior.bar(x=post.millets[,'a[2]'],y=2.8,fill=col2,width=width)
+points(d.korea.millets$med,y=rep(2.8,nrow(d.korea.millets)),pch=18,col=adjustcolor('black',0.2))
 posterior.bar(x=post.setaria[,'a[1]'],y=2.2,fill=col1,width=width)
+points(d.japan.setaria$med,y=rep(2.2,nrow(d.japan.setaria)),pch=18,col=adjustcolor('black',0.2))
 posterior.bar(x=post.setaria[,'a[2]'],y=1.8,fill=col2,width=width)
+points(d.korea.setaria$med,y=rep(1.8,nrow(d.korea.setaria)),pch=18,col=adjustcolor('black',0.2))
 posterior.bar(x=post.panicum[,'a[1]'],y=1.2,fill=col1,width=width)
+points(d.japan.panicum$med,y=rep(1.2,nrow(d.japan.panicum)),pch=18,col=adjustcolor('black',0.2))
 posterior.bar(x=post.panicum[,'a[2]'],y=0.8,fill=col2,width=width)
+points(d.korea.panicum$med,y=rep(0.8,nrow(d.korea.panicum)),pch=18,col=adjustcolor('black',0.2))
+
 abline(h=c(1.5,2.5,3.5),col='lightgrey')
 text(x=BCADtoBP(-5200),y=4.2,labels='Rice',cex=0.8)
 text(x=BCADtoBP(-5200),y=3.2,labels='Millets (combined)',cex=0.8)

@@ -3,7 +3,7 @@ library(here)
 library(nimbleCarbon)
 library(rcarbon)
 library(dplyr)
-d  <-  read.csv(here('data','combined_final.csv')) |> subset(!Exclude=='YES')
+d  <-  read.csv(here('arrivalestimates','combined_final.csv')) |> subset(!Exclude=='YES')
 cal.dates <- calibrate(d$CRA,d$CRAError)
 d$med <- medCal(cal.dates)
 d <- d[which.CalDates(cal.dates,BP>1500,p=0.5),]
@@ -140,9 +140,9 @@ runscript <- function(seed,d,inits,constants,nburnin,thin,niter)
 	results <- runMCMC(cMCMC,niter = niter, thin=thin,nburnin = nburnin,samplesAsCodaMCMC = T, setSeed=seed) 
 }
 
-save(dat.rice,constants.rice,inits.rice,runscript,file=here('rice_run.RData'))
-save(dat.millets,constants.millets,inits.millets,runscript,file=here('millets_run.RData'))
-save(dat.setaria,constants.setaria,inits.setaria,runscript,file=here('setaria_run.RData'))
-save(dat.panicum,constants.panicum,inits.panicum,runscript,file=here('panicum_run.RData'))
+save(dat.rice,constants.rice,inits.rice,runscript,file=here('arrivaldates','rice_run.RData'))
+save(dat.millets,constants.millets,inits.millets,runscript,file=here('arrivaldates','millets_run.RData'))
+save(dat.setaria,constants.setaria,inits.setaria,runscript,file=here('arrivaldates','setaria_run.RData'))
+save(dat.panicum,constants.panicum,inits.panicum,runscript,file=here('arrivaldates','panicum_run.RData'))
 
 
