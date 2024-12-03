@@ -193,8 +193,8 @@ Conc <- Conc %>%
 library(MixSIAR)
 
 Pots <- Data %>% filter(d13C16 < 0) %>% dplyr::select(Sample_ID, Site_name, Region, Phase_2, d13C16, d13C18)
-write.csv (Pots,"/Users/olcraig/Desktop/KorKyu_project/R_script/pots.csv")
-mix <- load_mix_data (filename="/Users/olcraig/Desktop/KorKyu_project/R_script/pots.csv", 
+write.csv (Pots,"/Users/olcraig/Documents/GitHub/KoreavsKyushu/pots.csv")
+mix <- load_mix_data (filename="/Users/olcraig/Documents/GitHub/KoreavsKyushu/pots.csv", 
                      iso_names=c("d13C16", "d13C18"), 
                      factors="Sample_ID",
                      fac_random=FALSE, 
@@ -235,8 +235,8 @@ Source
 Load the source data
 
 ```{r}
-write.csv (Source,"/Users/olcraig/Desktop/KorKyu_project/R_script/source.csv", row.names=FALSE)
-source <- load_source_data (filename="/Users/olcraig/Desktop/KorKyu_project/R_script/source.csv", 
+write.csv (Source,"/Users/olcraig/Documents/GitHub/KoreavsKyushu/source.csv", row.names=FALSE)
+source <- load_source_data (filename="/Users/olcraig/Documents/GitHub/KoreavsKyushu/source.csv", 
                            source_factors=NULL,
                              conc_dep=TRUE, 
                            data_type="raw", 
@@ -245,7 +245,7 @@ source <- load_source_data (filename="/Users/olcraig/Desktop/KorKyu_project/R_sc
 #4c Load the TDFs if relevant or neill return
 ```{r}
 # Load the discrimination/TDF data
-discr <- load_discr_data(filename="/Users/olcraig/Desktop/KorKyu_project/R_script/Discr.csv", mix)
+discr <- load_discr_data(filename="/Users/olcraig/Documents/GitHub/KoreavsKyushu/scr.csv", mix)
 ```
 ```{r, eval=FALSE}
 # Make an isospace plot
@@ -386,7 +386,7 @@ p
 #Create labels for individual plots
 ```{r}
 # A data frame with labels for each facet
-p_labels <- data.frame(Country= c('Korea', 'Japan'), label = c("A. Bronze Age Korea", "B.Jomon-Yayoi Japan"))
+p_labels <- data.frame(Country= c('Korea', 'Japan'), label = c("Bronze Age Korea", "Jomon-Yayoi Japan"))
 ```
 
 Plot millet biomarkers by 'culture'
@@ -394,8 +394,8 @@ Plot millet biomarkers by 'culture'
 ```{r}
 points <- c("Mumun" = 21, "Jomon" = 23, "Yayoi" = 21)
 p1 <-p +
-    geom_point(data=subset(Data, Millet=='no'), aes(y=d13C18,x=d13C16, shape= Phase_2), size=2, fill= "lightgrey",colour ="black")+
-  geom_point(data=subset(Data, Millet=='n/a'), aes(y=d13C18, x=d13C16, shape=Phase_2), size=2, fill= "lightgrey", colour ="black")+
+    geom_point(data=subset(Data, Millet=='n/a'), aes(y=d13C18, x=d13C16, shape=Phase_2), size=2, fill= "lightgrey", colour ="black")+
+  geom_point(data=subset(Data, Millet=='no'), aes(y=d13C18,x=d13C16, shape= Phase_2), size=2, fill= "white",colour ="black")+
   geom_point (data= subset(Data, Millet=="yes"), aes(y=d13C18, x=d13C16, shape=Phase_2), fill= "#E69F00", size=2, colour="black")+
   scale_shape_manual(values=points)
 p1 <- p1 + facet_wrap (~factor(Country, levels=c('Korea', 'Japan')))
@@ -408,89 +408,112 @@ p1 + geom_text(data=subset(Data, Type=='Foodcrust'), aes(y=d13C18,x=d13C16, labe
 Plot aquatic biomarkers by 'culture'. 
 ```{r}
 p2 <-p +
-    geom_point(data=subset(Data, Aquatic=='no'), aes(y=d13C18,x=d13C16, shape=Phase_2), size=2,fill= "lightgrey", colour ="black")+ 
   geom_point(data=subset(Data, Aquatic=='n/a'), aes(y=d13C18,x=d13C16, shape=Phase_2),  size=2, fill= "lightgrey", colour ="black")+ 
+    geom_point(data=subset(Data, Aquatic=='no'), aes(y=d13C18,x=d13C16, shape=Phase_2), size=2,fill= "white", colour ="black")+ 
   geom_point (data= subset(Data, Aquatic=="yes"), aes(y=d13C18, x=d13C16, shape=Phase_2), fill= "#56B4E9", size=2, colour="black")+
   scale_shape_manual(values=points)
 p2 <- p2 + facet_wrap(~factor(Country, levels=c('Korea', 'Japan')))
 p2 +   geom_text(x = -32, y = -16, aes(label = label), data = p_labels, size=3)
+p2 + geom_text(data=subset(Data, Type=='Foodcrust'), aes(y=d13C18,x=d13C16, label = "*"),vjust = 0.2, size=4) 
 
 ```
 
-Fig 4. Biomarkers
+# Create Fig 2. 
 
 ```{r}
 library(ggpubr)
-Fig1 <- ggarrange(p1, p2,
+Fig2 <- ggarrange(p1, p2,
                     labels = c("A", "B"),
-                    ncol = 1, nrow = 2)
-Fig1
+                    ncol = 1, nrow = 2, widths = c(1, 2))
+ggsave("Fig2.png", width = 17.8, height = 17.8, dpi = 300, units = "cm", device='png')
+Fig2
 ```
+
+
+
+
 
 Credible limits for rice lipids. The shaded color scale shows the maximum credible contribution (95% confidence) of each product (expressed as % fatty acid to total fatty acid). 
 
 ```{r}
-Rice_pots <-Data_pots %>% filter (Category == "Rice" )
-p4 <- p +
-      geom_point(data = Rice_pots, aes(y=d13C18, x=d13C16,fill=p95, shape=Phase_2), size=2,show.legend =TRUE)+
-    scale_fill_gradient (low="blue", high ="orange", limits = c(0,1), labels = label_percent(), name = "maximum rice\ncontribution(%)")+
-  #labs(fill = "Rice") +
-  #theme(legend.position = 'bottom', legend.direction = "horizontal")+
-  facet_wrap (~factor(Country, levels=c('Korea', 'Japan'))) 
-  p4 +
-  scale_shape_manual(values=points)+
-  geom_text(x = -32, y = -16, aes(label = label), data = p_labels, size=3)+
-    guides(shape = "none") +
-    theme(legend.position="right", legend.title = element_text(size = 8), legend.spacing.y = unit(2, "cm"))
-```
-
-```{r}
 Millet_pots <-Data_pots %>% filter (Category == "Millet" )
-p5 <- p +
+p3 <- p +
       geom_point(data = Millet_pots, aes(y=d13C18, x=d13C16,fill=p95, shape=Phase_2), size=2)+
-    scale_fill_gradient (low="blue", high ="orange", limits = c(0,1), labels = label_percent(), name = "maximum millet\ncontribution(%)")+
+    scale_fill_gradient (low="blue", high ="orange", limits = c(0,1), labels = label_percent(), name = "maximum\ncontribution(%)")+
   #labs(fill = "Rice") +
   #theme(legend.position = 'bottom', legend.direction = "horizontal")+
   facet_wrap (~factor(Country, levels=c('Korea', 'Japan'))) 
-  p5 +
+  p3 <- p3 +
       scale_shape_manual(values=points)+
   geom_text(x = -32, y = -16, aes(label = label), data = p_labels, size=3)+
     guides(shape = "none") +
     theme(legend.position="right", legend.title = element_text(size = 8), legend.spacing.y = unit(3, "cm"))
+  p3
   
 ```
-
 ```{r}
 Marine_pots <-Data_pots %>% filter (Category == "Marine" )
-p6 <- p +
+p4 <- p +
       geom_point(data = Marine_pots, aes(y=d13C18, x=d13C16,fill=p95, shape=Phase_2), size=2)+
-    scale_fill_gradient (low="blue", high ="orange", limits = c(0,1), labels = label_percent(), name = "maximum marine\ncontribution(%)")+
+    scale_fill_gradient (low="blue", high ="orange", limits = c(0,1), labels = label_percent(), name = "maximum\ncontribution(%)")+
   #labs(fill = "Rice") +
   #theme(legend.position = 'bottom', legend.direction = "horizontal")+
   facet_wrap (~factor(Country, levels=c('Korea', 'Japan'))) 
-  p6 +
+  p4 <- p4 +
       scale_shape_manual(values=points)+
   geom_text(x = -30, y = -16, aes(label = label), data = p_labels, size=3)+
     guides(shape = "none") +
     theme(legend.position="right", legend.title = element_text(size = 8), legend.spacing.y = unit(3, "cm"))
-  
+  p4
+```
+
+```{r}
+Rice_pots <-Data_pots %>% filter (Category == "Rice" )
+p5 <- p +
+      geom_point(data = Rice_pots, aes(y=d13C18, x=d13C16,fill=p95, shape=Phase_2), size=2,show.legend =TRUE)+
+    scale_fill_gradient (low="blue", high ="orange", limits = c(0,1), labels = label_percent(), name = "maximum\ncontribution(%)")+
+  #labs(fill = "Rice") +
+  #theme(legend.position = 'bottom', legend.direction = "horizontal")+
+  facet_wrap (~factor(Country, levels=c('Korea', 'Japan'))) 
+   p5 <-p5 +
+  scale_shape_manual(values=points)+
+  geom_text(x = -32, y = -16, aes(label = label), data = p_labels, size=3)+
+   guides(shape = "none") +
+    theme(legend.position="right", legend.title = element_text(size = 8), legend.spacing.y = unit(2, "cm"))
+   p5
 ```
 
 ```{r}
 Rum_pots <-Data_pots %>% filter (Category == "Wild ruminant" )
-p7 <- p +
+p6 <- p +
       geom_point(data = Rum_pots, aes(y=d13C18, x=d13C16,fill=p95, shape=Phase_2), size=2)+
     scale_fill_gradient (low="blue", high ="orange", limits = c(0,1))+
   #labs(fill = "Rice") +
   #theme(legend.position = 'bottom', legend.direction = "horizontal")+
   facet_wrap (~factor(Country, levels=c('Korea', 'Japan'))) 
-  p7 +
+ p6 <- p6 +
      scale_shape_manual(values=points)+
   geom_text(x = -30, y = -16, aes(label = label), data = p_labels, size=3)+
     guides(shape = "none") +
     theme(legend.position="right", legend.title = element_text(size = 8), legend.spacing.y = unit(2, "cm"))
-  
+ p6
 ```
+
+
+
+#6. Create Fig 3. Mixing model
+
+```{r}
+library(ggpubr)
+Fig3 <- ggarrange(p3,p4,p5, labels = c("A","B","C"), ncol = 1, nrow = 3, common.legend = TRUE, legend="bottom")
+Fig3 
+ggsave("Fig3.png", width = 17, height = 27, dpi = 300, units = "cm", device='png')
+```
+
+
+
+
+
 
 
 ```{r}
@@ -513,7 +536,7 @@ p4 <- p +
 
 p5 <- p +
       geom_point(data = Data, aes(y=d13C18, x=d13C16, fill=EH, shape=Phase_2), size=2,show.legend =TRUE)+
-    scale_fill_gradient (low="blue", high ="orange",  limits = c(2,16), name = "APAA E/H ratio")+
+    scale_fill_gradient (low="blue", high ="orange",  limits = c(2,8), name = "APAA E/H ratio")+
   #labs(fill = "Rice") +
   #theme(legend.position = 'bottom', legend.direction = "horizontal")+
   facet_wrap (~factor(Country, levels=c('Korea', 'Japan'))) 
@@ -541,29 +564,8 @@ p5 <- p +
 ```
 
 
-Fig 5. Mixing model
-
-```{r}
-library(ggpubr)
-Fig5 <- ggarrange(p4,p5,p6,p7,
-                    labels = c("A.Rice", "B. Millet","C. Marine","D.Ruminant"), font.label = list(size = 10),
-                    ncol = 1, nrow = 4, common.legend = TRUE, legend="right")
-Fig5 
-ggsave("/Users/olcraig/Desktop/KorKyu_project/R_script/Fig5.png", width = 18, height = 18, units = "cm")
-
-```
 
 
-```{r}
-library(cowplot)
-ggdraw() +
-  draw_plot(p4, x = 0, y = 0.5, width = 0.5, height = 0.5) +
-  draw_plot(p5, x = 0.5, y = 0.5, width = 0.5, height = 0.5) +
-  draw_plot(p6, x = 0.5, y = 0, width = 0.5, height = 0.5) +
-  draw_plot(p7, x = 0, y = 0, width = 0.5, height = 0.5)
-
-
-```
 
 
 #7 Plot sites spatially
@@ -592,60 +594,46 @@ elevation <- get_elev_raster(locations = win, z = 5,clip = "locations",src='aws'
 dem <- as.data.frame(elevation, xy = T) |> na.omit()
 colnames(dem)[3] <- "elevation"
 dem$elevation[which(dem$elevation < 0)] = 0
-sites.sf<- st_as_sf(Data, coords=c("Longitude","Lattitude"),crs=4326)
+```
+Define datasets for plotting
+```{r}
+Map <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="Map_coords") |> as.data.frame()
+Pots <- Map %>% filter (Type == "Pot")
+Bones <- Map %>% filter (Type == "Bone")
+
+pots.sf <- st_as_sf(Pots, coords=c('Long','Lat'),crs=4326)
+bones.sf  <- st_as_sf(Bones, coords=c('Long','Lat'),crs=4326)
+
 ```
 
 
+
 ```{r}
+library("ggrepel")
+library("ggspatial")
+
 plot <- ggplot() +
 	geom_tile(data=dem,aes(x=x,y=y,fill=elevation)) +
 	scale_fill_etopo() +
-	geom_sf(data=sites.sf,size=3,col='darkred',pch=20) +
-  #geom_sf_text(data=Data, aes(label = Site_code))+
-#annotate('text',x=131.5,y=33.4,label='RMM',size=3) +
-#annotate('text',x=131.2,y=33.4,label='SHC, SAS', size=3) +
-#annotate('text',x=128.2,y=36.9,label='DPR',size=3) +
-#annotate('text',x=127.5,y=36.4,label='JKR',size=3) +
-#annotate('text',x=127.6,y=36.5,label='KCR',size=3) +
-#annotate('text',x=128.3,y=37.0,label='MJR',size=3) +
-#annotate('text',x=128.2,y=37.5,label='MSR',size=3) +
-#annotate('text',x=128.2,y=36.5,label='SDR',size=3) +
-	xlim(125,135) +
+	geom_sf(data=pots.sf, fill="#E69F00", shape=21, colour = "black", size=2) +
+  geom_sf(data=bones.sf, fill="#56B4E9", shape=21, colour = "black", size=2)+
+  geom_text_repel(data = Map, aes(x = Long, y = Lat, label = Num), nudge_x =  Map$Nudge_x, nudge_y = Map$Nudge_y, size=3) +
+	xlim(124,135) +
 	ylim(30,40) +
 	xlab('Longitude') +
 	ylab('Latitude') +
-	theme(legend.position = "none")
+  annotation_scale()+
+	theme(axis.ticks = element_blank())+
+  theme_bw(base_size = 10)+
+  theme(strip.text.x = element_blank())+
+theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
+theme(legend.position="none")
 plot
 ```
 
 
 
-Plot stable isotope locations
-Create a dataframe with the locations of each site with SI data in Korea and Kyhusu
 
-```{r}
-
-Site <- c('Ohtomo', 'Hwangsok-ri', 'Jungdo', 'Maedun Cave','Yoshinogari' )
-Long <- c('129.54', '128.13', '127.50','128.68','130.23')
-Lat <- c('33.32', '37.02','37.68', '37.32','33.19')
-Hum_loc <- data.frame(Site, Long, Lat)
-Bone.sf  <- st_as_sf(Hum_loc,coords=c('Long','Lat'),crs=4326)
-
-```
-
-```{r}
-plot <- ggplot() +
-	geom_tile(data=dem,aes(x=x,y=y,fill=elevation)) +
-	scale_fill_etopo() +
-	geom_sf(data=Bone.sf,size=4,col='black',pch=20) +
-  geom_sf_label(data=Bone.sf, aes(label = Site), hjust="left", nudge_x = 0.2, size=3, check_overlap= TRUE, colour = "black")+
-	xlim(125,135) +
-	ylim(30,40) +
-	xlab('Longitude') +
-	ylab('Latitude') +
-	theme(legend.position = "none")
-plot
-```
 
 
 Plot millet locations spatially. 
@@ -674,7 +662,8 @@ plot <- ggplot() +
 	theme(legend.position = "none")
 plot
 ```
-#5 Plot human isotope data
+
+#8 Plot human isotope data
 
 
 ```{r}
@@ -690,12 +679,17 @@ p <-ggplot()+
   scale_x_continuous(limits=c(-25,-10))+
   scale_y_continuous(limits=c(0,15))+
   geom_point(data=Data_hum, aes(y=d15N_coll, x=d13C_coll,  fill= Period_2), size=3, pch= 21,  colour="black")+
+  theme(axis.ticks = element_blank())+
+  theme_bw(base_size = 10)+
+  theme(strip.text.x = element_blank())+
+theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
+theme(legend.position="none")+
+  
+p
 ```
 
 
 ```{r}
-#scale_fill_manual(breaks= c("Millet", "Aquatic"), values=c("#D55E00","#009E73"))+
-  theme_Pub()
 p
 
 ```

@@ -3,342 +3,230 @@
 # Summary Statistics
 #################################################################
 
-DIC = 560.8112
+DIC = 546.1022
 
-                          Mean    SD  2.5%    5%
-p.DPR001.Marine          0.334 0.067 0.207 0.235
-p.DPR003.Marine          0.283 0.169 0.037 0.058
-p.DPR007.Marine          0.425 0.243 0.050 0.074
-p.DPR008.Marine          0.345 0.195 0.040 0.061
-p.DPR009.Marine          0.400 0.242 0.046 0.062
-p.DPR011.Marine          0.095 0.070 0.010 0.016
-p.DPR013.Marine          0.220 0.142 0.029 0.042
-p.DPR014.Marine          0.240 0.147 0.028 0.046
-p.DPR016.Marine          0.201 0.130 0.031 0.042
-p.DPR017.Marine          0.229 0.144 0.030 0.043
-p.DPR019.Marine          0.401 0.235 0.034 0.053
-p.DPR020.Marine          0.256 0.164 0.032 0.049
-p.DPR025.Marine          0.225 0.146 0.032 0.044
-p.DPR026.Marine          0.414 0.217 0.061 0.082
-p.DPR031.Marine          0.402 0.208 0.054 0.081
-p.DPR032.Marine          0.424 0.228 0.052 0.078
-p.DPR033.Marine          0.250 0.155 0.034 0.050
-p.JKR01.Marine           0.394 0.222 0.042 0.068
-p.JKR04.Marine           0.375 0.204 0.048 0.073
-p.JKR10.Marine           0.415 0.216 0.060 0.086
-p.JKR11.Marine           0.236 0.148 0.033 0.048
-p.JKR12.Marine           0.276 0.169 0.037 0.057
-p.MJR01.Marine           0.252 0.152 0.040 0.052
-p.MJR02.Marine           0.392 0.210 0.055 0.079
-p.MJR04.Marine           0.390 0.220 0.042 0.066
-p.MJR06.Marine           0.134 0.130 0.012 0.017
-p.MJR08.Marine           0.364 0.195 0.052 0.075
-p.MJR09.Marine           0.424 0.250 0.043 0.063
-p.MJR10.Marine           0.153 0.130 0.019 0.025
-p.MJR12.Marine           0.335 0.240 0.036 0.052
-p.MJR16.Marine           0.336 0.189 0.047 0.068
-p.MJR20.Marine           0.229 0.145 0.034 0.047
-p.MJR22.Marine           0.336 0.191 0.054 0.073
-p.MJR27.Marine           0.418 0.226 0.054 0.077
-p.MJR29.Marine           0.408 0.210 0.063 0.086
-p.MJR34.Marine           0.408 0.222 0.052 0.073
-p.MJR37.Marine           0.187 0.123 0.030 0.037
-p.MJR38.Marine           0.398 0.217 0.051 0.074
-p.MJR39.Marine           0.387 0.230 0.036 0.053
-p.MJR43.Marine           0.391 0.223 0.041 0.065
-p.MJR44.Marine           0.393 0.224 0.042 0.062
-p.MSR02.Marine           0.316 0.180 0.050 0.073
-p.MSR03.Marine           0.408 0.227 0.060 0.081
-p.MSR04.Marine           0.331 0.184 0.056 0.074
-p.MSR05.Marine           0.411 0.224 0.063 0.082
-p.MSR07.Marine           0.394 0.233 0.033 0.054
-p.MSR09.Marine           0.396 0.235 0.040 0.058
-p.NBK001FI.Marine        0.317 0.176 0.046 0.073
-p.NBK002FI.Marine        0.414 0.240 0.041 0.060
-p.NBK003FI.Marine        0.095 0.065 0.015 0.020
-p.NBK004FI.Marine        0.260 0.217 0.022 0.033
-p.NBK005FI.Marine        0.410 0.227 0.047 0.070
-p.NBK006FI.Marine        0.359 0.237 0.032 0.048
-p.NBK007FI.Marine        0.398 0.212 0.061 0.085
-p.NBK008FI.Marine        0.270 0.223 0.025 0.034
-p.NBK009FI.Marine        0.141 0.103 0.019 0.026
-p.NBK010FI.Marine        0.086 0.060 0.011 0.015
-p.NBK011FI.Marine        0.380 0.246 0.035 0.055
-p.NBK012FI.Marine        0.393 0.239 0.043 0.062
-p.OBD02I.Marine          0.257 0.153 0.036 0.049
-p.OBD08I.Marine          0.296 0.173 0.037 0.059
-p.OBD17I.Marine          0.412 0.227 0.047 0.071
-p.OBD20I.Marine          0.353 0.234 0.030 0.052
-p.RMM02I.Marine          0.327 0.190 0.046 0.061
-p.RMM07I.Marine          0.262 0.156 0.041 0.057
-p.RMM08I.Marine          0.353 0.198 0.044 0.065
-p.SAS01I.Marine          0.282 0.166 0.033 0.055
-p.SAS03I.Marine          0.155 0.106 0.019 0.028
-p.SAS04I.Marine          0.155 0.111 0.023 0.032
-p.SAS06I.Marine          0.165 0.114 0.025 0.034
-p.SAS07I.Marine          0.126 0.125 0.013 0.018
-p.SAS08I.Marine          0.248 0.148 0.036 0.053
-p.SAS10I.Marine          0.329 0.182 0.051 0.072
-p.SAS12I.Marine          0.250 0.154 0.036 0.049
-p.SAS16I.Marine          0.406 0.240 0.044 0.063
-p.SAS17I.Marine          0.204 0.131 0.026 0.039
-p.SAS20I.Marine          0.202 0.134 0.026 0.037
-p.SAS23I.Marine          0.240 0.149 0.036 0.049
-p.SAS24I.Marine          0.207 0.132 0.027 0.041
-p.SAS26I.Marine          0.225 0.141 0.028 0.041
-p.SAS28I.Marine          0.228 0.143 0.032 0.046
-p.SAS30I.Marine          0.389 0.209 0.051 0.077
-p.SAS31I.Marine          0.211 0.138 0.029 0.042
-p.SAS35FI.Marine         0.250 0.154 0.034 0.049
-p.SHC01I.Marine          0.386 0.208 0.039 0.068
-p.SHC05I.Marine          0.243 0.149 0.039 0.053
-p.SHC06I.Marine          0.339 0.195 0.043 0.068
-p.SHC07I.Marine          0.410 0.222 0.057 0.080
-p.SHC10I.Marine          0.364 0.205 0.053 0.065
-p.SHC13I.Marine          0.404 0.218 0.058 0.080
-p.SHC14I.Marine          0.379 0.204 0.054 0.078
-p.SHC19I.Marine          0.398 0.216 0.057 0.076
-p.SHC25I.Marine          0.358 0.194 0.064 0.082
-p.SHC27I.Marine          0.378 0.197 0.061 0.081
-p.SON002.Marine          0.380 0.214 0.048 0.065
-p.SON003.Marine          0.353 0.192 0.051 0.077
-p.SON004.Marine          0.393 0.218 0.047 0.069
-p.SON005.Marine          0.236 0.150 0.034 0.045
-p.SON006.Marine          0.358 0.207 0.050 0.067
-p.SON012.Marine          0.322 0.183 0.045 0.064
-p.SON013.Marine          0.389 0.209 0.054 0.074
-p.SON014.Marine          0.303 0.172 0.045 0.061
-p.SON016.Marine          0.391 0.214 0.049 0.068
-p.SON017.Marine          0.332 0.187 0.047 0.068
-p.SON018.Marine          0.418 0.247 0.050 0.067
-p.SON020.Marine          0.324 0.178 0.049 0.069
-p.SON022.Marine          0.258 0.161 0.032 0.045
-p.SON024.Marine          0.328 0.192 0.042 0.062
-p.SON025.Marine          0.243 0.156 0.035 0.049
-p.SON026.Marine          0.223 0.141 0.034 0.046
-p.SON027.Marine          0.306 0.177 0.050 0.065
-                           25%   50%   75%   95%
-p.DPR001.Marine          0.280 0.337 0.384 0.449
-p.DPR003.Marine          0.149 0.257 0.392 0.611
-p.DPR007.Marine          0.223 0.401 0.624 0.837
-p.DPR008.Marine          0.191 0.325 0.472 0.695
-p.DPR009.Marine          0.201 0.362 0.593 0.830
-p.DPR011.Marine          0.044 0.078 0.132 0.226
-p.DPR013.Marine          0.111 0.195 0.297 0.496
-p.DPR014.Marine          0.122 0.218 0.322 0.513
-p.DPR016.Marine          0.106 0.175 0.265 0.455
-p.DPR017.Marine          0.119 0.200 0.312 0.503
-p.DPR019.Marine          0.213 0.386 0.584 0.795
-p.DPR020.Marine          0.128 0.225 0.348 0.572
-p.DPR025.Marine          0.114 0.196 0.305 0.509
-p.DPR026.Marine          0.225 0.413 0.584 0.764
-p.DPR031.Marine          0.236 0.392 0.562 0.746
-p.DPR032.Marine          0.233 0.416 0.606 0.806
-p.DPR033.Marine          0.130 0.215 0.345 0.537
-p.JKR01.Marine           0.205 0.381 0.563 0.774
-p.JKR04.Marine           0.211 0.357 0.530 0.727
-p.JKR10.Marine           0.236 0.406 0.583 0.771
-p.JKR11.Marine           0.124 0.208 0.319 0.518
-p.JKR12.Marine           0.142 0.249 0.379 0.595
-p.MJR01.Marine           0.135 0.231 0.349 0.534
-p.MJR02.Marine           0.226 0.371 0.543 0.771
-p.MJR04.Marine           0.201 0.383 0.549 0.763
-p.MJR06.Marine           0.052 0.099 0.172 0.351
-p.MJR08.Marine           0.207 0.355 0.502 0.700
-p.MJR09.Marine           0.205 0.405 0.636 0.835
-p.MJR10.Marine           0.064 0.117 0.203 0.405
-p.MJR12.Marine           0.134 0.278 0.493 0.812
-p.MJR16.Marine           0.192 0.314 0.458 0.682
-p.MJR20.Marine           0.120 0.199 0.311 0.514
-p.MJR22.Marine           0.181 0.314 0.464 0.690
-p.MJR27.Marine           0.235 0.401 0.595 0.798
-p.MJR29.Marine           0.228 0.403 0.568 0.762
-p.MJR34.Marine           0.224 0.399 0.578 0.778
-p.MJR37.Marine           0.094 0.160 0.257 0.417
-p.MJR38.Marine           0.218 0.386 0.560 0.778
-p.MJR39.Marine           0.195 0.365 0.554 0.788
-p.MJR43.Marine           0.208 0.379 0.551 0.785
-p.MJR44.Marine           0.206 0.382 0.568 0.774
-p.MSR02.Marine           0.175 0.291 0.431 0.658
-p.MSR03.Marine           0.211 0.388 0.587 0.794
-p.MSR04.Marine           0.184 0.314 0.453 0.676
-p.MSR05.Marine           0.218 0.401 0.582 0.795
-p.MSR07.Marine           0.188 0.380 0.572 0.798
-p.MSR09.Marine           0.195 0.378 0.575 0.794
-p.NBK001FI.Marine        0.176 0.296 0.437 0.641
-p.NBK002FI.Marine        0.214 0.392 0.604 0.824
-p.NBK003FI.Marine        0.047 0.079 0.129 0.218
-p.NBK004FI.Marine        0.105 0.190 0.347 0.772
-p.NBK005FI.Marine        0.221 0.398 0.588 0.786
-p.NBK006FI.Marine        0.159 0.321 0.531 0.798
-p.NBK007FI.Marine        0.221 0.381 0.557 0.766
-p.NBK008FI.Marine        0.101 0.199 0.369 0.773
-p.NBK009FI.Marine        0.067 0.117 0.186 0.344
-p.NBK010FI.Marine        0.041 0.072 0.117 0.198
-p.NBK011FI.Marine        0.170 0.338 0.580 0.810
-p.NBK012FI.Marine        0.192 0.361 0.587 0.807
-p.OBD02I.Marine          0.135 0.237 0.358 0.545
-p.OBD08I.Marine          0.164 0.273 0.406 0.620
-p.OBD17I.Marine          0.218 0.400 0.585 0.789
-p.OBD20I.Marine          0.157 0.308 0.518 0.800
-p.RMM02I.Marine          0.176 0.302 0.454 0.664
-p.RMM07I.Marine          0.146 0.236 0.350 0.574
-p.RMM08I.Marine          0.194 0.336 0.496 0.701
-p.SAS01I.Marine          0.149 0.271 0.383 0.585
-p.SAS03I.Marine          0.076 0.133 0.208 0.366
-p.SAS04I.Marine          0.076 0.130 0.202 0.366
-p.SAS06I.Marine          0.081 0.139 0.222 0.384
-p.SAS07I.Marine          0.050 0.090 0.159 0.322
-p.SAS08I.Marine          0.137 0.221 0.333 0.546
-p.SAS10I.Marine          0.182 0.308 0.439 0.665
-p.SAS12I.Marine          0.133 0.221 0.342 0.542
-p.SAS16I.Marine          0.195 0.383 0.605 0.810
-p.SAS17I.Marine          0.109 0.178 0.272 0.445
-p.SAS20I.Marine          0.098 0.174 0.275 0.471
-p.SAS23I.Marine          0.128 0.212 0.316 0.520
-p.SAS24I.Marine          0.107 0.183 0.281 0.452
-p.SAS26I.Marine          0.119 0.202 0.304 0.488
-p.SAS28I.Marine          0.120 0.200 0.306 0.497
-p.SAS30I.Marine          0.212 0.373 0.551 0.750
-p.SAS31I.Marine          0.109 0.180 0.286 0.489
-p.SAS35FI.Marine         0.128 0.226 0.338 0.551
-p.SHC01I.Marine          0.214 0.375 0.543 0.746
-p.SHC05I.Marine          0.131 0.218 0.325 0.529
-p.SHC06I.Marine          0.178 0.323 0.480 0.685
-p.SHC07I.Marine          0.226 0.398 0.586 0.793
-p.SHC10I.Marine          0.196 0.348 0.508 0.729
-p.SHC13I.Marine          0.223 0.396 0.566 0.779
-p.SHC14I.Marine          0.214 0.367 0.534 0.728
-p.SHC19I.Marine          0.224 0.386 0.565 0.768
-p.SHC25I.Marine          0.203 0.344 0.489 0.711
-p.SHC27I.Marine          0.219 0.365 0.519 0.709
-p.SON002.Marine          0.201 0.366 0.546 0.745
-p.SON003.Marine          0.206 0.333 0.487 0.710
-p.SON004.Marine          0.208 0.392 0.555 0.766
-p.SON005.Marine          0.116 0.210 0.324 0.520
-p.SON006.Marine          0.188 0.335 0.509 0.736
-p.SON012.Marine          0.177 0.299 0.446 0.643
-p.SON013.Marine          0.219 0.378 0.534 0.759
-p.SON014.Marine          0.172 0.279 0.407 0.623
-p.SON016.Marine          0.219 0.378 0.553 0.767
-p.SON017.Marine          0.179 0.313 0.454 0.676
-p.SON018.Marine          0.206 0.384 0.614 0.841
-p.SON020.Marine          0.187 0.303 0.439 0.648
-p.SON022.Marine          0.133 0.233 0.353 0.552
-p.SON024.Marine          0.166 0.302 0.471 0.669
-p.SON025.Marine          0.126 0.216 0.322 0.562
-p.SON026.Marine          0.116 0.197 0.301 0.491
-p.SON027.Marine          0.170 0.277 0.417 0.642
+                          Mean    SD  2.5%    5%   25%   50%   75%   95%
+p.DPR001.Marine          0.314 0.074 0.174 0.194 0.261 0.315 0.365 0.436
+p.DPR003.Marine          0.272 0.165 0.040 0.056 0.144 0.246 0.372 0.582
+p.DPR007.Marine          0.389 0.237 0.043 0.062 0.181 0.359 0.582 0.807
+p.DPR008.Marine          0.338 0.199 0.037 0.059 0.176 0.311 0.479 0.707
+p.DPR009.Marine          0.381 0.240 0.036 0.054 0.175 0.342 0.570 0.806
+p.DPR011.Marine          0.090 0.079 0.009 0.013 0.037 0.070 0.119 0.233
+p.DPR013.Marine          0.223 0.143 0.032 0.044 0.115 0.195 0.308 0.499
+p.DPR014.Marine          0.233 0.152 0.030 0.043 0.118 0.201 0.320 0.530
+p.DPR016.Marine          0.188 0.126 0.026 0.034 0.091 0.161 0.258 0.423
+p.DPR017.Marine          0.220 0.143 0.028 0.040 0.109 0.193 0.303 0.487
+p.DPR019.Marine          0.388 0.236 0.037 0.057 0.183 0.366 0.571 0.802
+p.DPR020.Marine          0.240 0.153 0.030 0.044 0.121 0.212 0.333 0.531
+p.DPR025.Marine          0.225 0.147 0.029 0.040 0.112 0.198 0.315 0.504
+p.DPR026.Marine          0.380 0.218 0.045 0.063 0.199 0.359 0.547 0.758
+p.DPR031.Marine          0.378 0.214 0.044 0.062 0.201 0.365 0.541 0.745
+p.DPR032.Marine          0.402 0.232 0.043 0.067 0.207 0.379 0.586 0.796
+p.DPR033.Marine          0.246 0.155 0.034 0.046 0.127 0.216 0.340 0.546
+p.JKR01.Marine           0.374 0.224 0.043 0.060 0.178 0.351 0.554 0.764
+p.JKR04.Marine           0.364 0.207 0.041 0.064 0.193 0.349 0.515 0.716
+p.JKR10.Marine           0.386 0.227 0.040 0.058 0.192 0.371 0.564 0.776
+p.JKR11.Marine           0.222 0.142 0.030 0.044 0.113 0.194 0.304 0.497
+p.JKR12.Marine           0.262 0.164 0.039 0.051 0.133 0.233 0.361 0.583
+p.MJR01.Marine           0.248 0.154 0.032 0.048 0.128 0.222 0.341 0.534
+p.MJR02.Marine           0.365 0.215 0.037 0.055 0.183 0.353 0.519 0.746
+p.MJR04.Marine           0.375 0.215 0.044 0.062 0.194 0.358 0.539 0.749
+p.MJR06.Marine           0.114 0.110 0.011 0.016 0.045 0.087 0.147 0.289
+p.MJR08.Marine           0.358 0.203 0.042 0.067 0.189 0.339 0.504 0.716
+p.MJR09.Marine           0.379 0.243 0.033 0.055 0.169 0.336 0.574 0.801
+p.MJR10.Marine           0.152 0.145 0.015 0.020 0.057 0.114 0.199 0.403
+p.MJR12.Marine           0.306 0.233 0.026 0.037 0.121 0.244 0.439 0.781
+p.MJR16.Marine           0.329 0.185 0.041 0.061 0.184 0.312 0.458 0.659
+p.MJR20.Marine           0.234 0.148 0.031 0.044 0.118 0.211 0.318 0.516
+p.MJR22.Marine           0.326 0.191 0.039 0.057 0.171 0.303 0.453 0.675
+p.MJR27.Marine           0.399 0.233 0.043 0.065 0.198 0.379 0.589 0.801
+p.MJR29.Marine           0.391 0.221 0.046 0.068 0.204 0.375 0.566 0.772
+p.MJR34.Marine           0.383 0.215 0.046 0.068 0.204 0.372 0.547 0.757
+p.MJR37.Marine           0.182 0.124 0.024 0.034 0.086 0.157 0.248 0.417
+p.MJR38.Marine           0.369 0.212 0.044 0.063 0.194 0.348 0.525 0.742
+p.MJR39.Marine           0.383 0.229 0.039 0.056 0.192 0.355 0.556 0.786
+p.MJR43.Marine           0.374 0.215 0.043 0.066 0.196 0.353 0.532 0.748
+p.MJR44.Marine           0.386 0.218 0.045 0.067 0.198 0.368 0.557 0.755
+p.MSR02.Marine           0.301 0.178 0.039 0.058 0.157 0.276 0.423 0.617
+p.MSR03.Marine           0.392 0.225 0.045 0.067 0.205 0.374 0.563 0.788
+p.MSR04.Marine           0.328 0.186 0.042 0.065 0.180 0.307 0.454 0.669
+p.MSR05.Marine           0.390 0.218 0.046 0.069 0.207 0.373 0.552 0.768
+p.MSR07.Marine           0.388 0.230 0.040 0.063 0.192 0.372 0.560 0.787
+p.MSR09.Marine           0.391 0.226 0.043 0.061 0.199 0.371 0.567 0.786
+p.NBK001FI.Marine        0.317 0.183 0.043 0.061 0.169 0.297 0.439 0.653
+p.NBK002FI.Marine        0.392 0.237 0.045 0.066 0.188 0.367 0.575 0.815
+p.NBK003FI.Marine        0.094 0.068 0.011 0.016 0.044 0.076 0.128 0.228
+p.NBK004FI.Marine        0.252 0.210 0.021 0.033 0.096 0.186 0.342 0.728
+p.NBK005FI.Marine        0.397 0.226 0.048 0.066 0.198 0.383 0.569 0.780
+p.NBK006FI.Marine        0.349 0.238 0.031 0.045 0.152 0.302 0.516 0.805
+p.NBK007FI.Marine        0.389 0.220 0.045 0.066 0.201 0.379 0.561 0.767
+p.NBK008FI.Marine        0.262 0.217 0.023 0.033 0.099 0.198 0.356 0.753
+p.NBK009FI.Marine        0.132 0.096 0.016 0.023 0.061 0.109 0.177 0.315
+p.NBK010FI.Marine        0.086 0.061 0.011 0.016 0.041 0.073 0.116 0.202
+p.NBK011FI.Marine        0.367 0.243 0.033 0.052 0.157 0.326 0.552 0.813
+p.NBK012FI.Marine        0.375 0.242 0.033 0.049 0.170 0.336 0.561 0.810
+p.OBD02I.Marine          0.247 0.154 0.034 0.045 0.128 0.220 0.337 0.540
+p.OBD08I.Marine          0.288 0.171 0.040 0.055 0.155 0.265 0.398 0.600
+p.OBD17I.Marine          0.399 0.234 0.043 0.062 0.199 0.380 0.589 0.803
+p.OBD20I.Marine          0.337 0.235 0.031 0.044 0.143 0.285 0.495 0.795
+p.RMM02I.Marine          0.304 0.176 0.039 0.058 0.164 0.285 0.416 0.630
+p.RMM07I.Marine          0.248 0.156 0.031 0.046 0.124 0.223 0.339 0.548
+p.RMM08I.Marine          0.346 0.199 0.044 0.063 0.186 0.325 0.490 0.707
+p.SAS01I.Marine          0.272 0.165 0.039 0.054 0.138 0.244 0.376 0.582
+p.SAS03I.Marine          0.153 0.110 0.019 0.027 0.074 0.128 0.207 0.362
+p.SAS04I.Marine          0.149 0.103 0.020 0.028 0.071 0.127 0.202 0.337
+p.SAS06I.Marine          0.160 0.111 0.020 0.029 0.078 0.139 0.215 0.366
+p.SAS07I.Marine          0.122 0.126 0.012 0.017 0.047 0.088 0.155 0.322
+p.SAS08I.Marine          0.234 0.150 0.029 0.044 0.114 0.206 0.319 0.527
+p.SAS10I.Marine          0.310 0.185 0.037 0.055 0.161 0.283 0.425 0.660
+p.SAS12I.Marine          0.240 0.150 0.035 0.047 0.125 0.213 0.328 0.532
+p.SAS16I.Marine          0.375 0.239 0.036 0.056 0.171 0.337 0.559 0.805
+p.SAS17I.Marine          0.199 0.134 0.025 0.036 0.099 0.171 0.268 0.455
+p.SAS20I.Marine          0.195 0.132 0.026 0.036 0.095 0.168 0.270 0.447
+p.SAS23I.Marine          0.227 0.144 0.028 0.040 0.117 0.201 0.313 0.500
+p.SAS24I.Marine          0.205 0.134 0.026 0.036 0.104 0.179 0.285 0.461
+p.SAS26I.Marine          0.218 0.143 0.028 0.037 0.106 0.193 0.297 0.491
+p.SAS28I.Marine          0.225 0.144 0.031 0.041 0.110 0.202 0.310 0.500
+p.SAS30I.Marine          0.377 0.212 0.047 0.069 0.200 0.364 0.535 0.751
+p.SAS31I.Marine          0.199 0.128 0.028 0.041 0.102 0.173 0.267 0.443
+p.SAS35FI.Marine         0.243 0.153 0.032 0.046 0.125 0.218 0.327 0.532
+p.SHC01I.Marine          0.362 0.207 0.041 0.061 0.192 0.350 0.510 0.724
+p.SHC05I.Marine          0.225 0.143 0.029 0.041 0.114 0.196 0.312 0.488
+p.SHC06I.Marine          0.337 0.191 0.043 0.060 0.185 0.319 0.475 0.681
+p.SHC07I.Marine          0.387 0.214 0.044 0.067 0.210 0.376 0.544 0.753
+p.SHC10I.Marine          0.368 0.206 0.051 0.068 0.195 0.352 0.515 0.731
+p.SHC13I.Marine          0.396 0.217 0.047 0.066 0.220 0.382 0.562 0.768
+p.SHC14I.Marine          0.363 0.207 0.044 0.066 0.190 0.344 0.516 0.736
+p.SHC19I.Marine          0.393 0.221 0.044 0.067 0.207 0.374 0.567 0.771
+p.SHC25I.Marine          0.327 0.189 0.041 0.063 0.172 0.308 0.459 0.671
+p.SHC27I.Marine          0.346 0.195 0.045 0.064 0.187 0.330 0.488 0.687
+p.SON002.Marine          0.364 0.212 0.041 0.059 0.187 0.343 0.515 0.746
+p.SON003.Marine          0.345 0.193 0.045 0.066 0.194 0.326 0.481 0.693
+p.SON004.Marine          0.376 0.213 0.045 0.063 0.201 0.354 0.539 0.741
+p.SON005.Marine          0.221 0.152 0.026 0.038 0.101 0.189 0.304 0.511
+p.SON006.Marine          0.344 0.197 0.047 0.066 0.182 0.322 0.484 0.699
+p.SON012.Marine          0.310 0.179 0.042 0.057 0.168 0.288 0.430 0.631
+p.SON013.Marine          0.376 0.210 0.047 0.071 0.202 0.359 0.530 0.744
+p.SON014.Marine          0.298 0.177 0.041 0.059 0.159 0.272 0.415 0.631
+p.SON016.Marine          0.379 0.223 0.038 0.060 0.190 0.365 0.550 0.771
+p.SON017.Marine          0.321 0.184 0.045 0.064 0.172 0.296 0.439 0.663
+p.SON018.Marine          0.361 0.235 0.033 0.052 0.160 0.319 0.537 0.794
+p.SON020.Marine          0.321 0.187 0.042 0.059 0.169 0.300 0.455 0.654
+p.SON022.Marine          0.256 0.158 0.033 0.048 0.133 0.231 0.346 0.562
+p.SON024.Marine          0.325 0.186 0.038 0.060 0.175 0.305 0.454 0.664
+p.SON025.Marine          0.234 0.150 0.030 0.044 0.118 0.208 0.325 0.517
+p.SON026.Marine          0.223 0.143 0.029 0.040 0.117 0.195 0.307 0.503
+p.SON027.Marine          0.289 0.173 0.043 0.056 0.153 0.262 0.398 0.628
                          97.5%
-p.DPR001.Marine          0.470
-p.DPR003.Marine          0.675
-p.DPR007.Marine          0.871
-p.DPR008.Marine          0.766
-p.DPR009.Marine          0.859
-p.DPR011.Marine          0.258
-p.DPR013.Marine          0.561
-p.DPR014.Marine          0.585
-p.DPR016.Marine          0.521
-p.DPR017.Marine          0.547
-p.DPR019.Marine          0.849
-p.DPR020.Marine          0.644
-p.DPR025.Marine          0.589
-p.DPR026.Marine          0.830
-p.DPR031.Marine          0.806
-p.DPR032.Marine          0.848
-p.DPR033.Marine          0.601
-p.JKR01.Marine           0.826
-p.JKR04.Marine           0.784
-p.JKR10.Marine           0.825
-p.JKR11.Marine           0.598
-p.JKR12.Marine           0.650
-p.MJR01.Marine           0.609
-p.MJR02.Marine           0.823
-p.MJR04.Marine           0.826
-p.MJR06.Marine           0.456
-p.MJR08.Marine           0.767
-p.MJR09.Marine           0.877
-p.MJR10.Marine           0.498
-p.MJR12.Marine           0.871
-p.MJR16.Marine           0.759
-p.MJR20.Marine           0.588
-p.MJR22.Marine           0.745
-p.MJR27.Marine           0.851
-p.MJR29.Marine           0.813
-p.MJR34.Marine           0.821
-p.MJR37.Marine           0.489
-p.MJR38.Marine           0.836
-p.MJR39.Marine           0.839
-p.MJR43.Marine           0.831
-p.MJR44.Marine           0.824
-p.MSR02.Marine           0.710
-p.MSR03.Marine           0.840
-p.MSR04.Marine           0.736
-p.MSR05.Marine           0.842
-p.MSR07.Marine           0.843
-p.MSR09.Marine           0.851
-p.NBK001FI.Marine        0.708
-p.NBK002FI.Marine        0.882
-p.NBK003FI.Marine        0.258
-p.NBK004FI.Marine        0.857
-p.NBK005FI.Marine        0.826
+p.DPR001.Marine          0.458
+p.DPR003.Marine          0.650
+p.DPR007.Marine          0.852
+p.DPR008.Marine          0.770
+p.DPR009.Marine          0.854
+p.DPR011.Marine          0.278
+p.DPR013.Marine          0.566
+p.DPR014.Marine          0.597
+p.DPR016.Marine          0.487
+p.DPR017.Marine          0.564
+p.DPR019.Marine          0.853
+p.DPR020.Marine          0.615
+p.DPR025.Marine          0.570
+p.DPR026.Marine          0.808
+p.DPR031.Marine          0.798
+p.DPR032.Marine          0.839
+p.DPR033.Marine          0.613
+p.JKR01.Marine           0.812
+p.JKR04.Marine           0.779
+p.JKR10.Marine           0.835
+p.JKR11.Marine           0.565
+p.JKR12.Marine           0.654
+p.MJR01.Marine           0.608
+p.MJR02.Marine           0.809
+p.MJR04.Marine           0.810
+p.MJR06.Marine           0.372
+p.MJR08.Marine           0.770
+p.MJR09.Marine           0.852
+p.MJR10.Marine           0.555
+p.MJR12.Marine           0.866
+p.MJR16.Marine           0.723
+p.MJR20.Marine           0.586
+p.MJR22.Marine           0.750
+p.MJR27.Marine           0.846
+p.MJR29.Marine           0.819
+p.MJR34.Marine           0.810
+p.MJR37.Marine           0.482
+p.MJR38.Marine           0.795
+p.MJR39.Marine           0.846
+p.MJR43.Marine           0.802
+p.MJR44.Marine           0.805
+p.MSR02.Marine           0.700
+p.MSR03.Marine           0.841
+p.MSR04.Marine           0.724
+p.MSR05.Marine           0.823
+p.MSR07.Marine           0.852
+p.MSR09.Marine           0.831
+p.NBK001FI.Marine        0.722
+p.NBK002FI.Marine        0.854
+p.NBK003FI.Marine        0.264
+p.NBK004FI.Marine        0.824
+p.NBK005FI.Marine        0.827
 p.NBK006FI.Marine        0.857
-p.NBK007FI.Marine        0.822
-p.NBK008FI.Marine        0.849
-p.NBK009FI.Marine        0.414
+p.NBK007FI.Marine        0.819
+p.NBK008FI.Marine        0.847
+p.NBK009FI.Marine        0.369
 p.NBK010FI.Marine        0.235
-p.NBK011FI.Marine        0.848
-p.NBK012FI.Marine        0.851
-p.OBD02I.Marine          0.609
-p.OBD08I.Marine          0.702
-p.OBD17I.Marine          0.839
-p.OBD20I.Marine          0.854
-p.RMM02I.Marine          0.739
-p.RMM07I.Marine          0.625
-p.RMM08I.Marine          0.756
-p.SAS01I.Marine          0.651
-p.SAS03I.Marine          0.410
-p.SAS04I.Marine          0.417
-p.SAS06I.Marine          0.442
-p.SAS07I.Marine          0.477
-p.SAS08I.Marine          0.589
-p.SAS10I.Marine          0.751
-p.SAS12I.Marine          0.602
-p.SAS16I.Marine          0.851
-p.SAS17I.Marine          0.527
-p.SAS20I.Marine          0.518
-p.SAS23I.Marine          0.607
-p.SAS24I.Marine          0.517
-p.SAS26I.Marine          0.564
-p.SAS28I.Marine          0.591
-p.SAS30I.Marine          0.809
-p.SAS31I.Marine          0.544
-p.SAS35FI.Marine         0.631
-p.SHC01I.Marine          0.799
-p.SHC05I.Marine          0.604
-p.SHC06I.Marine          0.763
-p.SHC07I.Marine          0.838
-p.SHC10I.Marine          0.791
+p.NBK011FI.Marine        0.856
+p.NBK012FI.Marine        0.856
+p.OBD02I.Marine          0.606
+p.OBD08I.Marine          0.679
+p.OBD17I.Marine          0.848
+p.OBD20I.Marine          0.862
+p.RMM02I.Marine          0.700
+p.RMM07I.Marine          0.621
+p.RMM08I.Marine          0.755
+p.SAS01I.Marine          0.660
+p.SAS03I.Marine          0.433
+p.SAS04I.Marine          0.403
+p.SAS06I.Marine          0.423
+p.SAS07I.Marine          0.433
+p.SAS08I.Marine          0.586
+p.SAS10I.Marine          0.721
+p.SAS12I.Marine          0.599
+p.SAS16I.Marine          0.859
+p.SAS17I.Marine          0.523
+p.SAS20I.Marine          0.515
+p.SAS23I.Marine          0.569
+p.SAS24I.Marine          0.529
+p.SAS26I.Marine          0.565
+p.SAS28I.Marine          0.565
+p.SAS30I.Marine          0.804
+p.SAS31I.Marine          0.512
+p.SAS35FI.Marine         0.610
+p.SHC01I.Marine          0.787
+p.SHC05I.Marine          0.561
+p.SHC06I.Marine          0.733
+p.SHC07I.Marine          0.814
+p.SHC10I.Marine          0.797
 p.SHC13I.Marine          0.820
-p.SHC14I.Marine          0.789
-p.SHC19I.Marine          0.822
-p.SHC25I.Marine          0.767
-p.SHC27I.Marine          0.771
-p.SON002.Marine          0.803
-p.SON003.Marine          0.781
-p.SON004.Marine          0.825
-p.SON005.Marine          0.587
-p.SON006.Marine          0.805
-p.SON012.Marine          0.701
-p.SON013.Marine          0.811
-p.SON014.Marine          0.690
-p.SON016.Marine          0.820
-p.SON017.Marine          0.740
-p.SON018.Marine          0.872
-p.SON020.Marine          0.711
-p.SON022.Marine          0.637
-p.SON024.Marine          0.725
-p.SON025.Marine          0.640
-p.SON026.Marine          0.570
-p.SON027.Marine          0.724
+p.SHC14I.Marine          0.787
+p.SHC19I.Marine          0.816
+p.SHC25I.Marine          0.741
+p.SHC27I.Marine          0.740
+p.SON002.Marine          0.798
+p.SON003.Marine          0.751
+p.SON004.Marine          0.801
+p.SON005.Marine          0.592
+p.SON006.Marine          0.761
+p.SON012.Marine          0.700
+p.SON013.Marine          0.798
+p.SON014.Marine          0.698
+p.SON016.Marine          0.826
+p.SON017.Marine          0.731
+p.SON018.Marine          0.850
+p.SON020.Marine          0.715
+p.SON022.Marine          0.634
+p.SON024.Marine          0.724
+p.SON025.Marine          0.596
+p.SON026.Marine          0.571
+p.SON027.Marine          0.685
  [ reached getOption("max.print") -- omitted 441 rows ]
