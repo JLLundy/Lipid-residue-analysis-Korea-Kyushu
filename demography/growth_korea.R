@@ -7,11 +7,11 @@ library(parallel)
 library(here)
 
 # Arrval dates
-load(here('scripts','ricearrival_res.RData'))
-load(here('scripts','milletsarrival_res.RData'))
+load(here('arrivalestimates','ricearrival_res.RData'))
+load(here('arrivalestimates','milletsarrival_res.RData'))
 
 # Read and Calibrate Dates
-korea.dates.rice <- read.csv(here('data','korea_demo','S0033822217001229sup001.csv')) |> rename(c14age=date,c14error=error)
+korea.dates.rice <- read.csv(here('demography','S0033822217001229sup001.csv')) |> rename(c14age=date,c14error=error)
 korea.caldates.rice <- calibrate(korea.dates.rice$c14age,korea.dates.rice$c14error)
 load(url('https://github.com/ercrema/NeolithicKoreaDemography/raw/master/R_image_files/koreanC14.RData'))
 korea.dates.millets <- koreaC14
