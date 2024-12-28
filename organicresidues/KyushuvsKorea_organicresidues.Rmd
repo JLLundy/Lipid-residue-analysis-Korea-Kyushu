@@ -19,8 +19,7 @@ library('googlesheets4')
  #gs4_deauth() # if needed
  gs4_auth(email='oliver.craig@york.ac.uk') # only if needed
 # gs4_auth(email='jasmine.lundy@york.ac.uk') # only if needed
-Data <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="Data") |> as.data.frame()
-library(dplyr)
+Data <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="Supplementary_data") |> as.data.frame()
 Data
 
 ```
@@ -32,88 +31,46 @@ Data
 ```{r}
 library(dplyr)
 #Grouped by site
-Conc_site <- Data %>% filter(Type == 'Ceramic') %>%
+Conc_site <- Data %>% filter(Sample_type == 'ceramic')%>%
   group_by(Site_code) %>% 
-  summarize(n = n(), mean.conc = mean(Concentration),
-            sd.conc = sd(Concentration), n_lipid = sum(Concentration >=5))%>%
+  summarize(n = n(), mean.conc = mean(Yield_AE),
+            sd.conc = sd(Yield_AE), n_lipid = sum(Yield_AE >=5))%>%
   mutate("%interp"= n_lipid/n*100)
 Conc_site <- Conc_site %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS','NBK', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
 Conc_site
-write.csv (Conc_site,"Conc.csv")
+write.csv (Conc_site,"Site_Preservation.csv")
 
-#Grouped by country
-#Data %>% 
- # group_by(Country) %>% 
-  #summarize(median.conc = median(Concentration),
-           # mean.conc = mean(Concentration),
-           # sd.conc = sd(Concentration),
-            #n.conc = n())%>%
-  #group_modify(~as.data.frame(t(quantile(.$Concentration))))
-
-  #mutate(se.conc = sd.conc / sqrt(n.conc),
-         #lower.ci.conc = mean.conc - qt(1 - (0.05 / 2), n.conc - 1) * se.conc,
-         #upper.ci.conc = mean.conc + qt(1 - (0.05 / 2), n.conc - 1) * se.conc)
 ```
   
-#1b. Preservation by Country
+#1b. Preservation by region
 
 ```{r}
-Region <-Data %>%filter(Type == 'Ceramic') %>% 
+Region <-Data %>%filter(Sample_type == 'ceramic') %>% 
  group_by(Country) %>% 
-  summarize(n = n(), median.conc = median(Concentration),
-           mean.conc = mean(Concentration),
-           sd.conc = sd(Concentration), n_lipid = sum(Concentration >=5)) %>%
+  summarize(n = n(), median.conc = median(Yield_AE),
+           mean.conc = mean(Yield_AE),
+           sd.conc = sd(Yield_AE), n_lipid = sum(Yield_AE >=5)) %>%
   mutate("%interp"= n_lipid/n*100)
 Region
  write.csv (Region,"Region_preservation.csv")
-#%>%
- # group_modify(~as.data.frame(t(quantile(.$Concentration))))%>%
-  #mutate(se.conc = sd.conc / sqrt(n),
-   #      lower.ci.conc = mean.conc - qt(1 - (0.05 / 2), n.conc - 1) * se.conc,
-    #     upper.ci.conc = mean.conc + qt(1 - (0.05 / 2), n.conc - 1) * se.conc)
-
 ```
   
-#2a.Millet identification by site by interpretable lipid
+#1c.Biomarker identification by site by interpretable lipid
 
 ```{r}
-Inter_lipid <- Data %>%filter (Concentration >=5)
+Inter_lipid <- Data %>%filter (Yield_AE >=5)
 Biomarker <-Inter_lipid %>% group_by(Site_code) %>% 
-  summarize (n = n(), n_millet = sum (Millet == "yes"), n_aquatic = sum (Aquatic == "yes")) %>%
+  summarize (n = n(), n_millet = sum (Miliacin == "yes"), n_aquatic = sum (Aquatic == "yes")) %>%
   mutate("%millet"= n_millet/n*100, "%aqatiuc"= n_aquatic/n*100)
-Biomarker <- Biomarker %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
+Biomarker <- Biomarker %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'NBK', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
 Biomarker
 write.csv (Biomarker,"Biomarker_preservation.csv")
 ```
 
 
-#2b.Aquatic identification by site by interpretable lipid
-```{r}
+#3. Isotope data overview and analysis
 
-Millet <- Biomarker %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'NBK', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
-Millet
-write.csv (Millet,"Marine_preservation.csv")
-```
-
-
-
-#3a. Isotope data overview and analysis
-
-
-```{r}
-library("ggplot2")
-Iso_data <- Data %>% filter(d13C16 < 0)
-p <-ggplot()+
-  labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
-  #scale_x_continuous(limits=c(-35,-10))+
-  #scale_y_continuous(limits=c(-35,-10))+
-  geom_point(data = Iso_data, aes(y=d13C18, x=d13C16, fill=Phase_2, size=Concentration), colour="black", pch=21)+
-  coord_fixed(ratio = 1)+
-  theme_Pub()
-p  +   facet_wrap(~Country)
-```
-
-#3b.Isotpic Reference data
+#3a.Isotpic Reference data
 
 Obtain data for isotope references and concentations
 ```{r}
@@ -131,7 +88,7 @@ Iso_sum
 Conc_sum
 ```
 
-#3c Generate arandom concentration values for each isotope value based on the mean and sd of the concentration 
+#3b Randomly sample  concentration values for each isotope value based on the mean and sd of the concentration 
 
 ```{r}
 library(dplyr)
@@ -156,6 +113,7 @@ Conc <- Conc %>%
 ```
 
 #4. Create a mixing model with MixSiar
+
 #4a Load the consumer data
 ```{r}
 #remotes::install_github("brianstock/MixSIAR")
@@ -207,12 +165,15 @@ source <- load_source_data (filename="/Users/olcraig/Documents/GitHub/KoreavsKyu
                            data_type="raw", 
                            mix)
 ```
+
 #4c Load the TDFs if relevant or nill return
 ```{r}
 # Load the discrimination/TDF data
 discr <- load_discr_data(filename="/Users/olcraig/Documents/GitHub/KoreavsKyushu/organicresidues/Discr.csv", mix)
 
 ```
+
+#4d Create an isospace plot
 ```{r, eval=FALSE}
 # Make an isospace plot
 plot <- plot_data(filename="isospace_plot", plot_save_pdf=F, plot_save_png=F,mix,source, discr, return_obj = TRUE)
@@ -225,13 +186,14 @@ legend.position="none")
 # Calculate the convex hull area, standardized by source variance
 calc_area(source=source,mix=mix,discr=discr)
 ```
-
+Specify priors
 ```{r, eval=FALSE}
 # default "UNINFORMATIVE" / GENERALIST prior (alpha = 1)
 #plot_prior(alpha.prior=1,source)
 ```
 
 #4d. Create the JAGS file and run the model. Choose process errors only although this needs to be considered carefully depending on the model. https://link.springer.com/article/10.1007/s10816-020-09492-5
+
 ```{r, eval=FALSE}
 # Write the JAGS model file
 model_filename <- "MixSIAR_model.txt"   # Name of the JAGS model file
@@ -249,18 +211,18 @@ jags.1 <- run_model(run="test", mix, source, discr, model_filename)
 jags.1 <- run_model(run="long", mix, source, discr, model_filename)
 ```
 
-#4d. Obtain the model outputs
+#4e. Obtain the model outputs
 ```{r, eval=FALSE}
 output_options <- list(summary_save = TRUE,
                        summary_name = "summary_final",
                        sup_post = TRUE,
-                       plot_post_save_pdf = TRUE,
+                       plot_post_save_pdf = FALSE,
                        plot_post_name = "posterior_density",
                        sup_pairs = TRUE,
-                       plot_pairs_save_pdf = TRUE,
+                       plot_pairs_save_pdf = FALSE,
                        plot_pairs_name = "pairs_plot",
                        sup_xy = TRUE,
-                       plot_xy_save_pdf = TRUE,
+                       plot_xy_save_pdf = FALSE,
                        plot_xy_name = "xy_plot",
                        gelman = TRUE,
                        heidel = TRUE,
@@ -268,14 +230,14 @@ output_options <- list(summary_save = TRUE,
                        diag_save = TRUE,
                        diag_name = "diagnostics",
                        indiv_effect = FALSE,
-                       plot_post_save_png = TRUE,
-                       plot_pairs_save_png = TRUE,
-                       plot_xy_save_png = TRUE,
+                       plot_post_save_png = FALSE,
+                       plot_pairs_save_png = FALSE,
+                       plot_xy_save_png = FALSE,
                        diag_save_ggmcmc = FALSE,
                        return_obj=TRUE)
 ```
 
-
+Get posterior chains into one tidy data frame
 ```{r}
 # Get posterior chains into one tidy data frame
 library(R2jags)
@@ -310,9 +272,9 @@ colnames(df.stats)[7] <- "p5"
 df.stats
 ```
 
-Join with isotope data to create a daframe for plotting
+Join with isotope data to create a dataframe for plotting
 ```{r}
-
+Iso_data <- Data %>% filter(d13C16 < 0) 
 Data_pots <- inner_join(Iso_data, df.stats, 
            by = c("Sample_ID"))
 Data_pots
@@ -325,10 +287,11 @@ g.post <- output_posteriors(jags.1, mix, source, output_options)
 ```
 
 
-#5. Create biomarker plots 
+#5. Create Figure 2
 
-Create a base plot
+#5a. Create a base plot
 ```{r}
+library("ggplot2")
 p <-ggplot()+
   labs(y=expression(delta^{13}*C[18:0]*"(\u2030)"), x=expression(delta^{13}*C[16:0]*"(\u2030)"))+
   scale_x_continuous(limits=c(-37,-15))+
@@ -339,7 +302,8 @@ p <-ggplot()+
 annotate("text", label = "C4/millet", x = -20, y = -17, size = 3, colour = "black")+ 
   annotate("text", label = "Marine", x = -25, y = -22, size = 3, colour = "black")+ 
   annotate("text", label = "Ruminant", x = -29, y = -35, size = 3, colour = "black")+ 
-  annotate("text", label = "Rice", x = -34, y = -34, size = 3, colour = "black")+   coord_fixed(ratio = 1)+
+  annotate("text", label = "Rice", x = -34, y = -34, size = 3, colour = "black")+   
+  coord_fixed(ratio = 1)+
   theme(axis.ticks = element_blank())+
   theme_bw(base_size = 10)+
   theme(strip.text.x = element_blank())+
@@ -348,29 +312,29 @@ theme(legend.position="none")
 p
 ```
 
-#Create labels for individual plots
+Create labels for individual plots
 ```{r}
 # A data frame with labels for each facet
 p_labels <- data.frame(Country= c('Korea', 'Japan'), label = c("Bronze Age Korea", "Jomon-Yayoi Japan"))
 ```
 
-Plot millet biomarkers by 'culture'
+#5b. Plot millet biomarkers by 'culture'
 
 ```{r}
 points <- c("Mumun" = 21, "Jomon" = 23, "Yayoi" = 21)
 p1 <-p +
-    geom_point(data=subset(Data, Millet=='n/a'), aes(y=d13C18, x=d13C16, shape=Phase_2), size=2, fill= "lightgrey", colour ="black")+
-  geom_point(data=subset(Data, Millet=='no'), aes(y=d13C18,x=d13C16, shape= Phase_2), size=2, fill= "white",colour ="black")+
-  geom_point (data= subset(Data, Millet=="yes"), aes(y=d13C18, x=d13C16, shape=Phase_2), fill= "#E69F00", size=2, colour="black")+
+    geom_point(data=subset(Data, Miliacin=='n/a'), aes(y=d13C18, x=d13C16, shape=Phase_2), size=2, fill= "lightgrey", colour ="black")+
+  geom_point(data=subset(Data, Miliacin=='no'), aes(y=d13C18,x=d13C16, shape= Phase_2), size=2, fill= "white",colour ="black")+
+  geom_point (data= subset(Data, Miliacin=="yes"), aes(y=d13C18, x=d13C16, shape=Phase_2), fill= "#E69F00", size=2, colour="black")+
   scale_shape_manual(values=points)
 p1 <- p1 + facet_wrap (~factor(Country, levels=c('Korea', 'Japan')))
 p1 +  geom_text(x = -32, y = -16, aes(label = label), data = p_labels, size=3)
-p1 + geom_text(data=subset(Data, Type=='Foodcrust'), aes(y=d13C18,x=d13C16, label = "*"),vjust = 0.2, size=4) 
+p1 + geom_text(data=subset(Data, Sample_type=='foodcrust'), aes(y=d13C18,x=d13C16, label = "*"),vjust = 0.2, size=4) 
 ```
 
 
 
-Plot aquatic biomarkers by 'culture'. 
+#5c .Plot aquatic biomarkers by 'culture'. 
 ```{r}
 p2 <-p +
   geom_point(data=subset(Data, Aquatic=='n/a'), aes(y=d13C18,x=d13C16, shape=Phase_2),  size=2, fill= "lightgrey", colour ="black")+ 
@@ -379,11 +343,11 @@ p2 <-p +
   scale_shape_manual(values=points)
 p2 <- p2 + facet_wrap(~factor(Country, levels=c('Korea', 'Japan')))
 p2 +   geom_text(x = -32, y = -16, aes(label = label), data = p_labels, size=3)
-p2 + geom_text(data=subset(Data, Type=='Foodcrust'), aes(y=d13C18,x=d13C16, label = "*"),vjust = 0.2, size=4) 
+p2 + geom_text(data=subset(Data, Sample_type=='foodcrust'), aes(y=d13C18,x=d13C16, label = "*"),vjust = 0.2, size=4) 
 
 ```
 
-# Create Fig 2. 
+#5c. Visulaise Fig 2. 
 
 ```{r}
 library(ggpubr)
@@ -397,9 +361,11 @@ Fig2
 
 
 
+#6. Create Fig 3. 
 
 Credible limits for rice lipids. The shaded color scale shows the maximum credible contribution (95% confidence) of each product (expressed as % fatty acid to total fatty acid). 
 
+#6b. Plote millet limits
 ```{r}
 library("scales")
 Millet_pots <-Data_pots %>% filter (Category == "Millet" )
@@ -414,9 +380,9 @@ p3 <- p +
   geom_text(x = -32, y = -16, aes(label = label), data = p_labels, size=3)+
     guides(shape = "none") +
     theme(legend.position="right", legend.title = element_text(size = 8), legend.spacing.y = unit(3, "cm"))
-  p3
-  
+p3
 ```
+#6b. Plote marine limits
 ```{r}
 Marine_pots <-Data_pots %>% filter (Category == "Marine" )
 p4 <- p +
@@ -432,7 +398,7 @@ p4 <- p +
     theme(legend.position="right", legend.title = element_text(size = 8), legend.spacing.y = unit(3, "cm"))
   p4
 ```
-
+#6c. Plote rice limits
 ```{r}
 Rice_pots <-Data_pots %>% filter (Category == "Rice" )
 p5 <- p +
@@ -448,7 +414,7 @@ p5 <- p +
     theme(legend.position="right", legend.title = element_text(size = 8), legend.spacing.y = unit(2, "cm"))
    p5
 ```
-
+#6d. Plote ruminant limits
 ```{r}
 Rum_pots <-Data_pots %>% filter (Category == "Wild ruminant" )
 p6 <- p +
@@ -516,28 +482,29 @@ bones.sf  <- st_as_sf(Bones, coords=c('Long','Lat'),crs=4326)
 
 ```
 
-Create map with pots
+Create map with site locations
 ```{r}
 library("ggrepel")
 library("ggspatial")
+library("ggpp")
 
-plot <- ggplot() +
+map <- ggplot() +
 	geom_tile(data=dem,aes(x=x,y=y,fill=elevation)) +
 	scale_fill_etopo() +
-	geom_sf(data=pots.sf, fill="#E69F00", shape=21, colour = "black", size=2) +
-  geom_sf(data=bones.sf, fill="#56B4E9", shape=21, colour = "black", size=2)+
-  geom_text_repel(data = Map, aes(x = Long, y = Lat, label = Num), nudge_x =  Map$Nudge_x, nudge_y = Map$Nudge_y, size=3) +
+	geom_sf(data=pots.sf, fill="black", shape=21, colour = "black", size=1) +
+  geom_sf(data=bones.sf, fill="black", shape=21, colour = "black", size=1)+
+  geom_text_repel(data = Map, aes(x = Long, y = Lat, label = Num), min.segment.length = 0, nudge_x =  Map$Nudge_x, nudge_y = Map$Nudge_y, size=2, check_overlap = T) +
 	xlim(124,135) +
 	ylim(30,40) +
 	xlab('Longitude') +
 	ylab('Latitude') +
   annotation_scale()+
 	theme(axis.ticks = element_blank())+
-  theme_bw(base_size = 10)+
+  theme_bw(base_size = 8)+
   theme(strip.text.x = element_blank())+
 theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
 theme(legend.position="none")
-plot
+map
 ```
 
 
@@ -546,23 +513,44 @@ plot
 ```{r}
 Data_hum <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="hum_isotopes") |> as.data.frame()
 ```
+
 ```{r}
-p <-ggplot()+
+points1 <- c("Bronze Age Korea" = 21, "Late Jomon" = 23, "Yayoi" = 21)
+colours <- c("Bronze Age Korea" = "#E69F00", "Late Jomon" = "#0072B2", "Yayoi" = "#56B4E9")
+sites <-c("Ohtomo, Yayoi" = "#0072B2", "Ohtomo, Jomon" = "#56B4E9", "Yoshinogari, Yayoi" = "#009E73","Bronze Age Korea" = "#E69F00") 
+```
+
+
+```{r}
+hum <-ggplot()+
   labs(y=expression(delta^{15}*N[collagen]*"(\u2030)"), x=expression(delta^{13}*C[collagen]*"(\u2030)"))+
   scale_x_continuous(limits=c(-25,-10))+
-  scale_y_continuous(limits=c(0,15))+
-  geom_point(data=Data_hum, aes(y=d15N_coll, x=d13C_coll,  fill= Period_2), size=3, pch= 21,  colour="black")+
+  scale_y_continuous(limits=c(2,17))+
+  geom_point(data=Data_hum, aes(y=d15N_coll, x=d13C_coll, fill= Group), size=2, pch =21, colour="black")+
+  scale_fill_manual(values=sites)+
   theme(axis.ticks = element_blank())+
-  theme_bw(base_size = 10)+
+  theme_bw(base_size = 8)+
   theme(strip.text.x = element_blank())+
 theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
-theme(legend.position="none")
-p
+theme(legend.position="none")+
+  coord_fixed(ratio = 1)
+hum
 ```
-
+#9.Create Fig 1
 
 ```{r}
-p
+library(ggpubr)
+Fig1 <- ggarrange(map, hum,
+                    labels = c("A", "B"),
+                    ncol = 2, nrow = 1, widths = c(1, 1))
+ggsave("Fig1.png", width = 17.8, height = 17.8, dpi = 300, units = "cm", device='png')
+Fig1
 
 ```
-p
+Make legend
+```{r}
+# Combine first_name and last_name columns
+Map$Num_loc <- paste(Map$Num, Map$Name)
+Map$Num_loc
+```
+
