@@ -1,0 +1,2191 @@
+id,date,error,region,calcurve,Period,Site,Feature
+gg130,2670,50,Gyeonggi,intcal13,Mumun,Ansan Manjeongri Singi,Zone 3 Mumun 1
+gg131,2530,50,Gyeonggi,intcal13,Mumun,Ansan Manjeongri Singi,Zone 3 Mumun 2
+gg132,2470,50,Gyeonggi,intcal13,Mumun,Ansan Manjeongri Singi,Zone 3 Mumun 3
+gg133,2590,50,Gyeonggi,intcal13,Mumun,Ansan Manjeongri Singi,Zone 3 Mumun 4
+gg134,2920,50,Gyeonggi,intcal13,Mumun,Ansan Manjeongri Singi,Zone 4 Mumun 1
+gg135,2840,50,Gyeonggi,intcal13,Mumun,Ansan Manjeongri Singi,Zone 5 Mumun 1
+gg136,2921,36,Gyeonggi,intcal13,Mumun,Ansan Manjeongri Singi,Zone 5 Mumun 2
+neo052,4720,50,Gyeonggi,intcal13,Chulmun,Ansan Singildong,no 1
+neo055,4710,50,Gyeonggi,intcal13,Chulmun,Ansan Singildong,no 10
+neo079,4530,50,Gyeonggi,intcal13,Chulmun,Ansan Singildong,no 11
+neo056,4700,50,Gyeonggi,intcal13,Chulmun,Ansan Singildong,no 2
+neo072,4610,50,Gyeonggi,intcal13,Chulmun,Ansan Singildong,no 21
+neo065,4650,50,Gyeonggi,intcal13,Chulmun,Ansan Singildong,no 22
+neo054,4710,50,Gyeonggi,intcal13,Chulmun,Ansan Singildong,no 4
+neo046,4760,50,Gyeonggi,intcal13,Chulmun,Ansan Singildong,no 5
+neo071,4620,50,Gyeonggi,intcal13,Chulmun,Ansan Singildong,no 6
+neo073,4600,50,Gyeonggi,intcal13,Chulmun,Ansan Singildong,no 7
+gg137,2900,40,Gyeonggi,intcal13,Mumun,Ansung Banjeri,Mumun 4
+gg138,3020,80,Gyeonggi,intcal13,Mumun,Ansung Banjeri,Mumun 5
+gg139,2903,57,Gyeonggi,intcal13,Mumun,Ansung Banjeri,no 2
+gg140,2950,60,Gyeonggi,intcal13,Mumun,Anyang Gwanyangdong,no 1
+gg141,2370,90,Gyeonggi,intcal13,Mumun,Anyang Gwanyangdong,no 2
+gg142,2680,60,Gyeonggi,intcal13,Mumun,Anyang Gwanyangdong,no 3
+gg143,2740,40,Gyeonggi,intcal13,Mumun,Anyang Gwanyangdong,no 4
+gg144,2870,50,Gyeonggi,intcal13,Mumun,Anyang Gwanyangdong,no 5
+gg145,2740,40,Gyeonggi,intcal13,Mumun,Anyang Gwanyangdong,no 6
+gg147,2535,29,Gyeonggi,intcal13,Mumun,Anyang Gwanyangdong,no 7
+gg146,2440,60,Gyeonggi,intcal13,Mumun,Anyang Gwanyangdong,no 8
+cc436,2406,39,Chungcheong,intcal13,Mumun,Anyeongri,no 10
+neo143,4470,60,Chungcheong,intcal13,Chulmun,Asan Baekamri Jeombaegol,KC-002
+neo136,4610,80,Chungcheong,intcal13,Chulmun,Asan Baekamri Jeombaegol,KC-003
+cc414,2851,29,Chungcheong,intcal13,Mumun,Asan Baekamri Jeombaegol,KC-004
+cc299,2470,50,Chungcheong,intcal13,Mumun,Asan Daechuri,no 10
+cc300,2470,40,Chungcheong,intcal13,Mumun,Asan Daechuri,no 11
+cc528,2510,40,Chungcheong,intcal13,Mumun,Asan Daechuri,no 12
+cc529,2480,40,Chungcheong,intcal13,Mumun,Asan Daechuri,no 13
+cc301,2550,40,Chungcheong,intcal13,Mumun,Asan Daechuri,no 14
+cc530,2410,50,Chungcheong,intcal13,Mumun,Asan Daechuri,no 16
+cc303,2520,40,Chungcheong,intcal13,Mumun,Asan Daechuri,no 17
+cc525,2660,40,Chungcheong,intcal13,Mumun,Asan Daechuri,no 2
+cc526,2490,40,Chungcheong,intcal13,Mumun,Asan Daechuri,no 3
+cc527,2420,40,Chungcheong,intcal13,Mumun,Asan Daechuri,no 4
+cc302,2660,40,Chungcheong,intcal13,Mumun,Asan Daechuri,no 6
+cc308,2776,37,Chungcheong,intcal13,Mumun,Asan Daeheungri Keunseonjang,no 1
+cc310,2850,50,Chungcheong,intcal13,Mumun,Asan Daeheungri Keunseonjang,no 11
+cc311,2860,36,Chungcheong,intcal13,Mumun,Asan Daeheungri Keunseonjang,no 14
+cc309,2520,100,Chungcheong,intcal13,Mumun,Asan Daeheungri Keunseonjang,no 3
+cc367,2680,50,Chungcheong,intcal13,Mumun,Asan Dunpori,II-4
+neo137,4550,50,Chungcheong,intcal13,Chulmun,Asan Jangjaeri Anganggol 1,Chulmun 2
+neo140,4500,80,Chungcheong,intcal13,Chulmun,Asan Jangjaeri Anganggol 1,Chulmun 4
+cc312,2796,36,Chungcheong,intcal13,Mumun,Asan Jangjaeri Anganggol 1,Mumun 1
+cc316,2830,60,Chungcheong,intcal13,Mumun,Asan Jangjaeri Anganggol 1,Mumun 11
+cc313,2980,80,Chungcheong,intcal13,Mumun,Asan Jangjaeri Anganggol 1,Mumun 3
+cc314,2790,50,Chungcheong,intcal13,Mumun,Asan Jangjaeri Anganggol 1,Mumun 7
+cc315,2950,60,Chungcheong,intcal13,Mumun,Asan Jangjaeri Anganggol 1,Mumun 8
+cc112,2910,40,Chungcheong,intcal13,Mumun,Asan Myungamri,no 1
+cc150,2797,43,Chungcheong,intcal13,Mumun,Asan Myungamri 11,Early Mumun 14
+cc149,2591,29,Chungcheong,intcal13,Mumun,Asan Myungamri 11,Early Mumun 7
+cc151,2566,29,Chungcheong,intcal13,Mumun,Asan Myungamri 11,Middle Mumun 6
+cc152,2480,40,Chungcheong,intcal13,Mumun,Asan Myungamri 11,Middle Mumun 7
+cc332,2820,50,Chungcheong,intcal13,Mumun,Asan Myungamri 12,no 20
+cc333,2860,60,Chungcheong,intcal13,Mumun,Asan Myungamri 12,no 22
+cc334,2520,50,Chungcheong,intcal13,Mumun,Asan Myungamri 12,no 28
+cc329,2810,50,Chungcheong,intcal13,Mumun,Asan Myungamri 12,no 4
+cc330,2700,50,Chungcheong,intcal13,Mumun,Asan Myungamri 12,no 7
+cc331,2850,50,Chungcheong,intcal13,Mumun,Asan Myungamri 12,no 9
+cc92,2820,50,Chungcheong,intcal13,Mumun,Asan Myungamri Bakjimeure,II-1-9
+cc93,2700,50,Chungcheong,intcal13,Mumun,Asan Myungamri Bakjimeure,II-2-4
+cc450,2730,40,Chungcheong,intcal13,Mumun,Asan Myungamri Gobteogol,II-10
+cc451,2650,40,Chungcheong,intcal13,Mumun,Asan Myungamri Gobteogol,II-23
+cc449,2870,40,Chungcheong,intcal13,Mumun,Asan Myungamri Gobteogol,II-6
+cc452,2860,40,Chungcheong,intcal13,Mumun,Asan Myungamri Gobteogol,III-8
+cc94,2758,36,Chungcheong,intcal13,Mumun,Asan Namsungri,I-12
+cc95,2570,36,Chungcheong,intcal13,Mumun,Asan Namsungri,I-14
+cc96,2670,50,Chungcheong,intcal13,Mumun,Asan Namsungri,I-15
+cc97,2400,50,Chungcheong,intcal13,Mumun,Asan Namsungri,II-7
+cc132,2850,60,Chungcheong,intcal13,Mumun,Asan Punggidong,no 1
+cc133,2860,50,Chungcheong,intcal13,Mumun,Asan Punggidong Apgol,Mumun 1
+cc142,2980,50,Chungcheong,intcal13,Mumun,Asan Punggidong Apgol,Mumun 15
+cc141,3040,50,Chungcheong,intcal13,Mumun,Asan Punggidong Apgol,Mumun 16
+cc136,2970,50,Chungcheong,intcal13,Mumun,Asan Punggidong Apgol,Mumun 17
+cc140,3030,50,Chungcheong,intcal13,Mumun,Asan Punggidong Apgol,Mumun 18
+cc134,2690,50,Chungcheong,intcal13,Mumun,Asan Punggidong Apgol,Mumun 2
+cc135,2660,50,Chungcheong,intcal13,Mumun,Asan Punggidong Apgol,Mumun 24
+cc137,2880,50,Chungcheong,intcal13,Mumun,Asan Punggidong Apgol,Mumun 3
+cc138,2850,50,Chungcheong,intcal13,Mumun,Asan Punggidong Apgol,Mumun 5
+cc139,3020,50,Chungcheong,intcal13,Mumun,Asan Punggidong Apgol,Mumun 9
+cc143,2718,37,Chungcheong,intcal13,Mumun,Asan Punggidong Bamjulgil,no 4
+cc144,2750,100,Chungcheong,intcal13,Mumun,Asan Punggidong Bamjulgil,no 5
+cc145,2820,50,Chungcheong,intcal13,Mumun,Asan Punggidong Bamjulgil 2,no 12
+cc359,2660,50,Chungcheong,intcal13,Mumun,Asan Seokgokri,A-5-1
+cc124,2470,24,Chungcheong,intcal13,Mumun,Asan Sijeonri,no 1
+neo135,4640,60,Chungcheong,intcal13,Chulmun,Asan Sungnaeri,no 2
+neo134,4660,50,Chungcheong,intcal13,Chulmun,Asan Sungnaeri,no 4
+neo151,4360,36,Chungcheong,intcal13,Chulmun,Asan Yongduri Buguiri,Na-2
+cc262,2830,40,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 11
+cc258,2720,40,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 12
+cc253,2780,40,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 19
+cc255,2820,40,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 20
+cc252,2770,40,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 21
+cc257,2920,50,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 24
+cc260,2840,40,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 25
+cc259,2710,40,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 27
+cc256,2510,40,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 30
+cc261,2730,40,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 6
+cc254,2810,40,Chungcheong,intcal13,Mumun,Asan Yongduri Jinteo,no 9
+cc177,2840,40,Chungcheong,intcal13,Mumun,Asan Yongduri Sangol,I-1-2
+cc178,2824,29,Chungcheong,intcal13,Mumun,Asan Yongduri Sangol,II-1-1
+cc184,2550,44,Chungcheong,intcal13,Mumun,Asan Yongduri Sangol,II-1-11
+cc179,2831,27,Chungcheong,intcal13,Mumun,Asan Yongduri Sangol,II-1-2
+cc180,2865,36,Chungcheong,intcal13,Mumun,Asan Yongduri Sangol,II-1-4
+cc181,2830,36,Chungcheong,intcal13,Mumun,Asan Yongduri Sangol,II-1-5
+cc182,2880,50,Chungcheong,intcal13,Mumun,Asan Yongduri Sangol,II-1-8
+cc183,2795,21,Chungcheong,intcal13,Mumun,Asan Yongduri Sangol,II-1-9
+cc244,2810,50,Chungcheong,intcal13,Mumun,Asan Yonghwadong Gajaegol,I-13
+cc245,2850,50,Chungcheong,intcal13,Mumun,Asan Yonghwadong Gajaegol,I-22
+cc246,2480,60,Chungcheong,intcal13,Mumun,Asan Yonghwadong Gajaegol,I-23
+cc247,2752,43,Chungcheong,intcal13,Mumun,Asan Yonghwadong Gajaegol,I-24
+cc248,2840,60,Chungcheong,intcal13,Mumun,Asan Yonghwadong Gajaegol,II-3-1
+cc249,2920,60,Chungcheong,intcal13,Mumun,Asan Yonghwadong Gajaegol,II-3-2
+cc250,2830,50,Chungcheong,intcal13,Mumun,Asan Yonghwadong Gajaegol,II-3-3
+cc251,2870,50,Chungcheong,intcal13,Mumun,Asan Yonghwadong Gajaegol,II-3-4
+cc430,2850,50,Chungcheong,intcal13,Mumun,Baeksukdong,94-B-13
+cc431,2820,60,Chungcheong,intcal13,Mumun,Baeksukdong,94-B-14
+cc427,2780,60,Chungcheong,intcal13,Mumun,Baeksukdong,94-B-15
+cc429,2595,43,Chungcheong,intcal13,Mumun,Baeksukdong,94-B-19
+cc428,2690,60,Chungcheong,intcal13,Mumun,Baeksukdong,94-B-2
+cc433,2805,39,Chungcheong,intcal13,Mumun,Baeksukdong,95-II-2
+cc432,2683,35,Chungcheong,intcal13,Mumun,Baeksukdong,95-II-7
+cc435,2760,60,Chungcheong,intcal13,Mumun,Baeksukdong,95-III-1
+cc434,2785,35,Chungcheong,intcal13,Mumun,Baeksukdong,95-III-5
+neo138,4529,27,Chungcheong,intcal13,Chulmun,Boryeong Gwanchangri,no 2
+neo146,4438,70,Chungcheong,intcal13,Chulmun,Boryeong Gwanchangri,no 47
+cc506,2545,29,Chungcheong,intcal13,Mumun,Boryeong Jinjukri,no 1
+cc507,2445,34,Chungcheong,intcal13,Mumun,Boryeong Jinjukri,no 3
+cc508,2323,30,Chungcheong,intcal13,Mumun,Boryeong Jinjukri,no 4
+cc509,2489,34,Chungcheong,intcal13,Mumun,Boryeong Jinjukri,no 6
+cc531,2510,70,Chungcheong,intcal13,Mumun,Boryeong Jinjukri,no 8-1
+cc532,2460,40,Chungcheong,intcal13,Mumun,Boryeong Jinjukri,no 8-2
+cc533,2390,60,Chungcheong,intcal13,Mumun,Boryeong Jinjukri,no 8-3
+cc510,2467,27,Chungcheong,intcal13,Mumun,Boryeong Jinjukri,no 9
+gg95,2690,50,Gyeonggi,intcal13,Mumun,Bucheon Gogangdong,no 10
+gg96,2910,70,Gyeonggi,intcal13,Mumun,Bucheon Gogangdong,no 12
+gg97,2851,34,Gyeonggi,intcal13,Mumun,Bucheon Gogangdong,no 13
+gg98,2840,80,Gyeonggi,intcal13,Mumun,Bucheon Gogangdong,no 14
+cc307,2790,60,Chungcheong,intcal13,Mumun,Buyeo Gajungri Sanjikri,no 2
+cc73,2480,35,Chungcheong,intcal13,Mumun,Buyeo Jeungsanri,I-3
+cc74,2510,35,Chungcheong,intcal13,Mumun,Buyeo Jeungsanri,I-6
+cc75,2590,60,Chungcheong,intcal13,Mumun,Buyeo Jeungsanri,I-7
+cc71,2708,30,Chungcheong,intcal13,Mumun,Buyeo Nabokri,no 4
+cc521,2444,45,Chungcheong,intcal13,Mumun,Buyeo Nabokri,no 8
+cc153,2550,50,Chungcheong,intcal13,Mumun,"Buyeo Nabokri Tongsil, Seokuri, Wonmunri",Mumun 1
+cc154,2570,60,Chungcheong,intcal13,Mumun,"Buyeo Nabokri Tongsil, Seokuri, Wonmunri",Mumun 2
+cc438,2356,39,Chungcheong,intcal13,Mumun,Buyeo Songgukri,zone 54 no 26
+cc437,2500,60,Chungcheong,intcal13,Mumun,Buyeo Songgukri,zone 54 no 38
+cc439,2590,50,Chungcheong,intcal13,Mumun,Buyeo Songgukri,zone 54 no 39
+cc440,2220,60,Chungcheong,intcal13,Mumun,Buyeo Songgukri,zone 54 no 43
+cc441,2520,50,Chungcheong,intcal13,Mumun,Buyeo Songgukri,zone 54 no 48
+cc511,2485,32,Chungcheong,intcal13,Mumun,Buyeo Songgukri 14,no 23
+cc512,2466,29,Chungcheong,intcal13,Mumun,Buyeo Songgukri 14,no 51
+cc513,2510,29,Chungcheong,intcal13,Mumun,Buyeo Songgukri 14,no 52
+cc514,2448,32,Chungcheong,intcal13,Mumun,Buyeo Songgukri 14,no 67
+cc515,2440,40,Chungcheong,intcal13,Mumun,Buyeo Songgukri 14,no 68
+cc516,2418,32,Chungcheong,intcal13,Mumun,Buyeo Songgukri 14,no 70
+yn292,2775,16,Yeongnam,intcal13,Mumun,Changnyung Sachangri,1
+yn463,2380,60,Yeongnam,intcal13,Mumun,Changnyung Yongjamri,1
+yn464,2320,50,Yeongnam,intcal13,Mumun,Changnyung Yongjamri,10
+gw95,2790,24,Gangwon,intcal13,Mumun,Cheolwon Wasuri,1
+gw96,3056,25,Gangwon,intcal13,Mumun,Cheolwon Wasuri,2
+cc271,2890,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,I-2
+cc272,2890,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,I-3
+cc274,2770,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,II-18
+cc275,2830,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,II-25
+cc276,2930,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,II-26
+cc277,2870,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,II-29
+cc273,2800,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,II-3
+cc278,2770,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,II-35
+cc279,2820,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,II-40
+cc283,2830,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-13
+cc284,2950,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-16
+cc285,2530,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-20
+cc286,2910,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-21
+cc287,2540,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-22
+cc288,2520,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-24
+cc289,2560,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-26
+cc290,2610,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-30
+cc280,2810,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-4
+cc281,2790,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-7
+cc282,2750,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,III-8
+cc291,2640,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,IV-1
+cc294,2830,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,IV-15
+cc295,2930,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,IV-17
+cc296,2940,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,IV-19
+cc297,2820,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,IV-21
+cc298,2590,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,IV-27
+cc292,2880,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,IV-4
+cc293,2780,40,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Gojaemigol,IV-7
+cc85,2845,36,Chungcheong,intcal13,Mumun,Cheonan Baekseokdong Saegaragol,II-1
+cc345,2810,35,Chungcheong,intcal13,Mumun,Cheonan Buldangdong,II-10
+cc346,2670,35,Chungcheong,intcal13,Mumun,Cheonan Buldangdong,II-12
+cc347,2310,80,Chungcheong,intcal13,Mumun,Cheonan Buldangdong,II-19
+cc344,2830,35,Chungcheong,intcal13,Mumun,Cheonan Buldangdong,II-2
+cc351,2834,39,Chungcheong,intcal13,Mumun,Cheonan Buldangdong,III-13
+cc348,2834,39,Chungcheong,intcal13,Mumun,Cheonan Buldangdong,III-3
+cc349,2708,40,Chungcheong,intcal13,Mumun,Cheonan Buldangdong,III-6
+cc350,2747,40,Chungcheong,intcal13,Mumun,Cheonan Buldangdong,III-9
+cc502,2786,25,Chungcheong,intcal13,Mumun,Cheonan Bulmugol,C KC001
+cc113,2546,91,Chungcheong,intcal13,Mumun,Cheonan Daeheungri,2
+cc496,2560,60,Chungcheong,intcal13,Mumun,Cheonan Daehwari Sinpungri,KC-003
+cc497,3010,60,Chungcheong,intcal13,Mumun,Cheonan Daehwari Sinpungri,KC-004
+cc498,3000,60,Chungcheong,intcal13,Mumun,Cheonan Daehwari Sinpungri,KC-005
+cc499,2810,60,Chungcheong,intcal13,Mumun,Cheonan Daehwari Sinpungri,KC-006
+cc500,2770,60,Chungcheong,intcal13,Mumun,Cheonan Daehwari Sinpungri,KC-009
+cc501,2840,60,Chungcheong,intcal13,Mumun,Cheonan Daehwari Sinpungri,KC-010
+cc443,2930,60,Chungcheong,intcal13,Mumun,Cheonan Dujeongdong C-D,3
+cc110,2835,36,Chungcheong,intcal13,Mumun,Cheonan Samgokri,2
+cc111,2780,50,Chungcheong,intcal13,Mumun,Cheonan Samgokri,3
+cc360,2740,40,Chungcheong,intcal13,Mumun,Cheonan Sinbangdong district 3,I-14
+cc361,2810,60,Chungcheong,intcal13,Mumun,Cheonan Sinbangdong district 3,I-21
+cc362,2360,40,Chungcheong,intcal13,Mumun,Cheonan Sinbangdong district 3,II-1
+cc364,2820,50,Chungcheong,intcal13,Mumun,Cheonan Sinbangdong district 3,II-11
+cc365,2890,60,Chungcheong,intcal13,Mumun,Cheonan Sinbangdong district 3,II-17
+cc366,2930,60,Chungcheong,intcal13,Mumun,Cheonan Sinbangdong district 3,II-19
+cc363,2850,60,Chungcheong,intcal13,Mumun,Cheonan Sinbangdong district 3,II-2
+cc114,2704,35,Chungcheong,intcal13,Mumun,Cheonan Ssangyongdong,zone 3 no 1
+cc115,2500,50,Chungcheong,intcal13,Mumun,Cheonan Ssangyongdong,zone 3 no 5
+cc116,2347,50,Chungcheong,intcal13,Mumun,Cheonan Ssangyongdong,zone 4 no 1
+cc317,2780,36,Chungcheong,intcal13,Mumun,Cheonan Yonggokdong Duteogol,1
+cc318,2785,29,Chungcheong,intcal13,Mumun,Cheonan Yonggokdong Duteogol,2
+cc319,2840,50,Chungcheong,intcal13,Mumun,Cheonan Yonggokdong Duteogol,3
+cc320,2770,50,Chungcheong,intcal13,Mumun,Cheonan Yonggokdong Duteogol,4
+cc130,2778,21,Chungcheong,intcal13,Mumun,Cheonan Yuri,Mumun 1
+yn326,2830,40,Yeongnam,intcal13,Mumun,Cheongdo Jinrari,3
+yn327,3000,40,Yeongnam,intcal13,Mumun,Cheongdo Jinrari,8
+yn328,2700,40,Yeongnam,intcal13,Mumun,Cheongdo Jinrari,17
+yn329,2890,60,Yeongnam,intcal13,Mumun,Cheongdo Jinrari,19
+yn330,2910,80,Yeongnam,intcal13,Mumun,Cheongdo Jinrari,64
+yn331,2980,60,Yeongnam,intcal13,Mumun,Cheongdo Jinrari,71
+yn456,3040,50,Yeongnam,intcal13,Mumun,Cheongdo Jinrari 933,1
+yn454,2980,50,Yeongnam,intcal13,Mumun,Cheongdo Jinrari 933,23
+yn452,2930,50,Yeongnam,intcal13,Mumun,Cheongdo Jinrari 933,36
+yn455,3020,50,Yeongnam,intcal13,Mumun,Cheongdo Jinrari 933,38
+yn453,2960,60,Yeongnam,intcal13,Mumun,Cheongdo Jinrari 933,41
+yn457,3040,50,Yeongnam,intcal13,Mumun,Cheongdo Jinrari 933,42
+cc70,3050,80,Chungcheong,intcal13,Mumun,Cheongju Bijadong 1,2
+cc55,2950,60,Chungcheong,intcal13,Mumun,Cheongju Bijadong 2,4
+cc56,2894,25,Chungcheong,intcal13,Mumun,Cheongju Bijadong 2,5
+cc57,2830,50,Chungcheong,intcal13,Mumun,Cheongju Bijadong 2,6
+cc58,2870,60,Chungcheong,intcal13,Mumun,Cheongju Bijadong 2,7
+cc59,2810,60,Chungcheong,intcal13,Mumun,Cheongju Bijadong 2,8
+cc60,2470,50,Chungcheong,intcal13,Mumun,Cheongju Bijadong 2,9
+cc447,2450,70,Chungcheong,intcal13,Mumun,Cheongju Bongmyungdong,B-4
+cc446,2760,80,Chungcheong,intcal13,Mumun,Cheongju Bongmyungdong,B-6
+neo142,4490,100,Chungcheong,intcal13,Chulmun,Cheongju Bongmyungdong,zone 4 no 1
+cc50,2580,60,Chungcheong,intcal13,Mumun,Cheongju Gagyungdong,1
+cc51,2720,40,Chungcheong,intcal13,Mumun,Cheongju Gagyungdong,2
+cc52,2760,40,Chungcheong,intcal13,Mumun,Cheongju Gagyungdong,5
+cc217,2960,50,Chungcheong,intcal13,Mumun,Cheongju Gangseodong,Mumun 1
+cc218,3050,80,Chungcheong,intcal13,Mumun,Cheongju Gangseodong,Mumun 2
+cc53,2941,35,Chungcheong,intcal13,Mumun,Cheongju Undongdong,1
+cc54,2915,43,Chungcheong,intcal13,Mumun,Cheongju Undongdong,3
+cc222,2930,50,Chungcheong,intcal13,Mumun,Cheongju Yongam I,I-1
+cc223,2900,50,Chungcheong,intcal13,Mumun,Cheongju Yongam I,II-1
+cc224,2774,36,Chungcheong,intcal13,Mumun,Cheongju Yongam I,II-4
+cc503,2470,40,Chungcheong,intcal13,Mumun,Cheongwon Gungpyeongri,A-KC001
+cc504,2470,40,Chungcheong,intcal13,Mumun,Cheongwon Gungpyeongri,B-KC005
+cc505,2440,40,Chungcheong,intcal13,Mumun,Cheongwon Gungpyeongri,B-KC007
+cc159,2570,50,Chungcheong,intcal13,Mumun,Cheongwon Ssangcheongri,I-1
+cc161,2510,60,Chungcheong,intcal13,Mumun,Cheongwon Ssangcheongri,II-10
+cc162,2550,60,Chungcheong,intcal13,Mumun,Cheongwon Ssangcheongri,II-13
+cc160,2460,50,Chungcheong,intcal13,Mumun,Cheongwon Ssangcheongri,II-7
+cc163,2790,60,Chungcheong,intcal13,Mumun,Cheongwon Ssangcheongri,III-A-9
+cc164,2470,50,Chungcheong,intcal13,Mumun,Cheongwon Ssangcheongri,III-B-1
+cc168,3100,80,Chungcheong,intcal13,Mumun,Cheongwon Ssangcheongri,III-B-18
+cc165,2670,60,Chungcheong,intcal13,Mumun,Cheongwon Ssangcheongri,III-B-2
+cc166,2540,60,Chungcheong,intcal13,Mumun,Cheongwon Ssangcheongri,III-B-8
+cc167,2560,60,Chungcheong,intcal13,Mumun,Cheongwon Ssangcheongri,III-B-9
+neo154,4254,26,Chungcheong,intcal13,Chulmun,Cheongwon Yeonghari,1
+cc33,2440,50,Chungcheong,intcal13,Mumun,Cheongyang Gwangamri,1
+cc34,2450,50,Chungcheong,intcal13,Mumun,Cheongyang Gwangamri,2
+cc35,2480,50,Chungcheong,intcal13,Mumun,Cheongyang Gwangamri,4
+cc36,2465,36,Chungcheong,intcal13,Mumun,Cheongyang Gwangamri,7
+gw86,2460,60,Gangwon,intcal13,Mumun,Cheonjeonri,A-11
+gw87,2616,43,Gangwon,intcal13,Mumun,Cheonjeonri,A-13
+gw88,2580,39,Gangwon,intcal13,Mumun,Cheonjeonri,A-15
+gw89,2646,39,Gangwon,intcal13,Mumun,Cheonjeonri,A-18
+gw90,2600,43,Gangwon,intcal13,Mumun,Cheonjeonri,A-47
+gw91,2900,60,Gangwon,intcal13,Mumun,Cheonjeonri,A-59
+gw84,2470,60,Gangwon,intcal13,Mumun,Cheonjeonri,A-6
+gw92,2410,50,Gangwon,intcal13,Mumun,Cheonjeonri,A-63
+gw93,2470,50,Gangwon,intcal13,Mumun,Cheonjeonri,A-67
+gw94,2600,50,Gangwon,intcal13,Mumun,Cheonjeonri,A-72
+gw85,2560,50,Gangwon,intcal13,Mumun,Cheonjeonri,A-9
+neo026,3730,60,Gangwon,intcal13,Chulmun,Cheonjeonri,Cheonjeon-7
+gw191,2951,31,Gangwon,intcal13,Mumun,Chuncheon Bukhangang Embankment Reconstruction site (Sinmae),1
+gw192,2705,36,Gangwon,intcal13,Mumun,Chuncheon Bukhangang Embankment Reconstruction site (Sinmae),2
+gw193,2672,36,Gangwon,intcal13,Mumun,Chuncheon Bukhangang Embankment Reconstruction site (Sinmae),3
+gw194,2530,50,Gangwon,intcal13,Mumun,Chuncheon Bukhangang Embankment Reconstruction site (Sinmae),5
+gw125,2918,39,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri 121-16,no 10
+gw126,3020,80,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri 121-16,no 2
+gw127,2805,36,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri 121-16,no 7
+gw128,2800,60,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri 121-16,no 8
+gw129,2500,40,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 15
+gw130,2910,50,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 16
+gw131,2480,50,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 18
+gw132,2810,50,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 19
+gw133,2930,50,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 24
+gw134,2560,50,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 29
+gw135,2580,40,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 30
+gw136,2490,50,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 34
+gw137,2850,40,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 7
+gw138,2820,40,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 8
+gw139,2930,40,Gangwon,intcal13,Mumun,Chuncheon Cheonjeonri Yulmunri,Mumun 9
+gw102,2820,40,Gangwon,intcal13,Mumun,Chuncheon Geodujigu,1
+gw103,2532,22,Gangwon,intcal13,Mumun,Chuncheon Geodujigu,2
+gw104,2760,70,Gangwon,intcal13,Mumun,Chuncheon Geodujigu,3
+gw97,2890,50,Gangwon,intcal13,Mumun,Chuncheon Geoduri,1
+gw100,2520,40,Gangwon,intcal13,Mumun,Chuncheon Geoduri,12
+gw101,2480,40,Gangwon,intcal13,Mumun,Chuncheon Geoduri,14
+gw98,2870,40,Gangwon,intcal13,Mumun,Chuncheon Geoduri,17
+gw99,2940,40,Gangwon,intcal13,Mumun,Chuncheon Geoduri,19
+gw200,2550,50,Gangwon,intcal13,Mumun,Chuncheon Geoduri 779-1,1
+gw201,2910,50,Gangwon,intcal13,Mumun,Chuncheon Geoduri 779-1,2
+gw202,2840,50,Gangwon,intcal13,Mumun,Chuncheon Geoduri 779-1,4
+gw203,2830,50,Gangwon,intcal13,Mumun,Chuncheon Geoduri 779-1,5
+gw205,2881,18,Gangwon,intcal13,Mumun,Chuncheon Geumsanri,A-Mumun 1
+gw206,2847,21,Gangwon,intcal13,Mumun,Chuncheon Geumsanri,A-Mumun 2
+gw207,2835,24,Gangwon,intcal13,Mumun,Chuncheon Geumsanri,B-Mumun 1
+gw211,2735,23,Gangwon,intcal13,Mumun,Chuncheon Geumsanri,B-Mumun 15
+gw212,2794,23,Gangwon,intcal13,Mumun,Chuncheon Geumsanri,B-Mumun 16
+gw208,2936,18,Gangwon,intcal13,Mumun,Chuncheon Geumsanri,B-Mumun 4
+gw209,2724,21,Gangwon,intcal13,Mumun,Chuncheon Geumsanri,B-Mumun 7
+gw210,2730,19,Gangwon,intcal13,Mumun,Chuncheon Geumsanri,B-Mumun 8
+gw156,3020,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 1
+gw149,2800,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 13
+gw150,2750,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 14
+gw148,2330,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 15
+gw146,2380,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 18
+gw153,2390,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 31
+gw151,2760,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 36
+gw152,2650,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 37
+gw141,2390,50,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 43
+gw142,2410,50,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 44
+gw144,2490,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 45
+gw143,2480,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 46
+gw155,2610,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 48
+gw140,2690,50,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 49
+gw154,2720,40,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 51
+gw145,2660,50,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 7
+gw147,2700,50,Gangwon,intcal13,Mumun,Chuncheon Hyeonamri,Mumun 9
+gw118,2450,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,10
+gw119,2490,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,13
+gw120,2530,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,14
+gw121,2460,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,16
+gw112,2380,50,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,2
+gw122,2550,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,26
+gw123,2590,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,27
+gw124,2520,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,29
+gw113,2470,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,3
+gw114,2430,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,4
+gw115,2420,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,5
+gw116,2400,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,8
+gw117,2430,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong,9
+gw288,2360,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 10
+gw290,3040,50,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 21
+gw287,2410,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 23
+gw286,2650,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 25
+gw284,2750,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 28
+gw291,2936,29,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 28
+gw296,2519,32,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 32
+gw298,2480,50,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 34
+gw297,2530,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 35
+gw292,2395,36,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 36
+gw294,2601,29,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 39
+gw295,2519,32,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 41
+gw293,2485,29,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 42
+gw299,2410,60,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 47
+gw300,2610,50,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 51
+gw301,2753,32,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 61
+gw302,2753,32,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 62
+gw303,2570,50,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 63
+gw304,3030,29,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 64
+gw289,2530,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 7
+gw307,2410,60,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 77
+gw305,2540,50,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 79
+gw306,2520,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 83
+gw308,2520,50,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 86
+gw283,2660,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 9
+gw285,2930,40,Gangwon,intcal13,Mumun,Chuncheon Jungdodong D-E,no 9-1
+gw400,2930,60,Gangwon,intcal13,Mumun,Chuncheon Naepyungri,pit house
+gw107,3026,36,Gangwon,intcal13,Mumun,Chuncheon Sinmaedaegyo,no 17
+gw108,2930,36,Gangwon,intcal13,Mumun,Chuncheon Sinmaedaegyo,no 18
+gw109,2625,36,Gangwon,intcal13,Mumun,Chuncheon Sinmaedaegyo,no 27
+gw105,2745,25,Gangwon,intcal13,Mumun,Chuncheon Songamdong,Mumun 1
+gw106,2485,20,Gangwon,intcal13,Mumun,Chuncheon Songamdong,Mumun 3
+gw110,2460,60,Gangwon,intcal13,Mumun,Chuncheon Yulmunri 335-4,Mumun 2
+gw111,2570,50,Gangwon,intcal13,Mumun,Chuncheon Yulmunri 335-4,Mumun 9
+hn210,2990,60,Honam,intcal13,Mumun,Daeanri Bangdoo,pit house
+gg87,2650,50,Gyeonggi,intcal13,Mumun,Daedukgol,no 2
+gg88,2880,80,Gyeonggi,intcal13,Mumun,Daedukgol,no 3
+gg89,2920,80,Gyeonggi,intcal13,Mumun,Daedukgol,no 4
+yn7,2980,29,Yeongnam,intcal13,Mumun,Daegu Bongmoodong 5,no 2
+yn8,2755,43,Yeongnam,intcal13,Mumun,Daegu Bongmoodong 5,no 3
+yn5,3030,50,Yeongnam,intcal13,Mumun,Daegu Daecheondong 511-2,no 10
+yn6,3000,50,Yeongnam,intcal13,Mumun,Daegu Daecheondong 511-2,no 16
+yn1,2650,40,Yeongnam,intcal13,Mumun,Daegu Donghodong,no 1
+yn9,2985,36,Yeongnam,intcal13,Mumun,Daegu Donghodong 181,no 5
+yn17,2570,40,Yeongnam,intcal13,Mumun,Daegu Donghodong Settlement,no 20
+yn2,2860,50,Yeongnam,intcal13,Mumun,Daegu Maecheondong,no 3
+yn3,2865,36,Yeongnam,intcal13,Mumun,Daegu Maecheondong,no 5
+yn4,2822,28,Yeongnam,intcal13,Mumun,Daegu Maecheondong,no 6
+yn23,3170,50,Yeongnam,intcal13,Mumun,Daegu Sangdong 552-8,no 1
+yn24,3075,39,Yeongnam,intcal13,Mumun,Daegu Sangdong 552-8,no 2
+yn558,2750,50,Yeongnam,intcal13,Mumun,Daegu Sangindong 119-20,no 2
+yn559,2640,50,Yeongnam,intcal13,Mumun,Daegu Sangindong 119-20,no 4
+yn560,2710,50,Yeongnam,intcal13,Mumun,Daegu Sangindong 119-20,no 5
+yn19,3070,50,Yeongnam,intcal13,Mumun,Daegu Sangindong 98-1,no 1
+yn20,2740,50,Yeongnam,intcal13,Mumun,Daegu Sangindong 98-1,no 3
+yn21,2820,50,Yeongnam,intcal13,Mumun,Daegu Sangindong 98-1,no 4
+yn22,3140,50,Yeongnam,intcal13,Mumun,Daegu Sangindong 98-1,no 5
+yn13,2920,60,Yeongnam,intcal13,Mumun,Daegu Seobyeondong Settlement,no 1
+yn14,2710,80,Yeongnam,intcal13,Mumun,Daegu Seobyeondong Settlement,no 25
+yn15,2986,39,Yeongnam,intcal13,Mumun,Daegu Seobyeondong Settlement,no 27
+yn16,2690,40,Yeongnam,intcal13,Mumun,Daegu Seobyeondong Settlement,no 32
+yn25,2570,70,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 1275,no 1
+yn28,2440,50,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 1275,no 14
+yn29,3100,60,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 1275,no 15
+yn30,2920,80,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 1275,no 16
+yn31,2460,50,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 1275,no 17
+yn26,2950,80,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 1275,no 3
+yn27,2970,40,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 1275,no 5
+yn12,2818,39,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 498 3,Zone III pit house
+yn10,2680,40,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 585,no 1
+yn11,2730,50,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 585,no 4
+yn33,3050,50,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 591,no 3
+yn32,2870,50,Yeongnam,intcal13,Mumun,Daegu Wolsungdong 591,no 7
+cc102,3000,50,Chungcheong,intcal13,Mumun,Daejeon Bangdongteul,no 11
+cc103,2770,50,Chungcheong,intcal13,Mumun,Daejeon Bangdongteul,no 14
+cc104,2780,50,Chungcheong,intcal13,Mumun,Daejeon Bangdongteul,no 15
+cc105,3100,36,Chungcheong,intcal13,Mumun,Daejeon Bangdongteul,no 17
+cc106,2821,36,Chungcheong,intcal13,Mumun,Daejeon Bangdongteul,no 18
+cc107,2690,50,Chungcheong,intcal13,Mumun,Daejeon Bangdongteul,no 21
+cc98,2510,50,Chungcheong,intcal13,Mumun,Daejeon Bangdongteul,no 3
+cc99,2870,50,Chungcheong,intcal13,Mumun,Daejeon Bangdongteul,no 5
+cc100,2710,40,Chungcheong,intcal13,Mumun,Daejeon Bangdongteul,no 7
+cc101,2601,29,Chungcheong,intcal13,Mumun,Daejeon Bangdongteul,no 9
+cc170,2698,34,Chungcheong,intcal13,Mumun,Daejeon Gaodong,no 1
+cc171,2630,30,Chungcheong,intcal13,Mumun,Daejeon Gaodong,no 2
+cc40,2750,40,Chungcheong,intcal13,Mumun,Daejeon Gwanjeodong,no 11
+cc41,2840,40,Chungcheong,intcal13,Mumun,Daejeon Gwanjeodong,no 14
+cc42,2850,29,Chungcheong,intcal13,Mumun,Daejeon Gwanjeodong,no 15
+cc43,2840,40,Chungcheong,intcal13,Mumun,Daejeon Gwanjeodong,no 16
+cc44,2880,50,Chungcheong,intcal13,Mumun,Daejeon Gwanjeodong,no 17
+cc45,2910,40,Chungcheong,intcal13,Mumun,Daejeon Gwanjeodong,no 20
+cc46,2830,40,Chungcheong,intcal13,Mumun,Daejeon Gwanjeodong,no 21
+cc37,2856,25,Chungcheong,intcal13,Mumun,Daejeon Gwanjeodong,no 6
+cc38,2850,50,Chungcheong,intcal13,Mumun,Daejeon Gwanjeodong,no 7
+cc39,2889,21,Chungcheong,intcal13,Mumun,Daejeon Gwanjeodong,no 8
+cc169,2650,40,Chungcheong,intcal13,Mumun,Daejeon Gwanpyungdong,I-2
+neo152,4344,29,Chungcheong,intcal13,Chulmun,Daejeon Gwanpyungdong,I-2-1
+cc155,2550,40,Chungcheong,intcal13,Mumun,Daejeon Jaoondong,II-1
+cc156,2510,40,Chungcheong,intcal13,Mumun,Daejeon Jaoondong,II-2
+cc157,2480,90,Chungcheong,intcal13,Mumun,Daejeon Jaoondong,II-3
+cc158,2570,70,Chungcheong,intcal13,Mumun,Daejeon Jaoondong,II-4
+cc444,2370,55,Chungcheong,intcal13,Mumun,Daejeon Noeundong,A-1-1
+cc355,2840,40,Chungcheong,intcal13,Mumun,Daejeon Sangdaedong 1,Mumun rectangular 5
+cc356,2890,40,Chungcheong,intcal13,Mumun,Daejeon Sangdaedong 1,Mumun rectangular 8
+cc357,2474,32,Chungcheong,intcal13,Mumun,Daejeon Sangdaedong 1,Mumun Songgukri type 1
+cc358,2535,29,Chungcheong,intcal13,Mumun,Daejeon Sangdaedong 1,Mumun Songgukri type 5
+cc336,2303,36,Chungcheong,intcal13,Mumun,Daejeon Sangseodong,no 4
+cc338,2510,39,Chungcheong,intcal13,Mumun,Daejeon Sangseodong,no 5
+cc337,2859,26,Chungcheong,intcal13,Mumun,Daejeon Sangseodong,no 8
+cc125,2920,50,Chungcheong,intcal13,Mumun,Daejeon Wonsinheungdong Deolegui,no 1
+cc126,2840,50,Chungcheong,intcal13,Mumun,Daejeon Wonsinheungdong Deolegui,no 2
+cc127,2820,50,Chungcheong,intcal13,Mumun,Daejeon Wonsinheungdong Deolegui,no 4
+cc129,2450,50,Chungcheong,intcal13,Mumun,Daejeon Wonsinheungdong Deolegui,no 7
+cc128,2510,50,Chungcheong,intcal13,Mumun,Daejeon Wonsinheungdong Deolegui,no 8
+cc172,3030,50,Chungcheong,intcal13,Mumun,Daejeon Yonggyedong,Mumun 1
+cc173,2879,27,Chungcheong,intcal13,Mumun,Daejeon Yonggyedong,Mumun 2
+cc174,2920,50,Chungcheong,intcal13,Mumun,Daejeon Yonggyedong,Mumun 3
+cc175,2820,40,Chungcheong,intcal13,Mumun,Daejeon Yonggyedong,Mumun 4
+cc188,2890,60,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",II-1
+cc195,2880,50,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",II-12
+cc196,3060,80,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",II-14
+cc189,2940,50,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",II-2
+cc190,2810,60,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",II-3
+cc191,2845,43,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",II-4
+cc192,2880,43,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",II-5
+cc193,2560,60,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",II-6
+cc194,2720,50,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",II-7
+cc197,2970,80,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",IV-1
+cc198,2810,31,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",IV-2
+cc199,2860,60,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",IV-5
+cc200,2790,60,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",V-1
+cc201,2800,60,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",VI-10
+cc202,2730,43,Chungcheong,intcal13,Mumun,"Daejeon Yongsan, Taplipdong",VI-12
+cc26,2440,40,Chungcheong,intcal13,Mumun,Daejungdong,I-2 KC-004
+cc27,2418,29,Chungcheong,intcal13,Mumun,Daejungdong,I-2 KC-005
+yn561,2260,50,Yeongnam,intcal13,Mumun,Dalsung Daeilri 325,no 1
+hn64,2980,50,Honam,intcal13,Mumun,Damyang Taemokri 2,Mumun 1
+hn65,2960,50,Honam,intcal13,Mumun,Damyang Taemokri 2,Mumun 3
+cc146,2580,24,Chungcheong,intcal13,Mumun,Dangjin Jagaeri 1,no 32
+cc147,2520,40,Chungcheong,intcal13,Mumun,Dangjin Jagaeri 1,no 34
+cc148,2637,29,Chungcheong,intcal13,Mumun,Dangjin Jagaeri 1,no 36
+cc220,2736,43,Chungcheong,intcal13,Mumun,Dangjin Jagaeri 2 ,no 16
+cc221,2710,60,Chungcheong,intcal13,Mumun,Dangjin Jagaeri 2 ,no 19
+cc219,2737,34,Chungcheong,intcal13,Mumun,Dangjin Jagaeri 2 ,no 2
+cc87,2810,50,Chungcheong,intcal13,Mumun,Dangjin Seokuri Sosori,I-A-2
+cc88,2770,50,Chungcheong,intcal13,Mumun,Dangjin Seokuri Sosori,I-A-3
+cc89,2820,40,Chungcheong,intcal13,Mumun,Dangjin Seokuri Sosori,I-B-1
+neo150,4376,32,Chungcheong,intcal13,Chulmun,Dangjin Seokuri Sosori,II-1-A-1
+cc90,2680,40,Chungcheong,intcal13,Mumun,Dangjin Seokuri Sosori,II-1-B-1
+cc91,2880,50,Chungcheong,intcal13,Mumun,Dangjin Seokuri Sosori,II-2-A-1
+cc458,2810,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 16
+cc459,2750,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 18
+cc460,2840,50,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 21
+cc461,2894,29,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 24
+cc462,2890,50,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 30
+cc463,2914,29,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 37
+cc454,2846,29,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 4
+cc453,2840,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 5
+cc455,2800,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 6
+cc456,2805,29,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 8
+cc457,2890,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri 3-1,no 9
+cc464,2820,50,Chungcheong,intcal13,Mumun,Dangjin Seongsanri Tongjungri Samhwari,no 1
+cc466,2740,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri Tongjungri Samhwari,no 15
+cc467,2810,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri Tongjungri Samhwari,no 20
+cc468,2820,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri Tongjungri Samhwari,no 26
+cc469,2770,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri Tongjungri Samhwari,no 33
+cc470,2770,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri Tongjungri Samhwari,no 38
+cc471,2770,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri Tongjungri Samhwari,no 42
+cc465,2880,40,Chungcheong,intcal13,Mumun,Dangjin Seongsanri Tongjungri Samhwari,no 9
+cc476,2970,40,Chungcheong,intcal13,Mumun,Dangjin Tongjungri,I-1-3
+cc477,2945,29,Chungcheong,intcal13,Mumun,Dangjin Tongjungri,I-2-1
+cc86,2848,25,Chungcheong,intcal13,Mumun,Dangjin Udoori,no 1
+gw41,2725,25,Gangwon,intcal13,Mumun,Donghae Hyogadong,no 1
+gw42,2850,25,Gangwon,intcal13,Mumun,Donghae Hyogadong,no 2
+gw43,2860,20,Gangwon,intcal13,Mumun,Donghae Hyogadong,no 3
+yn541,2750,30,Yeongnam,intcal13,Mumun,Dongrae Oncheondong 2,pit house
+cc16,2320,40,Chungcheong,intcal13,Mumun,Dosamri,KC-002
+cc17,2600,30,Chungcheong,intcal13,Mumun,Dosamri,KC-003
+cc18,2440,40,Chungcheong,intcal13,Mumun,Dosamri,KC-006
+cc19,2380,40,Chungcheong,intcal13,Mumun,Dosamri,KC-007
+cc20,2360,60,Chungcheong,intcal13,Mumun,Dosamri,KC-010
+cc21,2450,40,Chungcheong,intcal13,Mumun,Dosamri,KC-012
+cc22,2450,40,Chungcheong,intcal13,Mumun,Dosamri,KC-015
+cc23,2610,40,Chungcheong,intcal13,Mumun,Dosamri,KC-016
+cc24,2650,60,Chungcheong,intcal13,Mumun,Dosamri,KC-023
+cc25,2670,40,Chungcheong,intcal13,Mumun,Dosamri,KC-024
+neo147,4426,39,Chungcheong,intcal13,Chulmun,Eumseong Geumseokri,pit house
+cc225,2644,24,Chungcheong,intcal13,Mumun,Eumseong Hadangri,pit house 6
+neo156,3370,70,Chungcheong,intcal13,Chulmun,Eumseong Hadangri,pit house 6-1
+cc131,2640,60,Chungcheong,intcal13,Mumun,Gadjaegol,Mumun 6
+neo158,4535,29,Honam,intcal13,Chulmun,Galmeori,no 1
+neo157,4621,57,Honam,intcal13,Chulmun,Galmeori,no 2
+gw19,2450,60,Gangwon,intcal13,Mumun,Gangneung Bangdongri,A-10
+gw20,2440,40,Gangwon,intcal13,Mumun,Gangneung Bangdongri,A-2
+gw21,2825,25,Gangwon,intcal13,Mumun,Gangneung Bangdongri,Mumun 1
+gw6,3100,50,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 1
+gw1,2760,60,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 10
+gw2,2920,50,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 11
+gw3,2850,60,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 13
+gw4,2790,60,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 14
+gw5,2780,60,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 15
+gw7,2740,50,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 2
+gw17,2930,50,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 3
+gw8,2800,60,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 3
+gw18,2500,50,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 4
+gw9,2890,50,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 4
+gw10,2890,60,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 5
+gw11,2960,50,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 6
+gw12,2910,50,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 7
+gw13,2750,50,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 8
+gw14,2760,50,Gangwon,intcal13,Mumun,Gangneung Bangnaeri,no 9
+gw23,3390,60,Gangwon,intcal13,Mumun,Gangneung Gyodong,no 1
+gw24,3100,50,Gangwon,intcal13,Mumun,Gangneung Gyodong,no 2
+gw25,3230,50,Gangwon,intcal13,Mumun,Gangneung Gyodong,no 3
+gw22,2460,20,Gangwon,intcal13,Mumun,Gangneung Hoisandong,Mumun 1
+gg13,2805,20,Gyeonggi,intcal13,Mumun,Gapyung Daesungri,Mumun 18
+gg14,2945,20,Gyeonggi,intcal13,Mumun,Gapyung Daesungri,Mumun 25
+gg1,2500,29,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 1
+gg4,2628,39,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 15
+gg5,2556,32,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 18
+gg6,2574,36,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 19
+gg7,2360,30,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 22
+gg8,2430,40,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 25
+gg9,2528,21,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 35
+gg10,3110,60,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 36
+gg11,2557,29,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 37
+gg12,3140,60,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 39
+gg2,2494,31,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 8
+gg3,2530,80,Gyeonggi,intcal13,Mumun,Gapyung Daljeonri,no 9
+gg15,3050,29,Gyeonggi,intcal13,Mumun,Gapyung Yeonhari,A-Da no 1
+cc475,2520,40,Chungcheong,intcal13,Mumun,Geumsan Majeonri,no 10
+cc472,2470,40,Chungcheong,intcal13,Mumun,Geumsan Majeonri,no 4
+cc473,2580,40,Chungcheong,intcal13,Mumun,Geumsan Majeonri,no 5
+cc474,2510,40,Chungcheong,intcal13,Mumun,Geumsan Majeonri,no 7
+cc79,2927,35,Chungcheong,intcal13,Mumun,Geumsan Sudangri,no 3
+cc80,2970,60,Chungcheong,intcal13,Mumun,Geumsan Sudangri,no 4
+neo131,4220,50,Yeongnam,intcal13,Chulmun,Gimcheon Jijaeri,Chulmun 4
+yn580,2440,40,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 2
+yn586,2460,40,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 20
+yn587,2680,40,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 24
+yn581,2520,40,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 29
+yn588,2570,40,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 57
+yn589,2370,40,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 58
+yn582,2540,40,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 60
+yn583,2380,40,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 62
+yn585,2720,40,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 73
+yn584,2530,50,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 84
+yn579,2460,40,Yeongnam,intcal13,Mumun,Gimcheon Jijaeri,Mumun 99
+neo130,4380,60,Yeongnam,intcal13,Chulmun,Gimcheon Songjukri 1,Chulmun 3
+neo132,3990,70,Yeongnam,intcal13,Chulmun,Gimcheon Songjukri 1,Chulmun 6
+yn438,2590,80,Yeongnam,intcal13,Mumun,Gimhae Gusandong,22-Oct
+yn437,2460,80,Yeongnam,intcal13,Mumun,Gimhae Gusandong,A-321
+yn293,2605,20,Yeongnam,intcal13,Mumun,Gimhae Yeoraeri,pit house 1
+hn96,2430,50,Honam,intcal13,Mumun,Gimje Geomsandong,no 1
+hn97,2494,41,Honam,intcal13,Mumun,Gimje Geomsandong,no 2
+hn150,2430,50,Honam,intcal13,Mumun,Gimje Yangcheongri,no 1
+gg85,2805,25,Gyeonggi,intcal13,Mumun,Gimpo Masong,II-2-2
+gg77,2745,25,Gyeonggi,intcal13,Mumun,Gimpo Unyangdong 1,I-11-1
+gg78,2800,25,Gyeonggi,intcal13,Mumun,Gimpo Unyangdong 1,I-11-5
+gg82,2870,25,Gyeonggi,intcal13,Mumun,Gimpo Unyangdong 2,II-10-1-6
+gg83,2915,25,Gyeonggi,intcal13,Mumun,Gimpo Unyangdong 2,II-10-1-7
+gg84,2905,25,Gyeonggi,intcal13,Mumun,Gimpo Unyangdong 2,II-10-1-9
+gg79,2745,25,Gyeonggi,intcal13,Mumun,Gimpo Unyangdong 2,II-7-1
+gg80,2790,25,Gyeonggi,intcal13,Mumun,Gimpo Unyangdong 2,II-7-3
+neo085,4448,15,Gyeonggi,intcal13,Chulmun,Gimpo Unyangdong 2,II-9-1-1
+gg81,2940,25,Gyeonggi,intcal13,Mumun,Gimpo Unyangdong 2,II-9-5
+gg39,2770,60,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-D no 22
+gg40,2850,40,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-D no 23
+gg41,2680,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-G no 2
+gg42,2700,40,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-G no 4
+gg44,2770,40,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-H no 12
+gg43,2380,40,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-H no 5 
+gg56,3020,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-K no 3
+gg60,2820,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 10
+gg61,2910,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 11
+gg62,2820,60,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 12
+gg63,2750,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 13
+gg64,2800,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 14
+gg65,3090,60,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 15
+gg66,2990,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 16
+gg67,2910,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 17
+gg68,2720,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 19
+gg69,2550,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 20
+gg57,2960,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 3
+gg58,2750,36,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 5
+gg59,2550,40,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,1-L no 6
+gg35,2650,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(B) no 1
+gg36,3010,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(B-1) no 1
+gg37,2540,40,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(B-1) no 2
+gg38,2950,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(B-1) no 3
+neo078,4530,50,Gyeonggi,intcal13,Chulmun,Gimpo Yangchon,2-1(F) no 1
+neo075,4550,50,Gyeonggi,intcal13,Chulmun,Gimpo Yangchon,2-1(F) no 2
+gg45,2670,40,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(J) no 1
+gg49,2710,40,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(J) no 10
+gg50,2900,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(J) no 12
+gg51,2788,36,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(J) no 13
+gg52,2630,40,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(J) no 16
+gg53,2560,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(J) no 18
+gg46,2820,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(J) no 3
+gg47,2740,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(J) no 4
+gg48,2830,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(J) no 6
+neo112,4020,50,Gyeonggi,intcal13,Chulmun,Gimpo Yangchon,2-1(J) no 9
+gg54,2900,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(K) no 1
+gg55,2630,40,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-1(K) no 2
+gg70,2520,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-3(Na) no 1
+gg76,2850,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-3(Na) no 15
+gg71,2660,60,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-3(Na) no 3
+gg72,2760,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-3(Na) no 4
+gg73,2680,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-3(Na) no 6
+gg74,2710,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-3(Na) no 7
+gg75,2920,50,Gyeonggi,intcal13,Mumun,Gimpo Yangchon,2-3(Na) no 8
+hn214,2500,60,Honam,intcal13,Mumun,Gochang Bugokri Jeungsan 2,Mumun 1
+hn209,2510,20,Honam,intcal13,Mumun,Gochang Seokgyori 2,no 9
+hn195,2530,30,Honam,intcal13,Mumun,Gochang Seoknamri,no 1
+hn196,2450,30,Honam,intcal13,Mumun,Gochang Seoknamri,no 1-1
+hn197,2640,50,Honam,intcal13,Mumun,Gochang Seoknamri,no 2
+hn211,2620,40,Honam,intcal13,Mumun,Goheung Hancheonri Sinchon,no 1
+hn212,2810,30,Honam,intcal13,Mumun,Goheung Hancheonri Sinchon,no 1
+hn121,2500,20,Honam,intcal13,Mumun,Goheung Jangdukri Jangdong,no 1
+hn122,2480,20,Honam,intcal13,Mumun,Goheung Jangdukri Jangdong,no 5
+hn41,2331,29,Honam,intcal13,Mumun,Goksung Daepyungri,no 11
+hn39,2310,29,Honam,intcal13,Mumun,Goksung Daepyungri,no 16
+hn40,2290,40,Honam,intcal13,Mumun,Goksung Daepyungri,no 17
+hn38,2236,29,Honam,intcal13,Mumun,Goksung Daepyungri,no 23
+hn42,2370,40,Honam,intcal13,Mumun,Goksung Daepyungri,no 3
+hn6,2640,60,Honam,intcal13,Mumun,Goksung Ojiri,Mumun 12
+hn7,2710,50,Honam,intcal13,Mumun,Goksung Ojiri,Mumun 14
+hn4,2670,60,Honam,intcal13,Mumun,Goksung Ojiri,Mumun 4
+hn5,2650,50,Honam,intcal13,Mumun,Goksung Ojiri,Mumun 6
+cc108,2563,43,Chungcheong,intcal13,Mumun,Gongju Jangsunri Tosil,no 2
+cc522,2420,40,Chungcheong,intcal13,Mumun,Gongju Jangwonri,Mumun 1
+cc523,2480,40,Chungcheong,intcal13,Mumun,Gongju Jangwonri,Mumun 1-1
+neo141,4494,17,Chungcheong,intcal13,Chulmun,Gongju Singwandong Gwangol,Chulmun pit house
+yn241,2880,50,Yeongnam,intcal13,Mumun,Goryung Eogokri 255-2,pit house 1-1
+yn294,2550,60,Yeongnam,intcal13,Mumun,Goryung Kwebinri,no 1
+yn295,2480,60,Yeongnam,intcal13,Mumun,Goryung Kwebinri,no 2
+neo018,4283,26,Gangwon,intcal13,Chulmun,Gosung Cheoltongri,Chulmun 1
+neo017,4299,24,Gangwon,intcal13,Chulmun,Gosung Cheoltongri,Chulmun 2
+neo019,4253,24,Gangwon,intcal13,Chulmun,Gosung Cheoltongri,Chulmun 3
+neo020,4242,27,Gangwon,intcal13,Chulmun,Gosung Cheoltongri,Chulmun 4
+gw35,2510,50,Gangwon,intcal13,Mumun,Gosung Chodori 2 - Hwapori,Chodori 1
+gw36,2460,50,Gangwon,intcal13,Mumun,Gosung Chodori 2 - Hwapori,Chodori 2
+gw37,2380,50,Gangwon,intcal13,Mumun,Gosung Chodori 2 - Hwapori,Chodori 6
+gw38,2580,50,Gangwon,intcal13,Mumun,Gosung Chodori 2 - Hwapori,Chodori 8
+gw40,2730,50,Gangwon,intcal13,Mumun,Gosung Chodori 2 - Hwapori,Hwapori 1-2
+gw39,2550,50,Gangwon,intcal13,Mumun,Gosung Chodori 2 - Hwapori,Hwapori 2-1
+gw30,2820,50,Gangwon,intcal13,Mumun,Gosung Daedaeri,no 1
+gw31,2900,50,Gangwon,intcal13,Mumun,Gosung Daedaeri,no 2
+gw32,2840,60,Gangwon,intcal13,Mumun,Gosung Daedaeri,no 3
+gw33,2870,50,Gangwon,intcal13,Mumun,Gosung Daedaeri,no 4
+gw26,2864,24,Gangwon,intcal13,Mumun,Gosung Daedaeri,no 5
+gw27,2862,24,Gangwon,intcal13,Mumun,Gosung Daedaeri,no 6
+gw28,2857,24,Gangwon,intcal13,Mumun,Gosung Daedaeri,no 7
+gw29,2838,24,Gangwon,intcal13,Mumun,Gosung Daedaeri,no 8
+gw34,3200,50,Gangwon,intcal13,Mumun,Gosung Jejinri 2,B-1
+neo023,4120,40,Gangwon,intcal13,Chulmun,Gosung Moonamri 2,no 1
+neo011,4480,40,Gangwon,intcal13,Chulmun,Gosung Moonamri 2,no 2
+neo012,4462,32,Gangwon,intcal13,Chulmun,Gosung Moonamri 2,no 3
+neo006,4600,50,Gangwon,intcal13,Chulmun,Gosung Moonamri 2,no 4
+neo003,4681,34,Gangwon,intcal13,Chulmun,Gosung Moonamri 2,no 7
+gg20,2495,20,Gyeonggi,intcal13,Mumun,Goyang Donaedong,I-1
+gg23,2545,20,Gyeonggi,intcal13,Mumun,Goyang Donaedong,I-10
+gg21,2650,20,Gyeonggi,intcal13,Mumun,Goyang Donaedong,I-6
+gg22,2545,20,Gyeonggi,intcal13,Mumun,Goyang Donaedong,I-7
+gg24,2615,20,Gyeonggi,intcal13,Mumun,Goyang Donaedong,II-1
+gg25,2460,20,Gyeonggi,intcal13,Mumun,Goyang Donaedong,II-2
+gg26,2495,20,Gyeonggi,intcal13,Mumun,Goyang Donaedong,II-5
+hn152,2960,80,Honam,intcal13,Mumun,Gurye Bongbukri,Na Mumun 2
+hn153,2560,50,Honam,intcal13,Mumun,Gurye Bongbukri,Na Mumun 3
+cc28,2420,70,Chungcheong,intcal13,Mumun,Gwanchangri,KC-020
+cc29,2420,70,Chungcheong,intcal13,Mumun,Gwanchangri,KC-038
+cc30,2810,90,Chungcheong,intcal13,Mumun,Gwanchangri,KC-040
+cc31,2480,50,Chungcheong,intcal13,Mumun,Gwanchangri,KC-042
+cc32,2630,70,Chungcheong,intcal13,Mumun,Gwanchangri,KC-048
+gg27,2631,16,Gyeonggi,intcal13,Mumun,Gwanggyo Sindosi,no 10-1
+hn161,2930,60,Honam,intcal13,Mumun,Gwangju Guemgok A,no 2
+hn62,2500,60,Honam,intcal13,Mumun,Gwangju Jangja,no 7
+gg32,2530,20,Gyeonggi,intcal13,Mumun,Gwangju Jangjidong Settlement,Mumun 3
+gg33,2510,20,Gyeonggi,intcal13,Mumun,Gwangju Jangjidong Settlement,Mumun 4
+gg34,2545,20,Gyeonggi,intcal13,Mumun,Gwangju Jangjidong Settlement,Mumun 8
+hn93,2610,50,Honam,intcal13,Mumun,"Gwangju Nodaedong, Hangamdong",Hyocheon II-1
+hn94,2370,50,Honam,intcal13,Mumun,"Gwangju Nodaedong, Hangamdong",Hyocheon II-3
+hn95,2851,43,Honam,intcal13,Mumun,"Gwangju Nodaedong, Hangamdong",Hyocheon II-6
+hn156,2548,28,Honam,intcal13,Mumun,Gwangju Nodaeri Singui,no 1
+hn157,2530,39,Honam,intcal13,Mumun,Gwangju Nodaeri Singui,no 2
+hn158,2546,43,Honam,intcal13,Mumun,Gwangju Nodaeri Singui,no 3
+hn23,2375,39,Honam,intcal13,Mumun,Gwangju Pyungdong,A-60
+hn24,2345,36,Honam,intcal13,Mumun,Gwangju Pyungdong,A-87
+hn1,2470,60,Honam,intcal13,Mumun,Gwangju Sanjung A,no 18
+hn2,2530,36,Honam,intcal13,Mumun,Gwangju Sanjung A,no 20
+hn3,2400,50,Honam,intcal13,Mumun,Gwangju Sanjung A,no 23
+hn167,2430,80,Honam,intcal13,Mumun,Gwangju Sinwan,no 1
+hn9,2920,60,Honam,intcal13,Mumun,Gwangju Sumun,Rectangular no 1
+hn10,2960,60,Honam,intcal13,Mumun,Gwangju Sumun,Rectangular no 2
+hn13,2460,60,Honam,intcal13,Mumun,Gwangju Sumun,Songgukri type no 13
+hn14,2820,60,Honam,intcal13,Mumun,Gwangju Sumun,Songgukri type no 28
+hn11,2610,50,Honam,intcal13,Mumun,Gwangju Sumun,Songgukri type no 5
+hn12,2310,60,Honam,intcal13,Mumun,Gwangju Sumun,Songgukri type no 8
+gg31,2815,20,Gyeonggi,intcal13,Mumun,Gwangju Yeokdong,Ma-10
+gg28,2535,20,Gyeonggi,intcal13,Mumun,Gwangju Yeokdong,Ma-3
+gg29,2515,20,Gyeonggi,intcal13,Mumun,Gwangju Yeokdong,Ma-4
+gg30,2890,20,Gyeonggi,intcal13,Mumun,Gwangju Yeokdong,Ma-5
+hn75,2520,60,Honam,intcal13,Mumun,Gwangyang Chilsungri,no 15-1
+hn73,2390,40,Honam,intcal13,Mumun,Gwangyang Chilsungri,no 2
+hn76,2550,60,Honam,intcal13,Mumun,Gwangyang Chilsungri,no 32
+hn77,2520,80,Honam,intcal13,Mumun,Gwangyang Chilsungri,no 33
+hn78,2500,60,Honam,intcal13,Mumun,Gwangyang Chilsungri,no 34
+hn79,2450,60,Honam,intcal13,Mumun,Gwangyang Chilsungri,no 39
+hn74,2640,60,Honam,intcal13,Mumun,Gwangyang Chilsungri,no 4-2
+hn28,2510,60,Honam,intcal13,Mumun,Gwangyang Gidu,no 1
+hn34,2281,36,Honam,intcal13,Mumun,Gwangyang Gidu,no 11
+hn35,2420,80,Honam,intcal13,Mumun,Gwangyang Gidu,no 19
+hn36,2593,61,Honam,intcal13,Mumun,Gwangyang Gidu,no 20-1
+hn29,2470,30,Honam,intcal13,Mumun,Gwangyang Gidu,no 3-1
+hn30,2451,26,Honam,intcal13,Mumun,Gwangyang Gidu,no 4
+hn31,2360,30,Honam,intcal13,Mumun,Gwangyang Gidu,no 6
+hn32,2440,57,Honam,intcal13,Mumun,Gwangyang Gidu,no 8
+hn33,2460,60,Honam,intcal13,Mumun,Gwangyang Gidu,no 9
+cc119,2890,60,Chungcheong,intcal13,Mumun,Gwansanri 1,KC-004
+cc120,2750,60,Chungcheong,intcal13,Mumun,Gwansanri 1,kC-009
+cc121,2570,70,Chungcheong,intcal13,Mumun,Gwansanri 1,KC-011
+cc122,2780,70,Chungcheong,intcal13,Mumun,Gwansanri 1,KC-012
+cc123,2920,70,Chungcheong,intcal13,Mumun,Gwansanri 1,KC-013
+cc339,2460,50,Chungcheong,intcal13,Mumun,Gyeryong Ibamri,Mumun 10
+cc340,2670,70,Chungcheong,intcal13,Mumun,Gyeryong Ibamri,Mumun 12
+cc341,2450,60,Chungcheong,intcal13,Mumun,Gyeryong Ibamri,Mumun 13
+cc342,2450,70,Chungcheong,intcal13,Mumun,Gyeryong Ibamri,Mumun 16
+cc343,2540,50,Chungcheong,intcal13,Mumun,Gyeryong Ibamri,Mumun 21
+gg17,2410,40,Gyeonggi,intcal13,Mumun,Gyesoodong Angol,no 1
+gg18,2830,30,Gyeonggi,intcal13,Mumun,Gyesoodong Angol,no 2
+gg19,2580,40,Gyeonggi,intcal13,Mumun,Gyesoodong Angol,no 3
+yn34,2850,60,Yeongnam,intcal13,Mumun,Gyungju Bangnaeri,I-4
+yn461,2703,36,Yeongnam,intcal13,Mumun,Gyungju Bonggilri,no 1
+yn37,2440,60,Yeongnam,intcal13,Mumun,Gyungju Bonggilri,no 10
+yn35,2360,40,Yeongnam,intcal13,Mumun,Gyungju Bonggilri,no 5
+yn462,2850,59,Yeongnam,intcal13,Mumun,Gyungju Bonggilri,no 6
+yn36,2730,30,Yeongnam,intcal13,Mumun,Gyungju Bonggilri,no 9
+yn460,2650,40,Yeongnam,intcal13,Mumun,Gyungju Bonggilri,no 9
+yn307,2735,36,Yeongnam,intcal13,Mumun,Gyungju Cheongundong 1544,II-3
+yn308,2680,50,Yeongnam,intcal13,Mumun,Gyungju Cheongundong Bronze Age Settlement,I-1
+yn309,2990,60,Yeongnam,intcal13,Mumun,Gyungju Cheongundong Bronze Age Settlement,I-3
+yn310,2890,50,Yeongnam,intcal13,Mumun,Gyungju Cheongundong Bronze Age Settlement,I-4
+yn313,2750,50,Yeongnam,intcal13,Mumun,Gyungju Cheongundong Bronze Age Settlement,no 21
+yn314,2630,60,Yeongnam,intcal13,Mumun,Gyungju Cheongundong Bronze Age Settlement,no 27
+yn311,2480,50,Yeongnam,intcal13,Mumun,Gyungju Cheongundong Bronze Age Settlement,no 4
+yn312,2800,60,Yeongnam,intcal13,Mumun,Gyungju Cheongundong Bronze Age Settlement,no 9
+yn358,2610,60,Yeongnam,intcal13,Mumun,Gyungju Cheongundong Pimak,Ra-1
+yn280,2620,50,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong,no 1
+yn284,2370,60,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong,no 10
+yn285,2290,60,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong,no 14
+yn281,2540,60,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong,no 2
+yn282,2690,60,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong,no 5
+yn283,2400,50,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong,no 7
+yn286,2590,60,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong 100-14,no 2
+yn287,2540,50,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong 100-14,no 7
+yn288,2720,50,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong 100-14,no 8
+yn44,2540,50,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong san-156,no 1
+yn45,2670,50,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong san-156,no 2
+yn46,2890,60,Yeongnam,intcal13,Mumun,Gyungju Chunghyodong san-156,no 3
+yn58,2944,33,Yeongnam,intcal13,Mumun,Gyungju Deokcheonri 1,no 11
+yn55,2920,43,Yeongnam,intcal13,Mumun,Gyungju Deokcheonri 1,no 2
+yn59,3010,60,Yeongnam,intcal13,Mumun,Gyungju Deokcheonri 1,no 20
+yn60,2812,36,Yeongnam,intcal13,Mumun,Gyungju Deokcheonri 1,no 21
+yn61,2940,36,Yeongnam,intcal13,Mumun,Gyungju Deokcheonri 1,no 24
+yn62,2960,36,Yeongnam,intcal13,Mumun,Gyungju Deokcheonri 1,no 25
+yn63,2740,50,Yeongnam,intcal13,Mumun,Gyungju Deokcheonri 1,no 26
+yn56,2850,50,Yeongnam,intcal13,Mumun,Gyungju Deokcheonri 1,no 8
+yn57,2510,60,Yeongnam,intcal13,Mumun,Gyungju Deokcheonri 1,no 9
+yn247,2610,50,Yeongnam,intcal13,Mumun,Gyungju Dongsanri 1,no 22
+yn248,2510,60,Yeongnam,intcal13,Mumun,Gyungju Dongsanri 1,no 24
+yn249,2640,50,Yeongnam,intcal13,Mumun,Gyungju Dongsanri 1,no 31
+yn250,2790,50,Yeongnam,intcal13,Mumun,Gyungju Dongsanri 1,no 33
+yn246,2600,50,Yeongnam,intcal13,Mumun,Gyungju Dongsanri 1,no 7
+yn545,2730,40,Yeongnam,intcal13,Mumun,Gyungju Eoilri,A-I-10
+yn546,2700,40,Yeongnam,intcal13,Mumun,Gyungju Eoilri,A-I-21
+yn547,2660,50,Yeongnam,intcal13,Mumun,Gyungju Eoilri,A-II-10
+yn548,2540,40,Yeongnam,intcal13,Mumun,Gyungju Eoilri,A-II-42
+yn549,2690,50,Yeongnam,intcal13,Mumun,Gyungju Eoilri,A-II-73
+yn550,2810,40,Yeongnam,intcal13,Mumun,Gyungju Eoilri,A-II-79
+yn551,2840,50,Yeongnam,intcal13,Mumun,Gyungju Eoilri,A-III-2
+yn553,2740,50,Yeongnam,intcal13,Mumun,Gyungju Eoilri,E-20
+yn552,2700,50,Yeongnam,intcal13,Mumun,Gyungju Eoilri,E-3
+yn554,2640,40,Yeongnam,intcal13,Mumun,Gyungju Eoilri,F-1
+yn555,2690,40,Yeongnam,intcal13,Mumun,Gyungju Eoilri,F-3
+yn204,2516,22,Yeongnam,intcal13,Mumun,Gyungju Gujungdong 255-1,no 1
+yn303,2480,60,Yeongnam,intcal13,Mumun,Gyungju Gwangmyungdong,no 2
+yn304,2675,43,Yeongnam,intcal13,Mumun,Gyungju Gwangmyungdong,no 3
+yn305,2760,50,Yeongnam,intcal13,Mumun,Gyungju Gwangmyungdong,no 8
+yn542,2750,50,Yeongnam,intcal13,Mumun,Gyungju Hagoori,A-1
+yn544,2690,50,Yeongnam,intcal13,Mumun,Gyungju Hagoori,A-10
+yn543,2630,50,Yeongnam,intcal13,Mumun,Gyungju Hagoori,A-5
+yn291,2800,60,Yeongnam,intcal13,Mumun,Gyungju Hagoori,no 5
+yn47,2784,39,Yeongnam,intcal13,Mumun,Gyungju Hwacheonri,no 1
+yn53,2980,60,Yeongnam,intcal13,Mumun,Gyungju Hwacheonri,no 10
+yn54,2620,50,Yeongnam,intcal13,Mumun,Gyungju Hwacheonri,no 11
+yn48,2680,60,Yeongnam,intcal13,Mumun,Gyungju Hwacheonri,no 3
+yn49,2700,60,Yeongnam,intcal13,Mumun,Gyungju Hwacheonri,no 4
+yn50,2780,50,Yeongnam,intcal13,Mumun,Gyungju Hwacheonri,no 7
+yn51,2720,60,Yeongnam,intcal13,Mumun,Gyungju Hwacheonri,no 8
+yn52,2861,43,Yeongnam,intcal13,Mumun,Gyungju Hwacheonri,no 9
+yn592,2950,40,Yeongnam,intcal13,Mumun,Gyungju Hwacheonri san-251-1,no 2
+yn593,2610,40,Yeongnam,intcal13,Mumun,Gyungju Hwacheonri san-251-1,no 3
+yn203,2715,29,Yeongnam,intcal13,Mumun,Gyungju Indongri,no 5-2
+yn205,2660,50,Yeongnam,intcal13,Mumun,Gyungju Jukdongri,Mumun 2
+yn206,2850,50,Yeongnam,intcal13,Mumun,Gyungju Jukdongri,Mumun 3
+yn207,2470,60,Yeongnam,intcal13,Mumun,Gyungju Jukdongri,Mumun 5
+yn208,2820,60,Yeongnam,intcal13,Mumun,Gyungju Jukdongri,Mumun 6
+yn209,2910,60,Yeongnam,intcal13,Mumun,Gyungju Jukdongri,Mumun 7
+yn243,2710,60,Yeongnam,intcal13,Mumun,Gyungju Munsanri 1,Ga-17
+yn242,2590,50,Yeongnam,intcal13,Mumun,Gyungju Munsanri 1,Ga-4
+yn244,2790,50,Yeongnam,intcal13,Mumun,Gyungju Munsanri 1,Na-14
+yn245,2650,50,Yeongnam,intcal13,Mumun,Gyungju Munsanri 1,Na-29
+yn517,2670,40,Yeongnam,intcal13,Mumun,Gyungju Naengcheonri,Mumun 1
+yn518,2670,40,Yeongnam,intcal13,Mumun,Gyungju Naengcheonri,Mumun 2
+yn519,2770,40,Yeongnam,intcal13,Mumun,Gyungju Naengcheonri,Mumun 3
+yn520,2430,50,Yeongnam,intcal13,Mumun,Gyungju Naengcheonri,Mumun 4
+yn306,2910,60,Yeongnam,intcal13,Mumun,Gyungju Sindangri 883-1,pit house 1
+yn38,2860,40,Yeongnam,intcal13,Mumun,Gyungju Songsunri,no 1
+yn42,2960,60,Yeongnam,intcal13,Mumun,Gyungju Songsunri,no 10
+yn43,2890,40,Yeongnam,intcal13,Mumun,Gyungju Songsunri,no 11
+yn40,2760,40,Yeongnam,intcal13,Mumun,Gyungju Songsunri,no 8
+yn41,2820,40,Yeongnam,intcal13,Mumun,Gyungju Songsunri,no 9
+yn354,2760,60,Yeongnam,intcal13,Mumun,Gyungju Sukgyeri,I-B-4
+yn355,2750,50,Yeongnam,intcal13,Mumun,Gyungju Sukgyeri,I-B-8
+yn466,2750,50,Yeongnam,intcal13,Mumun,Gyungju Yonggangdong,no 19
+yn467,2850,50,Yeongnam,intcal13,Mumun,Gyungju Yonggangdong,no 23
+yn468,2690,50,Yeongnam,intcal13,Mumun,Gyungju Yonggangdong,no 42
+yn465,2860,50,Yeongnam,intcal13,Mumun,Gyungju Yonggangdong,no 9
+yn289,2700,80,Yeongnam,intcal13,Mumun,Gyungju Yongjangri,no 1
+yn290,2678,33,Yeongnam,intcal13,Mumun,Gyungju Yongjangri,no 2
+yn301,2790,50,Yeongnam,intcal13,Mumun,Gyungsan Jungsandong 160-1,I-1
+yn302,2740,50,Yeongnam,intcal13,Mumun,Gyungsan Jungsandong 160-1,I-2
+yn516,3080,60,Yeongnam,intcal13,Mumun,Gyungsan Naerari,I-3
+yn515,2950,60,Yeongnam,intcal13,Mumun,Gyungsan Naerari,I-4
+yn513,2770,50,Yeongnam,intcal13,Mumun,Gyungsan Naerari,I-5
+yn512,2590,60,Yeongnam,intcal13,Mumun,Gyungsan Naerari,I-7
+yn514,2930,60,Yeongnam,intcal13,Mumun,Gyungsan Naerari,II-2-9
+yn378,2640,60,Yeongnam,intcal13,Mumun,Gyungsan Okgokdong 1,A-11
+yn377,2720,40,Yeongnam,intcal13,Mumun,Gyungsan Okgokdong 1,A-13
+yn376,2720,70,Yeongnam,intcal13,Mumun,Gyungsan Okgokdong 1,A-17
+yn375,2726,36,Yeongnam,intcal13,Mumun,Gyungsan Okgokdong 1,A-31
+yn374,2610,40,Yeongnam,intcal13,Mumun,Gyungsan Okgokdong 1,A-38
+yn379,3070,40,Yeongnam,intcal13,Mumun,Gyungsan Okgokdong 1,B-39
+yn381,2700,40,Yeongnam,intcal13,Mumun,Gyungsan Okgokdong 2,A-23
+yn380,2820,30,Yeongnam,intcal13,Mumun,Gyungsan Okgokdong 2,A-3
+yn64,2790,60,Yeongnam,intcal13,Mumun,Gyungsan Oksandong 300,no 22
+yn65,2540,50,Yeongnam,intcal13,Mumun,Gyungsan Oksandong 300,no 27
+yn66,2580,50,Yeongnam,intcal13,Mumun,Gyungsan Oksandong 300,no 33
+hn100,2550,50,Honam,intcal13,Mumun,Haenam Hwangsanri Bunto 2,Mumun 1
+hn101,2680,50,Honam,intcal13,Mumun,Haenam Hwangsanri Bunto 2,Mumun 7
+hn99,2430,50,Honam,intcal13,Mumun,Haenam Hwangsanri Bunto 2,Mumun 9
+neo148,4412,36,Chungcheong,intcal13,Chulmun,Hakamri,pit house
+hn173,2490,15,Honam,intcal13,Mumun,Hampyung Sinheungdong 2,no 1
+hn174,2945,20,Honam,intcal13,Mumun,Hampyung Sinheungdong 2,no 10
+hn175,2865,20,Honam,intcal13,Mumun,Hampyung Sinheungdong 2,no 5
+hn176,2910,20,Honam,intcal13,Mumun,Hampyung Sinheungdong 2,no 8
+hn177,2925,20,Honam,intcal13,Mumun,Hampyung Sinheungdong 2,no 9
+hn120,2550,40,Honam,intcal13,Mumun,Hampyung Sinheungdong 3,no 11
+hn178,2590,60,Honam,intcal13,Mumun,Hampyung Sinheungdong 3,no 3
+hn179,2620,50,Honam,intcal13,Mumun,Hampyung Sinheungdong 3,no 7
+hn155,2557,29,Honam,intcal13,Mumun,Hampyung Sungcheonri Wachon,no 5
+gg267,2914,32,Gyeonggi,intcal13,Mumun,Hanam Deokpungdong,1
+gg264,2679,29,Gyeonggi,intcal13,Mumun,Hanam Deokpunggol 2,pit house 5-1
+gg265,2800,23,Gyeonggi,intcal13,Mumun,Hanam Deokpunggol 2,pit house 5-2
+gg266,2784,25,Gyeonggi,intcal13,Mumun,Hanam Deokpunggol 2,pit house 6-1
+gg268,2760,60,Gyeonggi,intcal13,Mumun,Hanam Mangwoldong Gusan,2
+gg269,2680,60,Gyeonggi,intcal13,Mumun,Hanam Mangwoldong Gusan,6
+gg306,2631,91,Gyeonggi,intcal13,Mumun,Heunamri 3,no 8
+gg307,2950,50,Gyeonggi,intcal13,Mumun,Heunamri 4,no 12
+gw195,2810,34,Gangwon,intcal13,Mumun,Hoingsung Beopjuri,Mumun 1
+gw196,2642,19,Gangwon,intcal13,Mumun,Hoingsung Beopjuri,Mumun 2
+gw214,2960,36,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-11
+gw215,2988,36,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-12
+gw216,3025,36,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-21
+gw217,3000,50,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-22
+gw218,2930,50,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-23
+gw213,3015,36,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-3
+gw219,2940,50,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-32
+gw220,2830,50,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-36
+gw221,2520,50,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-44
+gw222,2430,50,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-45
+gw223,2460,50,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-46
+gw224,2500,50,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-50
+gw225,2845,36,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-54
+gw226,3068,39,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-56
+gw228,2511,43,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,A-58
+gw227,3110,60,Gangwon,intcal13,Mumun,Hongcheon Cheoljeongri 2,C-1
+gw168,2860,36,Gangwon,intcal13,Mumun,Hongcheon Hahwagyeri,Mumun 1
+gw163,2940,60,Gangwon,intcal13,Mumun,Hongcheon Oesampori,1
+gw164,2810,50,Gangwon,intcal13,Mumun,Hongcheon Oesampori,2
+gw165,3080,60,Gangwon,intcal13,Mumun,Hongcheon Oesampori,3
+gw166,2820,50,Gangwon,intcal13,Mumun,Hongcheon Oesampori,4
+gw167,3120,80,Gangwon,intcal13,Mumun,Hongcheon Oesampori,5
+neo013,4430,29,Gangwon,intcal13,Chulmun,Hongcheon Sungsanri,Chulmun pit house
+gw334,2500,29,Gangwon,intcal13,Mumun,Hongcheon Sungsanri,Mumun 2
+neo024,4100,80,Gangwon,intcal13,Chulmun,Hongcheon Yeoknaeri,1
+neo021,4190,60,Gangwon,intcal13,Chulmun,Hongcheon Yeoknaeri,2
+neo016,4350,60,Gangwon,intcal13,Chulmun,Hongcheon Yeoknaeri,3
+cc203,2510,60,Chungcheong,intcal13,Mumun,Hongseong Bongsinri,KC-003
+cc204,2460,50,Chungcheong,intcal13,Mumun,Hongseong Bongsinri,KC-004
+cc205,2560,50,Chungcheong,intcal13,Mumun,Hongseong Bongsinri,KC-005
+cc206,2420,50,Chungcheong,intcal13,Mumun,Hongseong Bongsinri,KC-010
+cc207,2600,50,Chungcheong,intcal13,Mumun,Hongseong Bongsinri,KC-011
+cc208,2960,50,Chungcheong,intcal13,Mumun,Hongseong Bongsinri,KC-014
+cc209,2760,50,Chungcheong,intcal13,Mumun,Hongseong Bongsinri,KC-017
+cc210,2640,50,Chungcheong,intcal13,Mumun,Hongseong Daedongri,KC-002
+cc211,2690,50,Chungcheong,intcal13,Mumun,Hongseong Daedongri,KC-005
+cc82,2704,18,Chungcheong,intcal13,Mumun,Hongseong Namjangri,5
+cc83,2660,40,Chungcheong,intcal13,Mumun,Hongseong Namjangri,12
+cc84,2790,40,Chungcheong,intcal13,Mumun,Hongseong Namjangri,17
+cc81,2810,70,Chungcheong,intcal13,Mumun,Hongseong Namjangri,Namjang Zone 2 no 4
+cc306,2926,36,Chungcheong,intcal13,Mumun,Hongseong Songwolri,1
+neo145,4448,32,Chungcheong,intcal13,Chulmun,Hongseong Songwolri,Chulmun 1
+gw396,2650,40,Gangwon,intcal13,Mumun,Hwacheon City Road 3-2 construction site,2
+gw397,2420,40,Gangwon,intcal13,Mumun,Hwacheon City Road 3-2 construction site,3
+gw398,2660,40,Gangwon,intcal13,Mumun,Hwacheon City Road 3-2 construction site,5
+gw399,2570,40,Gangwon,intcal13,Mumun,Hwacheon City Road 3-2 construction site,6
+gw179,2660,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri,5
+gw180,3280,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri,6
+gw173,2540,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri,10
+gw170,2670,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri,16
+gw171,2536,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri,17
+gw172,2560,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri,18
+gw174,2610,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri,19
+gw175,2610,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri,20
+gw176,2630,50,Gangwon,intcal13,Mumun,Hwacheon Guryerri,22
+gw169,2620,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri,24
+gw177,2580,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri,27
+gw178,2520,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri,28
+gw309,2770,50,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 18
+gw317,2477,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 24
+gw318,2459,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 26
+gw319,2504,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 29
+gw320,2393,34,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 30
+gw321,2885,41,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 34
+gw310,2610,60,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 37
+gw322,2440,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 37
+gw311,2530,50,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 38
+gw323,2480,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 38
+gw312,2859,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 41
+gw324,2960,50,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 41
+gw313,2340,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 42
+gw314,2945,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 43
+gw325,2880,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 43
+gw326,2480,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 50
+gw315,2900,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 54
+gw327,2850,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 54
+gw316,3130,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 61
+gw328,2522,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 66
+gw329,2335,29,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 70
+gw330,2920,50,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 71
+gw331,2400,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 74
+gw332,2790,50,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 75
+gw333,2600,40,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-3,Mumun 77
+gw382,2455,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 15
+gw383,2855,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 18
+gw384,2565,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 20
+gw385,2795,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 21
+gw386,2480,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 23
+gw387,2520,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 26
+gw388,2480,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 30
+gw389,2865,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 33
+gw390,2815,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 35
+gw379,2450,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 5
+gw380,2495,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 6
+gw381,2525,20,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-4-B,Mumun 9
+neo001,5040,50,Gangwon,intcal13,Chulmun,Hwacheon Guryerri 1-5,Chulmun 1
+gw367,2637,29,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 10
+gw368,2432,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 12
+gw369,2449,38,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 13
+gw370,2755,36,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 19
+gw360,2570,29,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 2
+gw371,2521,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 25
+gw372,2411,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 26
+gw373,2870,36,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 29
+gw361,2515,34,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 3
+gw374,2430,36,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 37
+gw362,2415,29,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 4
+gw375,2398,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 42
+gw376,2456,29,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 45
+gw377,2454,32,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 46
+gw363,2820,29,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 5
+gw378,3026,34,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 50
+gw364,2465,29,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 6
+gw365,2340,29,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 7
+gw366,2405,29,Gangwon,intcal13,Mumun,Hwacheon Guryerri 1-5,Mumun 9
+gw337,2315,29,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",8
+gw338,2527,29,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",9
+gw339,2560,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",16
+gw340,2860,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",28
+gw350,2770,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",32
+gw341,2690,29,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",33
+gw342,2330,29,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",34
+gw351,2390,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",37
+gw343,2646,29,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",38
+gw352,2740,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",39
+gw344,2375,29,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",45
+gw345,2310,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",46
+gw346,2450,29,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",49
+gw347,2430,50,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",62
+gw354,2450,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",82
+gw355,2350,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",83
+gw356,2300,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",91
+gw357,2440,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",93
+gw358,2400,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",100
+gw348,2830,29,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",101
+gw349,2435,36,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",102
+gw359,2470,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",105
+gw353,2460,40,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",117
+gw336,2486,21,Gangwon,intcal13,Mumun,"Hwacheon Guryerri A, C-F",Zone 1-4 pit house 2
+gw204,2825,20,Gangwon,intcal13,Mumun,Hwacheon Woncheonri,Mumun 7
+gw181,2520,20,Gangwon,intcal13,Mumun,Hwacheon Yongamri,5
+gw183,2620,20,Gangwon,intcal13,Mumun,Hwacheon Yongamri,8
+gw184,2465,25,Gangwon,intcal13,Mumun,Hwacheon Yongamri,9
+gw185,2510,20,Gangwon,intcal13,Mumun,Hwacheon Yongamri,10
+gw186,2550,25,Gangwon,intcal13,Mumun,Hwacheon Yongamri,11
+gw187,2750,20,Gangwon,intcal13,Mumun,Hwacheon Yongamri,12
+gw182,2510,25,Gangwon,intcal13,Mumun,Hwacheon Yongamri,15
+gw188,2480,20,Gangwon,intcal13,Mumun,Hwacheon Yongamri,17
+gw189,2580,20,Gangwon,intcal13,Mumun,Hwacheon Yongamri,18
+gw190,2555,20,Gangwon,intcal13,Mumun,Hwacheon Yongamri,21
+cc1,2420,30,Chungcheong,intcal13,Mumun,Hwangtanri,KC-003
+cc2,2750,40,Chungcheong,intcal13,Mumun,Hwangtanri,KC-005
+cc3,2470,50,Chungcheong,intcal13,Mumun,Hwangtanri,KC-006
+hn180,2630,40,Honam,intcal13,Mumun,Hwasoon Naepyungri 1,Mumun 2
+hn181,2740,40,Honam,intcal13,Mumun,Hwasoon Naepyungri 1,Mumun 3
+hn182,2720,50,Honam,intcal13,Mumun,Hwasoon Naepyungri 1,Mumun 5
+hn183,2650,40,Honam,intcal13,Mumun,Hwasoon Naepyungri 1,Mumun 6
+hn184,2550,60,Honam,intcal13,Mumun,Hwasoon Naepyungri 1,Mumun 7
+gg282,2710,29,Gyeonggi,intcal13,Mumun,Hwasung Bansongri Mumun Settlement,no 14
+gg278,2479,26,Gyeonggi,intcal13,Mumun,Hwasung Bansongri Mumun Settlement,no 2
+gg279,2460,40,Gyeonggi,intcal13,Mumun,Hwasung Bansongri Mumun Settlement,no 5
+gg280,2508,32,Gyeonggi,intcal13,Mumun,Hwasung Bansongri Mumun Settlement,no 8
+gg281,2817,32,Gyeonggi,intcal13,Mumun,Hwasung Bansongri Mumun Settlement,no 9
+gg283,2490,40,Gyeonggi,intcal13,Mumun,Hwasung Banwoldong,PRI-53
+gg305,3140,80,Gyeonggi,intcal13,Mumun,Hwasung Cheoncheonri,no 11
+gg302,2879,22,Gyeonggi,intcal13,Mumun,Hwasung Cheoncheonri,no 6
+gg303,2816,27,Gyeonggi,intcal13,Mumun,Hwasung Cheoncheonri,no 7
+gg304,2509,49,Gyeonggi,intcal13,Mumun,Hwasung Cheoncheonri,no 9-2
+gg270,2910,43,Gyeonggi,intcal13,Mumun,Hwasung Gogeumsan,Mumun 1
+gg271,2818,29,Gyeonggi,intcal13,Mumun,Hwasung Guemuiri,no 1
+neo063,4666,15,Gyeonggi,intcal13,Chulmun,Hwasung Hyangnam 2,Chulmun 1
+gg301,2970,50,Gyeonggi,intcal13,Mumun,Hwasung Jungmunri,Zone 1 pit house
+gg272,2670,29,Gyeonggi,intcal13,Mumun,Hwasung Namyangdong,Zone 1 Mumun 1
+gg273,2790,50,Gyeonggi,intcal13,Mumun,Hwasung Namyangdong,Zone 4 Mumun 3
+gg274,2800,29,Gyeonggi,intcal13,Mumun,Hwasung Namyangdong,Zone 5 Mumun 1
+gg275,2817,29,Gyeonggi,intcal13,Mumun,Hwasung Namyangdong,Zone 5 Mumun 2
+gg276,2714,29,Gyeonggi,intcal13,Mumun,Hwasung Namyangdong,Zone 6 Mumun 3
+gg277,2797,29,Gyeonggi,intcal13,Mumun,Hwasung Namyangdong,Zone 6 Mumun 4
+neo077,4540,50,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 13
+neo053,4720,50,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 15
+neo051,4730,50,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 18
+neo066,4650,40,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 19
+neo089,4400,70,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 2
+neo064,4660,36,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 23
+neo049,4740,36,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 24
+neo059,4690,50,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 25
+neo030,4970,50,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 5
+neo069,4630,40,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 6
+neo038,4850,50,Gyeonggi,intcal13,Chulmun,Hwasung Seokgyori,no 7
+gg284,2860,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 1
+gg288,2740,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 13
+gg289,2640,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 14
+gg290,2900,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 15
+gg291,2720,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 20
+gg292,2850,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 21
+gg293,2760,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 23
+gg294,2640,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 25
+gg295,2733,29,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 26
+gg296,2760,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 28
+gg297,2630,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 29
+gg285,2660,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 3
+gg298,2810,36,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 33
+gg299,2920,60,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 34
+gg300,2700,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 35
+gg286,2831,36,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 6
+gg287,2780,50,Gyeonggi,intcal13,Mumun,Hwasung Xangsongri,Mumun 9
+gg162,2436,36,Gyeonggi,intcal13,Mumun,Icheon Suhari,B-4
+hn159,2430,36,Honam,intcal13,Mumun,Iksan Eoryangri,no 4
+hn213,2362,33,Honam,intcal13,Mumun,Iksan Heungamri,no 1
+hn63,2804,39,Honam,intcal13,Mumun,Iksan Mohyundong,Seomdari no 2
+neo159,4439,15,Honam,intcal13,Chulmun,Iksan Sinyongri Gadjeom,no 1
+hn193,2470,40,Honam,intcal13,Mumun,Iksan Songhakri,no 1
+hn194,2330,40,Honam,intcal13,Mumun,Iksan Songhakri,no 2
+hn168,2850,15,Honam,intcal13,Mumun,Iksan Yonggiri 1,no 1
+hn169,2770,20,Honam,intcal13,Mumun,Iksan Yonggiri 1,no 2
+hn170,2915,20,Honam,intcal13,Mumun,Iksan Yonggiri 1,no 3
+hn171,2805,25,Honam,intcal13,Mumun,Iksan Yonggiri 1,no 4
+hn172,2480,20,Honam,intcal13,Mumun,Iksan Yonggiri 1,no 6
+hn141,2500,43,Honam,intcal13,Mumun,Imsil Mangwolchon,1
+hn140,2208,43,Honam,intcal13,Mumun,Imsil Mangwolchon,2
+neo095,4333,56,Gyeonggi,intcal13,Chulmun,Incheon Eulwangdong,A-1
+neo091,4385,36,Gyeonggi,intcal13,Chulmun,Incheon Gyungseodong,II-1
+neo094,4340,50,Gyeonggi,intcal13,Chulmun,Incheon Gyungseodong,II-2
+gg163,3120,29,Gyeonggi,intcal13,Mumun,Incheon Gyungseodong,III-1
+neo121,3740,50,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 21 Chulmun 22
+neo118,3924,36,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 21 Chulmun 27
+neo101,4240,50,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 21 Chulmun 29
+neo096,4330,50,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 21 Chulmun 30
+neo084,4460,50,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 21 Chulmun 31
+neo103,4190,50,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 23 Chulmun 12
+neo110,4030,50,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 23 Chulmun 24
+neo098,4260,50,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 23 Chulmun 25
+neo114,3990,50,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 23 Chulmun 4
+neo104,4180,50,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 23 Chulmun 5
+neo088,4410,50,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong,District 23 Chulmun 6
+gg188,2500,50,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 1
+gg191,2510,50,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 14
+gg192,2510,50,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 15
+gg193,2600,60,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 19
+gg189,2615,39,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 2
+gg194,2480,50,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 20
+gg195,2710,50,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 25
+gg196,2650,80,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 27
+gg197,2750,50,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 29
+gg198,2630,50,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 30
+gg199,2380,50,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 32
+gg200,2430,50,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 34
+gg190,2950,90,Gyeonggi,intcal13,Mumun,Incheon Jungsandong,Mumun 5
+neo123,3730,80,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong(Chungang),Chulmun 2-1
+neo125,3662,39,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong(Chungang),Chulmun 2-2
+neo099,4260,60,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong(Chungang),Chulmun 2-3
+neo124,3700,36,Gyeonggi,intcal13,Chulmun,Incheon Jungsandong(Chungang),Chulmun 7-1
+neo067,4631,39,Gyeonggi,intcal13,Chulmun,Incheon Sammokdo 3,no 11
+neo083,4468,32,Gyeonggi,intcal13,Chulmun,Incheon Sammokdo 3,no 9
+neo082,4500,60,Gyeonggi,intcal13,Chulmun,Incheon Unbukdong,I-1
+neo100,4240,50,Gyeonggi,intcal13,Chulmun,Incheon Unbukdong,II-3
+neo087,4430,60,Gyeonggi,intcal13,Chulmun,Incheon Unbukdong,VI-10
+neo092,4380,50,Gyeonggi,intcal13,Chulmun,Incheon Unbukdong,VI-3
+neo126,3480,50,Gyeonggi,intcal13,Chulmun,Incheon Unbukdong,VI-7
+neo034,4880,50,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-11
+neo057,4691,41,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-14
+neo076,4550,80,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-16
+neo090,4390,70,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-18
+neo031,4920,80,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-21
+neo036,4870,50,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-25
+neo032,4910,50,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-26
+neo027,5040,50,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-3
+neo028,4990,60,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-30
+neo060,4680,50,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-40
+neo048,4750,70,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-42
+neo061,4680,50,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-45
+neo044,4780,50,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-48
+neo068,4630,50,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-56
+neo128,3360,60,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 1,I-2-57
+neo045,4780,60,Gyeonggi,intcal13,Chulmun,Incheon Unseodong 2,III-1
+gg166,3140,50,Gyeonggi,intcal13,Mumun,Incheon Unseodong 2,III-2
+gg167,3370,50,Gyeonggi,intcal13,Mumun,Incheon Unseodong 2,III-5
+gg168,2745,43,Gyeonggi,intcal13,Mumun,Incheon Wondangdong,no 3
+gg169,2403,28,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ga-1
+gg174,2690,60,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ga-12
+gg175,3035,36,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ga-16
+gg176,2860,80,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ga-18
+gg177,2600,40,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ga-19
+gg170,2850,60,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ga-2
+gg171,2560,80,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ga-3
+gg172,2370,40,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ga-6
+gg173,2630,40,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ga-9
+gg178,2510,60,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Na-1
+gg179,2550,40,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Na-2
+gg180,2870,50,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Na-3
+gg181,2920,60,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Na-4
+gg182,2870,80,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Na-6
+gg183,2900,80,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Na-7
+gg184,2800,36,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ra-1
+gg185,2519,34,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ra-2
+gg186,2732,32,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ra-3
+gg187,2430,60,Gyeonggi,intcal13,Mumun,Incheon Wondangdong 2,Ra-4
+neo102,4232,39,Gyeonggi,intcal13,Chulmun,Incheon Yeongjongdo,no 2
+gg164,2465,36,Gyeonggi,intcal13,Mumun,Incheon Yeongjongdo,no 6
+gg165,2525,32,Gyeonggi,intcal13,Mumun,Incheon Yeongjongdo,no 7
+neo106,4140,50,Gyeonggi,intcal13,Chulmun,Incheon Yeongjongdo,no 7
+cc234,2980,90,Chungcheong,intcal13,Mumun,Jangcheokri,no 1
+cc233,2555,29,Chungcheong,intcal13,Mumun,Jangcheokri,no 3
+hn123,2280,40,Honam,intcal13,Mumun,Jangheung Galdu 2,no 5
+hn124,2520,40,Honam,intcal13,Mumun,Jangheung Galdu 2,no 8
+hn129,2727,25,Honam,intcal13,Mumun,Jangheung Samsanri Hwasan,1
+hn127,2926,17,Honam,intcal13,Mumun,Jangheung Samsanri Hwasan,2
+hn125,2460,50,Honam,intcal13,Mumun,Jangheung Samsanri Hwasan,3
+hn126,2490,40,Honam,intcal13,Mumun,Jangheung Samsanri Hwasan,4
+hn128,2370,40,Honam,intcal13,Mumun,Jangheung Samsanri Hwasan,7
+hn15,2520,43,Honam,intcal13,Mumun,Jangheung Sinpung,1
+hn16,2450,80,Honam,intcal13,Mumun,Jangheung Sinpung,2
+hn17,2604,47,Honam,intcal13,Mumun,Jangheung Sinpung,3
+hn18,2433,24,Honam,intcal13,Mumun,Jangheung Sinpung,14
+hn19,2490,60,Honam,intcal13,Mumun,Jangheung Sinpung,21
+hn20,2460,60,Honam,intcal13,Mumun,Jangheung Sinpung,24
+hn21,2530,40,Honam,intcal13,Mumun,Jangheung Sinpung,27
+hn22,2560,80,Honam,intcal13,Mumun,Jangheung Sinpung,40
+hn66,2530,50,Honam,intcal13,Mumun,Jangseong Hwangyo 1,A-Mumun 1
+hn67,2460,60,Honam,intcal13,Mumun,Jangseong Hwangyo 1,A-Mumun 2
+hn68,2540,60,Honam,intcal13,Mumun,Jangseong Hwangyo 1,A-Mumun 4
+hn215,2640,40,Honam,intcal13,Mumun,Jangsung Wolsanri,Mumun 1
+hn216,2948,32,Honam,intcal13,Mumun,Jangsung Wolsanri,Mumun 2
+cc486,2810,40,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 1-1,Mumun 1
+cc485,2730,50,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 1-1,Mumun 3
+cc487,2730,40,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 1-1,Mumun 4
+cc488,2660,40,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 1-2,Mumun 3
+cc489,2640,40,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 1-2,Mumun 4-4
+cc490,2830,40,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 2-1,Mumun 1-1
+cc491,2800,50,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 2-1,Mumun 2-2
+cc492,2660,40,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 2-1,Mumun 4-4
+cc493,2850,40,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 2-1,Mumun 5-5
+cc494,2840,40,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 2-1,Mumun 6-6
+cc495,2570,50,Chungcheong,intcal13,Mumun,Jangtaesan Earthen Wall zone 2-2,Mumun 1-1
+cc230,2810,70,Chungcheong,intcal13,Mumun,Jecheon Neunggangri Dolmen,1
+cc232,2822,48,Chungcheong,intcal13,Mumun,Jecheon Neunggangri Dolmen,3
+neo155,3670,50,Chungcheong,intcal13,Chulmun,Jecheon Sinwoljigu,Zone III pit house
+hn205,2697,29,Honam,intcal13,Mumun,Jeongeup Jangsudong,Mumun 1
+hn206,2660,36,Honam,intcal13,Mumun,Jeongeup Jangsudong,Mumun 5
+hn91,2470,40,Honam,intcal13,Mumun,Jeongeup Oejang,1
+hn92,2590,29,Honam,intcal13,Mumun,Jeongeup Oejang,2
+hn148,2574,49,Honam,intcal13,Mumun,Jeongeup Sangpyungdong,1
+hn145,2292,36,Honam,intcal13,Mumun,Jeongeup Sangpyungdong,2
+hn146,2570,60,Honam,intcal13,Mumun,Jeongeup Sangpyungdong,2
+hn147,2650,50,Honam,intcal13,Mumun,Jeongeup Sangpyungdong,4
+gw82,3010,60,Gangwon,intcal13,Mumun,Jeongseon Auraji,1
+gw83,2719,39,Gangwon,intcal13,Mumun,Jeongseon Auraji,3
+hn151,2550,60,Honam,intcal13,Mumun,Jeonju Cheokdong,II-1
+hn154,2350,50,Honam,intcal13,Mumun,Jeonju Daejeong,1
+hn71,2740,60,Honam,intcal13,Mumun,Jeonju Jangdong 3,I-36
+hn107,2500,50,Honam,intcal13,Mumun,Jeonju Majeon zone 3,3-1 Mumun 1
+hn108,2550,80,Honam,intcal13,Mumun,Jeonju Majeon zone 3,3-1 Mumun 3
+hn109,2470,50,Honam,intcal13,Mumun,Jeonju Majeon zone 3,3-1 Mumun 4
+hn80,2430,50,Honam,intcal13,Mumun,Jeonju Osongri,2
+hn81,2480,50,Honam,intcal13,Mumun,Jeonju Osongri,3
+hn82,2310,60,Honam,intcal13,Mumun,Jeonju Osongri,4
+hn72,2320,80,Honam,intcal13,Mumun,Jeonju Songcheondong,Mumun pit house
+hn102,2770,40,Honam,intcal13,Mumun,Jeonju Songcheondong 2-ga,3
+hn103,2543,36,Honam,intcal13,Mumun,Jeonju Songcheondong 2-ga,7
+hn104,2395,43,Honam,intcal13,Mumun,Jeonju Songcheondong 2-ga,9
+hn105,2408,34,Honam,intcal13,Mumun,Jeonju Songcheondong 2-ga,10
+hn106,2490,50,Honam,intcal13,Mumun,Jeonju Songcheondong 2-ga,11
+cc212,2930,30,Chungcheong,intcal13,Mumun,Jeungpyung Seokgokri,I-1
+cc213,2870,30,Chungcheong,intcal13,Mumun,Jeungpyung Seokgokri,I-2
+neo149,4390,30,Chungcheong,intcal13,Chulmun,Jeungpyung Seokgokri,I-3
+cc214,2440,30,Chungcheong,intcal13,Mumun,Jeungpyung Seokgokri,II-1
+cc215,2450,30,Chungcheong,intcal13,Mumun,Jeungpyung Seokgokri,II-3
+hn198,3700,100,Honam,intcal13,Mumun,Jinan Jingeuneul,5
+cc185,2570,80,Chungcheong,intcal13,Mumun,Jincheon Naechonri Dangol,1
+cc186,2570,50,Chungcheong,intcal13,Mumun,Jincheon Naechonri Dangol,2
+cc216,2920,80,Chungcheong,intcal13,Mumun,Jincheon Sinwolri,Mumun 1
+yn436,2490,50,Yeongnam,intcal13,Mumun,Jinju Hotandong,1
+yn182,3050,50,Yeongnam,intcal13,Mumun,Jinju Pyunggeo dictrict 3-1,2
+neo133,3940,40,Yeongnam,intcal13,Chulmun,Jinju Pyunggeo dictrict 3-1,3
+yn177,3020,50,Yeongnam,intcal13,Mumun,Jinju Pyunggeo dictrict 3-1,4
+yn178,2940,18,Yeongnam,intcal13,Mumun,Jinju Pyunggeo dictrict 3-1,5
+yn179,2940,18,Yeongnam,intcal13,Mumun,Jinju Pyunggeo dictrict 3-1,11
+yn180,2989,13,Yeongnam,intcal13,Mumun,Jinju Pyunggeo dictrict 3-1,12
+yn181,3015,30,Yeongnam,intcal13,Mumun,Jinju Pyunggeo dictrict 3-1,23
+neo129,4450,50,Yeongnam,intcal13,Chulmun,Jinju Pyunggeo dictrict 4-1,1
+yn183,2910,50,Yeongnam,intcal13,Mumun,Jinju Pyunggeo dictrict 4-1,5
+yn184,2900,50,Yeongnam,intcal13,Mumun,Jinju Pyunggeo dictrict 4-1,5
+yn185,3021,36,Yeongnam,intcal13,Mumun,Jinju Pyunggeo dictrict 4-2,7
+yn186,3120,50,Yeongnam,intcal13,Mumun,Jinju Pyunggeo dictrict 4-2,13
+yn591,3010,50,Yeongnam,intcal13,Mumun,Jinju Sangchonri dolmen no 3~8 and prehistoric site,10
+yn590,3030,50,Yeongnam,intcal13,Mumun,Jinju Sangchonri dolmen no 3~8 and prehistoric site,2
+cc5,2510,90,Chungcheong,intcal13,Mumun,Jugyori,KC-001
+cc6,2620,40,Chungcheong,intcal13,Mumun,Jugyori,KC-008
+cc7,2770,40,Chungcheong,intcal13,Mumun,Jugyori,KC-011
+cc8,2850,80,Chungcheong,intcal13,Mumun,Jugyori,KC-013
+cc9,2840,40,Chungcheong,intcal13,Mumun,Jugyori,KC-018
+cc15,2560,40,Chungcheong,intcal13,Mumun,Majeonri C,KC-001
+hn69,2406,36,Honam,intcal13,Mumun,"Muan Dugok, Dunjeon",Dunjeon II Mumun 1
+hn70,2490,50,Honam,intcal13,Mumun,"Muan Dugok, Dunjeon",Dunjeon II Mumun 4
+hn142,2490,50,Honam,intcal13,Mumun,Muan Pyungsanri Pyungrim,no 1
+hn143,2460,50,Honam,intcal13,Mumun,Muan Pyungsanri Pyungrim,no 2
+hn144,2620,50,Honam,intcal13,Mumun,Muan Pyungsanri Pyungrim,no 3
+hn149,2530,50,Honam,intcal13,Mumun,Muan Tongjung,no 1
+hn208,2550,50,Honam,intcal13,Mumun,Muan Yeonri,Mumun 1
+hn207,2440,50,Honam,intcal13,Mumun,Muan Yeonri,Mumun 3
+neo127,3390,100,Gyeonggi,intcal13,Chulmun,Munsan Dangdongri,I-Chulmun
+gg91,2760,50,Gyeonggi,intcal13,Mumun,Munsan Dangdongri,IV-Mumun 11
+gg92,2510,60,Gyeonggi,intcal13,Mumun,Munsan Dangdongri,IV-Mumun 12
+gg90,2670,36,Gyeonggi,intcal13,Mumun,Munsan Dangdongri,IV-Mumun 2
+gg93,2550,50,Gyeonggi,intcal13,Mumun,Munsan Dangdongri,IV-Mumun 25
+gg94,2670,50,Gyeonggi,intcal13,Mumun,Munsan Dangdongri,IV-Mumun 41
+neo119,3910,50,Gyeonggi,intcal13,Chulmun,Munsan Dangdongri,VII-Chulmun 1
+neo115,3960,60,Gyeonggi,intcal13,Chulmun,Munsan Dangdongri,VII-Chulmun 2
+neo122,3730,60,Gyeonggi,intcal13,Chulmun,Munsan Dangdongri,VII-Chulmun 3
+hn26,2740,50,Honam,intcal13,Mumun,Naju Domindong,Mumun 11
+hn27,3150,50,Honam,intcal13,Mumun,Naju Domindong,Mumun 21
+hn25,2510,50,Honam,intcal13,Mumun,Naju Domindong,Mumun 4
+hn204,2923,27,Honam,intcal13,Mumun,Naju Donggokri Hoingsan,no 1
+hn83,3014,29,Honam,intcal13,Mumun,Naju Iam,no 1
+hn130,2860,50,Honam,intcal13,Mumun,Naju Ibamdong Ibam,no 1
+hn131,2590,50,Honam,intcal13,Mumun,Naju Ibamdong Ibam,no 2
+hn132,2680,40,Honam,intcal13,Mumun,Naju Ibamdong Ibam,no 3
+hn133,2676,32,Honam,intcal13,Mumun,Naju Ibamdong Ibam,no 4
+hn135,2880,50,Honam,intcal13,Mumun,Naju Ibamdong Ibam,no 6
+hn134,2680,50,Honam,intcal13,Mumun,Naju Ibamdong Ibam,no 7
+hn57,2710,50,Honam,intcal13,Mumun,Naju Jangdongri,Mumun 11
+hn56,2700,50,Honam,intcal13,Mumun,Naju Jangdongri,Mumun 14
+hn59,2790,50,Honam,intcal13,Mumun,Naju Jangdongri,Mumun 26
+hn60,2785,36,Honam,intcal13,Mumun,Naju Jangdongri,Mumun 28
+hn55,2630,60,Honam,intcal13,Mumun,Naju Jangdongri,Mumun 3
+hn61,2820,50,Honam,intcal13,Mumun,Naju Jangdongri,Mumun 30
+hn58,2740,50,Honam,intcal13,Mumun,Naju Jangdongri,Mumun 42
+hn84,2741,29,Honam,intcal13,Mumun,Naju Maesungri,I-1
+hn85,2328,31,Honam,intcal13,Mumun,Naju Maesungri,III-1
+hn48,2580,50,Honam,intcal13,Mumun,Naju Ungokdong 2,II-Mumun 18
+hn46,2410,40,Honam,intcal13,Mumun,Naju Ungokdong 2,II-Mumun 2
+hn49,2470,50,Honam,intcal13,Mumun,Naju Ungokdong 2,II-Mumun 31
+hn50,2560,50,Honam,intcal13,Mumun,Naju Ungokdong 2,II-Mumun 33
+hn51,2550,50,Honam,intcal13,Mumun,Naju Ungokdong 2,II-Mumun 41
+hn47,2420,40,Honam,intcal13,Mumun,Naju Ungokdong 2,II-Mumun 6
+hn43,2450,60,Honam,intcal13,Mumun,Naju Ungokdong 2,I-Mumun 2
+hn44,2380,60,Honam,intcal13,Mumun,Naju Ungokdong 2,I-Mumun 4
+hn45,2550,60,Honam,intcal13,Mumun,Naju Ungokdong 2,I-Mumun 5
+hn54,2300,50,Honam,intcal13,Mumun,Naju Ungokdong 4,III-Mumun 3
+hn52,2300,60,Honam,intcal13,Mumun,Naju Ungokdong 4,I-Mumun 11
+hn53,2130,60,Honam,intcal13,Mumun,Naju Ungokdong 4,I-Mumun 18
+hn98,2450,50,Honam,intcal13,Mumun,Naju Yungcheon,no 6
+neo113,4000,50,Gyeonggi,intcal13,Chulmun,Namyangju Byeolnae 5,I-1-1-1
+neo108,4040,50,Gyeonggi,intcal13,Chulmun,Namyangju Byeolnae 5,I-1-1-2
+neo116,3940,50,Gyeonggi,intcal13,Chulmun,Namyangju Byeolnae 5,I-1-2
+neo107,4080,50,Gyeonggi,intcal13,Chulmun,Namyangju Byeolnae 5,I-1-3
+neo109,4030,50,Gyeonggi,intcal13,Chulmun,Namyangju Byeolnae 5,III-1
+neo117,3930,60,Gyeonggi,intcal13,Chulmun,Namyangju Hopyungdong Jisaeul,no 1
+neo120,3860,50,Gyeonggi,intcal13,Chulmun,Namyangju Hopyungdong Jisaeul,no 2
+neo111,4027,35,Gyeonggi,intcal13,Chulmun,Namyangju Hopyungdong Jisaeul,no 3
+gg86,2874,39,Gyeonggi,intcal13,Mumun,Namyangju Hopyungdong Jisaeul,no 4
+cc415,3060,60,Chungcheong,intcal13,Mumun,Nonsan Naedong,4-KC-003
+cc416,2810,50,Chungcheong,intcal13,Mumun,Nonsan Naedong,4-KC-004
+cc520,2930,50,Chungcheong,intcal13,Mumun,Ochang Haksori,site 1 no 1
+cc61,3000,50,Chungcheong,intcal13,Mumun,Ochang Haksori,site 1 no 2
+cc62,2910,60,Chungcheong,intcal13,Mumun,Ochang Haksori,site 1 no 3
+cc64,3010,60,Chungcheong,intcal13,Mumun,Ochang Haksori,site 2 no 1
+cc63,2900,60,Chungcheong,intcal13,Mumun,Ochang Haksori,site 2 no 2
+cc67,2543,46,Chungcheong,intcal13,Mumun,Ochang Jangdaeri,no 14
+cc68,2447,46,Chungcheong,intcal13,Mumun,Ochang Jangdaeri,no 16
+cc69,2512,46,Chungcheong,intcal13,Mumun,Ochang Jangdaeri,no 17
+cc65,2483,39,Chungcheong,intcal13,Mumun,Ochang Jangdaeri,no 2
+cc66,2568,39,Chungcheong,intcal13,Mumun,Ochang Jangdaeri,no 3
+neo043,4790,80,Gyeonggi,intcal13,Chulmun,Oido Gaundesalmak shell midden,no 1
+neo144,4467,29,Chungcheong,intcal13,Chulmun,Okcheon Daecheonri,pit house
+gg154,2600,40,Gyeonggi,intcal13,Mumun,Osan Cheonghakdong,Zone 6-1 no 2
+gg155,2570,40,Gyeonggi,intcal13,Mumun,Osan Cheonghakdong,Zone 6-1 no 5
+gg156,2620,40,Gyeonggi,intcal13,Mumun,Osan Cheonghakdong,Zone 6-1 no 6
+neo015,4360,50,Gangwon,intcal13,Chulmun,Osanri 5,Zone B pit house
+cc176,2500,26,Chungcheong,intcal13,Mumun,Oseokri,95 pit house 4
+cc517,2450,22,Chungcheong,intcal13,Mumun,Osong Unified Silla Settlement,Mumun pit house
+gg201,2700,50,Gyeonggi,intcal13,Mumun,Paju Danghari,no 1
+gg202,2430,50,Gyeonggi,intcal13,Mumun,Paju Danghari,no 2
+yn68,2410,50,Yeongnam,intcal13,Mumun,Pohang Chogokri,no 1
+yn69,2620,36,Yeongnam,intcal13,Mumun,Pohang Chogokri,no 5
+yn70,3060,40,Yeongnam,intcal13,Mumun,Pohang Chogokri,no 6
+yn77,2590,50,Yeongnam,intcal13,Mumun,Pohang Daebori,1
+yn510,2520,60,Yeongnam,intcal13,Mumun,Pohang Daegokri,Gibuk pit house 2
+yn511,2490,60,Yeongnam,intcal13,Mumun,Pohang Daegokri,Gibuk pit house 3
+yn319,2720,50,Yeongnam,intcal13,Mumun,Pohang Daeryunri,6
+yn320,2660,60,Yeongnam,intcal13,Mumun,Pohang Daeryunri,10
+yn321,2660,60,Yeongnam,intcal13,Mumun,Pohang Daeryunri,13
+yn322,2670,60,Yeongnam,intcal13,Mumun,Pohang Daeryunri,19
+yn323,2870,50,Yeongnam,intcal13,Mumun,Pohang Daeryunri,22
+yn316,2850,60,Yeongnam,intcal13,Mumun,Pohang Daeryunri,I-4
+yn317,2830,50,Yeongnam,intcal13,Mumun,Pohang Daeryunri,I-5
+yn318,2580,50,Yeongnam,intcal13,Mumun,Pohang Daeryunri,I-6
+yn72,2580,40,Yeongnam,intcal13,Mumun,Pohang Daeryunri,no 10
+yn73,2960,40,Yeongnam,intcal13,Mumun,Pohang Daeryunri,no 11
+yn71,2650,40,Yeongnam,intcal13,Mumun,Pohang Daeryunri,no 4-2
+yn315,2630,50,Yeongnam,intcal13,Mumun,Pohang Daeryunri(Hakdanggol),I-6
+yn78,2980,50,Yeongnam,intcal13,Mumun,Pohang Gangsari 2,no 1
+yn79,2660,60,Yeongnam,intcal13,Mumun,Pohang Gangsari 2,no 3
+yn80,2680,50,Yeongnam,intcal13,Mumun,Pohang Gangsari 2,no 4
+yn76,2970,60,Yeongnam,intcal13,Mumun,Pohang Gumanri,no 10
+yn74,2760,50,Yeongnam,intcal13,Mumun,Pohang Gumanri,no 5
+yn75,2640,50,Yeongnam,intcal13,Mumun,Pohang Gumanri,no 6
+yn324,2930,50,Yeongnam,intcal13,Mumun,Pohang Iinri,2
+yn325,2920,40,Yeongnam,intcal13,Mumun,Pohang Iinri,8
+yn484,2860,50,Yeongnam,intcal13,Mumun,Pohang Iinri 2,I-4
+yn483,2800,36,Yeongnam,intcal13,Mumun,Pohang Iinri 2,I-5
+yn482,2640,50,Yeongnam,intcal13,Mumun,Pohang Iinri 2,I-6
+yn481,2600,50,Yeongnam,intcal13,Mumun,Pohang Iinri 2,II-7
+yn480,2500,50,Yeongnam,intcal13,Mumun,Pohang Iinri 2,II-8
+yn479,2820,50,Yeongnam,intcal13,Mumun,Pohang Iinri 2,IV-13
+yn356,2518,32,Yeongnam,intcal13,Mumun,Pohang Jigokdong,Na-1
+yn357,2440,36,Yeongnam,intcal13,Mumun,Pohang Jigokdong,Na-2
+yn426,2840,40,Yeongnam,intcal13,Mumun,Pohang Namsongri 1,Mumun 12
+yn422,2560,40,Yeongnam,intcal13,Mumun,Pohang Namsongri 1,Mumun 16
+yn424,2640,40,Yeongnam,intcal13,Mumun,Pohang Namsongri 1,Mumun 34
+yn425,2800,40,Yeongnam,intcal13,Mumun,Pohang Namsongri 1,Mumun 36
+yn423,2610,40,Yeongnam,intcal13,Mumun,Pohang Namsongri 1,Mumun 9
+yn427,2500,40,Yeongnam,intcal13,Mumun,Pohang Namsongri 2-3,Mumun 1
+yn429,2890,40,Yeongnam,intcal13,Mumun,Pohang Namsongri 2-3,Mumun 2
+yn428,2580,40,Yeongnam,intcal13,Mumun,Pohang Namsongri 2-3,Mumun 3
+yn430,2440,60,Yeongnam,intcal13,Mumun,Pohang Samjung1ri 1-2,31
+yn431,2690,60,Yeongnam,intcal13,Mumun,Pohang Samjung1ri 1-2,59
+yn433,2700,60,Yeongnam,intcal13,Mumun,Pohang Samjung2ri,8
+yn432,2690,60,Yeongnam,intcal13,Mumun,Pohang Samjung2ri,9
+yn434,2490,40,Yeongnam,intcal13,Mumun,Pohang Sunggokri 1-2,I-1
+yn435,2940,40,Yeongnam,intcal13,Mumun,Pohang Sunggokri 1-2,II-2
+yn227,3130,60,Yeongnam,intcal13,Mumun,Pohang Sunggokri 1-4,1
+yn228,2880,50,Yeongnam,intcal13,Mumun,Pohang Sunggokri 1-4,12
+yn229,3070,50,Yeongnam,intcal13,Mumun,Pohang Sunggokri 1-4,17
+yn230,2810,50,Yeongnam,intcal13,Mumun,Pohang Sunggokri 1-4,21
+yn231,2640,50,Yeongnam,intcal13,Mumun,Pohang Sunggokri 1-4,27
+yn232,2880,50,Yeongnam,intcal13,Mumun,Pohang Sunggokri 1-4,33
+yn233,2700,60,Yeongnam,intcal13,Mumun,Pohang Sunggokri 1-4,37
+yn234,2890,50,Yeongnam,intcal13,Mumun,Pohang Sunggokri 1-4,48
+yn556,2878,39,Yeongnam,intcal13,Mumun,Pohang Wolpori,425 A-1
+yn557,2956,36,Yeongnam,intcal13,Mumun,Pohang Wolpori,425 A-3
+yn451,2950,60,Yeongnam,intcal13,Mumun,Pohang Wondong 2,22
+yn449,2850,60,Yeongnam,intcal13,Mumun,Pohang Wondong 2,56
+yn450,2870,60,Yeongnam,intcal13,Mumun,Pohang Wondong 2,57
+yn448,2710,60,Yeongnam,intcal13,Mumun,Pohang Wondong 2,58
+gw159,2750,50,Gangwon,intcal13,Mumun,Pyeongchang Cheondongri Majiri,Majiri 1
+gw160,2850,50,Gangwon,intcal13,Mumun,Pyeongchang Cheondongri Majiri,Majiri 2
+gw161,2680,50,Gangwon,intcal13,Mumun,Pyeongchang Cheondongri Majiri,Majiri 4
+gw162,2620,50,Gangwon,intcal13,Mumun,Pyeongchang Cheondongri Majiri,Majiri 8
+gw392,2880,40,Gangwon,intcal13,Mumun,Pyeongchang Hupyeongri,no 3
+gw393,2820,40,Gangwon,intcal13,Mumun,Pyeongchang Hupyeongri,no 5
+gw394,2820,50,Gangwon,intcal13,Mumun,Pyeongchang Hupyeongri,no 6
+gw391,2390,40,Gangwon,intcal13,Mumun,Pyeongchang Hupyeongri,pit house 1-1
+gw271,2840,40,Gangwon,intcal13,Mumun,Pyeongchang Jongburi,II-1
+gw272,2910,40,Gangwon,intcal13,Mumun,Pyeongchang Jongburi,II-2
+gw273,2921,46,Gangwon,intcal13,Mumun,Pyeongchang Jongburi,II-3
+gw274,2820,50,Gangwon,intcal13,Mumun,Pyeongchang Jongburi,II-4
+gw275,2870,40,Gangwon,intcal13,Mumun,Pyeongchang Jongburi,II-6
+gw276,2740,60,Gangwon,intcal13,Mumun,Pyeongchang Jongburi,III-1
+gw262,2820,40,Gangwon,intcal13,Mumun,Pyeongchang Yaksuri,A-6
+gw263,2760,40,Gangwon,intcal13,Mumun,Pyeongchang Yaksuri,A-7
+gw264,2780,50,Gangwon,intcal13,Mumun,Pyeongchang Yaksuri,A-8
+gw265,2850,50,Gangwon,intcal13,Mumun,Pyeongchang Yaksuri,A-9
+gw266,2800,40,Gangwon,intcal13,Mumun,Pyeongchang Yaksuri,B-1
+gw269,2830,40,Gangwon,intcal13,Mumun,Pyeongchang Yaksuri,B-11
+gw270,2870,40,Gangwon,intcal13,Mumun,Pyeongchang Yaksuri,B-12
+gw267,2740,50,Gangwon,intcal13,Mumun,Pyeongchang Yaksuri,B-6
+gw268,2850,100,Gangwon,intcal13,Mumun,Pyeongchang Yaksuri,B-8
+gw158,2460,40,Gangwon,intcal13,Mumun,Pyeongchang Yonghangri,no 1
+gw157,2919,21,Gangwon,intcal13,Mumun,Pyeongchang Yonghangri,no 2
+gg251,2860,80,Gyeonggi,intcal13,Mumun,Pyungtaek Chilgoidong,no 1
+gg252,2430,60,Gyeonggi,intcal13,Mumun,Pyungtaek Chilgoidong,no 3
+gg253,2480,60,Gyeonggi,intcal13,Mumun,Pyungtaek Chilgoidong,no 4
+gg254,2570,50,Gyeonggi,intcal13,Mumun,Pyungtaek Chilgoidong,no 5
+gg250,2560,80,Gyeonggi,intcal13,Mumun,Pyungtaek Jijedong,pit house 2-2
+gg215,2810,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Da-4
+gg216,2990,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Da-5
+gg217,2990,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Da-6
+gg218,2930,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Da-7
+gg206,2840,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-10
+gg207,2550,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-13
+gg208,2850,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-14
+gg209,2470,60,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-15
+gg210,2840,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-16
+gg211,2950,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-17
+gg212,2840,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-18
+gg203,2850,60,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-2
+gg213,2750,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-20
+gg214,2850,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-28
+gg204,2300,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-4
+gg205,2930,60,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ga-7
+gg221,2900,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ra-10
+gg222,3010,60,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ra-20
+gg219,2740,50,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ra-4
+gg220,2470,80,Gyeonggi,intcal13,Mumun,Pyungtaek Sosadong,Ra-7
+gg226,2370,40,Gyeonggi,intcal13,Mumun,Pyungtaek Suwolamri,zone 2 no 10
+gg223,2480,40,Gyeonggi,intcal13,Mumun,Pyungtaek Suwolamri,zone 2 no 5
+gg224,2420,50,Gyeonggi,intcal13,Mumun,Pyungtaek Suwolamri,zone 2 no 8
+gg225,2330,40,Gyeonggi,intcal13,Mumun,Pyungtaek Suwolamri,zone 2 no 9
+gg227,2500,40,Gyeonggi,intcal13,Mumun,Pyungtaek Suwolamri,zone 4 no 3
+gg256,2937,26,Gyeonggi,intcal13,Mumun,Pyungtaek Tojinri,no 1
+gg257,2360,60,Gyeonggi,intcal13,Mumun,Pyungtaek Tojinri,no 2
+gg258,2598,38,Gyeonggi,intcal13,Mumun,Pyungtaek Tojinri,no 3
+gg255,2510,20,Gyeonggi,intcal13,Mumun,Pyungtaek Tojinri san-29-1,no 8
+gg236,2710,70,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 1 no 12
+gg233,2860,60,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 1 no 3
+gg234,2830,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 1 no 6
+gg235,2660,70,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 1 no 8
+gg237,2740,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-1 no 6
+gg238,2730,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-1 no 7
+gg239,2470,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-1 no 9
+gg240,2830,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-2 no 1
+gg245,2480,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-2 no 11
+gg246,2640,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-2 no 14
+gg247,2610,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-2 no 16
+gg241,2540,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-2 no 2
+gg242,2880,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-2 no 3
+gg243,2740,60,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-2 no 4
+gg244,2710,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 2-2 no 9
+gg248,2460,50,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori,zone 3 no 2
+gg230,2725,20,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori san-41-1,no 1
+gg232,2775,20,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori san-41-1,no 10
+gg228,2770,20,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori san-41-1,no 13
+gg229,2510,20,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori san-41-1,no 4
+gg231,2755,20,Gyeonggi,intcal13,Mumun,Pyungtaek Yanggyori san-41-1,no 5
+gw335,2630,40,Gangwon,intcal13,Mumun,Samcheok Hosanri,B-1-Mumun 1
+yn416,2700,25,Yeongnam,intcal13,Mumun,Sancheong Hachonri district 3,III-12
+yn417,2730,20,Yeongnam,intcal13,Mumun,Sancheong Hachonri district 3,III-15
+yn419,2835,25,Yeongnam,intcal13,Mumun,Sancheong Hachonri district 3,III-2
+yn418,2825,25,Yeongnam,intcal13,Mumun,Sancheong Hachonri district 3,III-4
+yn415,2680,25,Yeongnam,intcal13,Mumun,Sancheong Hachonri district 3,III-7
+cc48,2474,32,Chungcheong,intcal13,Mumun,Sangdaedong,no 1
+cc49,2641,24,Chungcheong,intcal13,Mumun,Sangdaedong,no 5
+cc47,2890,40,Chungcheong,intcal13,Mumun,Sangdaedong,no 8
+yn67,2920,40,Yeongnam,intcal13,Mumun,Sangju Bokryongdong 256,B4 Grid pit house 1
+neo153,4336,28,Chungcheong,intcal13,Chulmun,Sangjungri,Chulmun 1
+cc76,2630,40,Chungcheong,intcal13,Mumun,Seocheon Bongsunri,III-2-3
+cc77,2720,40,Chungcheong,intcal13,Mumun,Seocheon Bongsunri,III-3-1
+cc226,2844,32,Chungcheong,intcal13,Mumun,Seocheon Chudongri,A-1
+cc519,2300,60,Chungcheong,intcal13,Mumun,Seocheon Chudongri,A-10
+cc227,2800,40,Chungcheong,intcal13,Mumun,Seocheon Chudongri,A-2
+cc228,2799,49,Chungcheong,intcal13,Mumun,Seocheon Chudongri,A-4
+cc229,2501,49,Chungcheong,intcal13,Mumun,Seocheon Chudongri,A-5
+cc304,2520,60,Chungcheong,intcal13,Mumun,Seocheon Chudongri 3,no 1
+cc305,2490,60,Chungcheong,intcal13,Mumun,Seocheon Chudongri 3,no 3
+cc382,2610,50,Chungcheong,intcal13,Mumun,Seocheon Mungokri,no 2
+cc383,2500,50,Chungcheong,intcal13,Mumun,Seocheon Mungokri,no 3
+cc12,2650,50,Chungcheong,intcal13,Mumun,Seokgokri,KC-001
+cc13,2520,40,Chungcheong,intcal13,Mumun,Seokgokri,KC-002
+cc14,2490,40,Chungcheong,intcal13,Mumun,Seokgokri,KC-003
+cc321,2820,50,Chungcheong,intcal13,Mumun,Seokmun Complex Construction site,no 1
+cc328,2740,40,Chungcheong,intcal13,Mumun,Seokmun Complex Construction site,no 15
+cc323,2810,40,Chungcheong,intcal13,Mumun,Seokmun Complex Construction site,no 20
+cc324,2820,40,Chungcheong,intcal13,Mumun,Seokmun Complex Construction site,no 26
+cc325,2700,40,Chungcheong,intcal13,Mumun,Seokmun Complex Construction site,no 33
+cc326,2770,40,Chungcheong,intcal13,Mumun,Seokmun Complex Construction site,no 38
+cc327,2770,40,Chungcheong,intcal13,Mumun,Seokmun Complex Construction site,no 42
+cc322,2880,40,Chungcheong,intcal13,Mumun,Seokmun Complex Construction site,no 9
+cc117,2841,31,Chungcheong,intcal13,Mumun,Seosan Ilramri,no 1
+cc118,2914,31,Chungcheong,intcal13,Mumun,Seosan Ilramri,no 2
+cc263,2575,36,Chungcheong,intcal13,Mumun,Seosan Sinsongri,no 1
+cc267,2810,60,Chungcheong,intcal13,Mumun,Seosan Sinsongri,no 12
+cc268,2670,60,Chungcheong,intcal13,Mumun,Seosan Sinsongri,no 13
+cc269,2690,36,Chungcheong,intcal13,Mumun,Seosan Sinsongri,no 14
+cc270,2916,39,Chungcheong,intcal13,Mumun,Seosan Sinsongri,no 16
+cc264,2540,50,Chungcheong,intcal13,Mumun,Seosan Sinsongri,no 3
+cc265,2490,50,Chungcheong,intcal13,Mumun,Seosan Sinsongri,no 7
+cc266,2735,36,Chungcheong,intcal13,Mumun,Seosan Sinsongri,no 9
+cc376,2858,31,Chungcheong,intcal13,Mumun,Seosan Wangjungri,I-1
+neo139,4520,60,Chungcheong,intcal13,Chulmun,Seosan Wangjungri,I-1
+cc378,2870,60,Chungcheong,intcal13,Mumun,Seosan Wangjungri,I-11
+cc377,2850,50,Chungcheong,intcal13,Mumun,Seosan Wangjungri,I-5
+cc379,2880,50,Chungcheong,intcal13,Mumun,Seosan Wangjungri,II-1
+cc380,2800,60,Chungcheong,intcal13,Mumun,Seosan Wangjungri,II-3
+cc381,2810,50,Chungcheong,intcal13,Mumun,Seosan Wangjungri,II-4
+gg99,2888,31,Gyeonggi,intcal13,Mumun,Seoul Godeokdong,D-1
+gg100,2891,32,Gyeonggi,intcal13,Mumun,Seoul Godeokdong,D-2
+gg101,2361,25,Gyeonggi,intcal13,Mumun,Seoul Godeokdong,D-3
+gg102,2567,24,Gyeonggi,intcal13,Mumun,Seoul Godeokdong,D-5
+neo047,4750,60,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 11
+neo080,4520,80,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 12
+neo029,4970,50,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 13
+neo033,4900,50,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 16
+neo041,4810,36,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 18
+neo037,4860,50,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 19
+neo050,4730,50,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 2
+neo042,4800,50,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 20
+neo070,4620,70,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 23
+neo058,4690,50,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 4
+neo035,4870,50,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 6
+neo039,4830,50,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 7
+neo074,4580,60,Gyeonggi,intcal13,Chulmun,Siheung Neunggokdong,Chulmun 9
+gg125,3020,50,Gyeonggi,intcal13,Mumun,Siheung Neunggokdong,Mumun 4
+gg126,3050,50,Gyeonggi,intcal13,Mumun,Siheung Neunggokdong,Mumun 5
+gg127,3060,50,Gyeonggi,intcal13,Mumun,Siheung Neunggokdong,Mumun 6
+gg128,2750,70,Gyeonggi,intcal13,Mumun,Siheung Neunggokdong,Mumun 7
+gg129,3009,38,Gyeonggi,intcal13,Mumun,Siheung Neunggokdong,Mumun pit house
+cc4,2670,50,Chungcheong,intcal13,Mumun,Sinanri,KC-001
+gw44,2830,60,Gangwon,intcal13,Mumun,Sokcho Joyangdong,no 5
+hn160,2550,50,Honam,intcal13,Mumun,Suncheon Deokamdong 2,no 4
+hn8,2500,50,Honam,intcal13,Mumun,Suncheon Gagokdong,no 2
+neo160,3010,40,Honam,intcal13,Chulmun,Suncheon Maryunri Maryun,Chulmun pit house
+hn200,2898,32,Honam,intcal13,Mumun,Suncheon Maryunri Maryun,Zone 1 no 1
+hn201,2820,50,Honam,intcal13,Mumun,Suncheon Maryunri Maryun,Zone 1 no 3
+hn202,2920,50,Honam,intcal13,Mumun,Suncheon Maryunri Maryun,Zone 2 no 1
+hn203,2907,26,Honam,intcal13,Mumun,Suncheon Maryunri Maryun,Zone 2 no 2
+gg103,2670,36,Gyeonggi,intcal13,Mumun,Sungnam Dongpangyo,21-1 no 12
+neo105,4140,50,Gyeonggi,intcal13,Chulmun,Sungnam Dongpangyo,24-1 no 10
+gg107,2920,36,Gyeonggi,intcal13,Mumun,Sungnam Dongpangyo,24-1 no 18
+gg104,2597,41,Gyeonggi,intcal13,Mumun,Sungnam Dongpangyo,24-1 no 2
+gg105,2675,36,Gyeonggi,intcal13,Mumun,Sungnam Dongpangyo,24-1 no 3
+gg106,2680,36,Gyeonggi,intcal13,Mumun,Sungnam Dongpangyo,24-1 no 9
+gg108,2660,40,Gyeonggi,intcal13,Mumun,Sungnam Yeosudong,II Mumun 3
+gg109,2730,60,Gyeonggi,intcal13,Mumun,Sungnam Yeosudong,II Mumun 6
+gg114,2790,50,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 1
+gg121,2890,60,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 12
+gg122,2900,50,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 17
+gg123,2790,60,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 18
+gg115,2780,50,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 2
+gg124,2740,50,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 20
+gg116,2730,60,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 3
+gg117,2700,60,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 4
+gg118,2850,60,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 5
+gg119,2800,60,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 7
+gg120,2850,60,Gyeonggi,intcal13,Mumun,Suwon Homaesildong Guemgokdong,Mumun 8
+gg112,2925,43,Gyeonggi,intcal13,Mumun,Suwon Imokdong,no 1
+gg113,3170,40,Gyeonggi,intcal13,Mumun,Suwon Imokdong,no 2
+gg110,2801,29,Gyeonggi,intcal13,Mumun,Suwon Yuljeondong,no 1
+gg111,3043,34,Gyeonggi,intcal13,Mumun,Suwon Yuljeondong,no 3
+yn155,2840,43,Yeongnam,intcal13,Mumun,Uisan Deoksinri Osan,II-12
+yn156,2824,39,Yeongnam,intcal13,Mumun,Uisan Deoksinri Osan,II-15
+yn269,2270,80,Yeongnam,intcal13,Mumun,Uisan Sanhadong,no 1
+yn274,2360,50,Yeongnam,intcal13,Mumun,Uisan Sanhadong,no 15
+yn275,2460,60,Yeongnam,intcal13,Mumun,Uisan Sanhadong,no 16
+yn276,2540,60,Yeongnam,intcal13,Mumun,Uisan Sanhadong,no 17
+yn270,2240,60,Yeongnam,intcal13,Mumun,Uisan Sanhadong,no 4
+yn271,2400,50,Yeongnam,intcal13,Mumun,Uisan Sanhadong,no 7
+yn272,2660,80,Yeongnam,intcal13,Mumun,Uisan Sanhadong,no 8
+yn273,2670,60,Yeongnam,intcal13,Mumun,Uisan Sanhadong,no 9
+yn528,2732,20,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,C-22
+yn529,2799,15,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,C-34
+yn530,2759,15,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,C-36
+yn531,2642,20,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,D-40
+yn534,2699,20,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,F-17
+yn535,2744,21,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,F-18
+yn536,2488,20,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,F-22
+yn537,2488,20,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,F-28
+yn538,2661,20,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,F-29
+yn539,2676,21,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,F-34
+yn540,2701,20,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,F-35
+yn532,2739,20,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,F-4
+yn533,2451,20,Yeongnam,intcal13,Mumun,Uisan Sanhadong 1-4,F-9
+yn277,2960,60,Yeongnam,intcal13,Mumun,Uisan Sanhadong Hwaam,no 3
+yn278,3220,60,Yeongnam,intcal13,Mumun,Uisan Sanhadong Hwaam,no 4
+yn279,3007,43,Yeongnam,intcal13,Mumun,Uisan Sanhadong Hwaam,no 5
+gg159,2777,29,Gyeonggi,intcal13,Mumun,Uiwang Idong,no 1
+gg160,2730,36,Gyeonggi,intcal13,Mumun,Uiwang Idong,no 10
+gg161,2720,39,Gyeonggi,intcal13,Mumun,Uiwang Idong,no 11
+yn263,2500,60,Yeongnam,intcal13,Mumun,Ulju Banyeonri,no 1
+yn267,2590,60,Yeongnam,intcal13,Mumun,Ulju Banyeonri,no 13
+yn268,2130,60,Yeongnam,intcal13,Mumun,Ulju Banyeonri,no 14
+yn264,2613,43,Yeongnam,intcal13,Mumun,Ulju Banyeonri,no 2
+yn265,2796,43,Yeongnam,intcal13,Mumun,Ulju Banyeonri,no 8
+yn266,2560,60,Yeongnam,intcal13,Mumun,Ulju Banyeonri,no 9
+yn253,2751,31,Yeongnam,intcal13,Mumun,Ulju Guyeongri,IV-15
+yn254,2800,50,Yeongnam,intcal13,Mumun,Ulju Guyeongri,IV-16
+yn251,2797,35,Yeongnam,intcal13,Mumun,Ulju Guyeongri,IV-2
+yn255,2888,39,Yeongnam,intcal13,Mumun,Ulju Guyeongri,IV-22
+yn252,2630,50,Yeongnam,intcal13,Mumun,Ulju Guyeongri,IV-8
+yn256,2720,60,Yeongnam,intcal13,Mumun,Ulju Guyeongri,V-1-1
+yn257,2740,60,Yeongnam,intcal13,Mumun,Ulju Guyeongri,V-1-14
+yn258,2934,35,Yeongnam,intcal13,Mumun,Ulju Guyeongri,V-1-17
+yn259,2560,50,Yeongnam,intcal13,Mumun,Ulju Guyeongri,V-1-20
+yn260,2988,31,Yeongnam,intcal13,Mumun,Ulju Guyeongri,V-1-28
+yn261,2870,40,Yeongnam,intcal13,Mumun,Ulju Guyeongri,V-1-29
+yn262,2487,35,Yeongnam,intcal13,Mumun,Ulju Guyeongri,V-2-2
+yn86,2360,50,Yeongnam,intcal13,Mumun,Ulju Oegwangri Settlement,no 18
+yn87,2290,50,Yeongnam,intcal13,Mumun,Ulju Oegwangri Settlement,no 23
+yn85,2430,50,Yeongnam,intcal13,Mumun,Ulju Oegwangri Settlement,no 8
+yn389,2800,40,Yeongnam,intcal13,Mumun,Ulsan Banggiri 286-3,no 1
+yn390,2620,60,Yeongnam,intcal13,Mumun,Ulsan Banggiri 286-3,no 4
+yn172,2600,25,Yeongnam,intcal13,Mumun,Ulsan Bansongri,no 1
+yn173,2690,25,Yeongnam,intcal13,Mumun,Ulsan Bansongri,no 4
+yn174,2600,20,Yeongnam,intcal13,Mumun,Ulsan Bansongri,no 5
+yn175,2730,20,Yeongnam,intcal13,Mumun,Ulsan Bansongri,no 6
+yn176,2735,25,Yeongnam,intcal13,Mumun,Ulsan Bansongri,no 8
+yn385,2435,20,Yeongnam,intcal13,Mumun,Ulsan Banyeonri Gamakmot,I-1
+yn383,2415,20,Yeongnam,intcal13,Mumun,Ulsan Banyeonri Gamakmot,I-12
+yn387,2515,20,Yeongnam,intcal13,Mumun,Ulsan Banyeonri Gamakmot,I-3
+yn384,2425,20,Yeongnam,intcal13,Mumun,Ulsan Banyeonri Gamakmot,I-8
+yn386,2460,20,Yeongnam,intcal13,Mumun,Ulsan Banyeonri Gamakmot,II-3
+yn382,2395,20,Yeongnam,intcal13,Mumun,Ulsan Banyeonri Gamakmot,II-5
+yn388,2575,25,Yeongnam,intcal13,Mumun,Ulsan Banyeonri Gamakmot,III-1
+yn332,2600,80,Yeongnam,intcal13,Mumun,Ulsan Changpyungdong ,no 1
+yn337,2590,60,Yeongnam,intcal13,Mumun,Ulsan Changpyungdong ,no 14
+yn333,2580,60,Yeongnam,intcal13,Mumun,Ulsan Changpyungdong ,no 2
+yn334,2840,80,Yeongnam,intcal13,Mumun,Ulsan Changpyungdong ,no 4
+yn335,2810,80,Yeongnam,intcal13,Mumun,Ulsan Changpyungdong ,no 5
+yn336,2950,60,Yeongnam,intcal13,Mumun,Ulsan Changpyungdong ,no 6
+yn95,2920,50,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong,Ga-1
+yn96,3100,55,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong,Ga-5
+yn97,2820,60,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong,Ga-6
+yn98,2650,50,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong,Na-5
+yn81,2920,50,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong 2,no 1
+yn82,2710,50,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong 2,no 11
+yn83,2590,50,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong 2,no 25
+yn109,2885,20,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong Gajaegol 2,no 13
+yn110,2712,12,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong Gajaegol 4,no 1
+yn111,2833,15,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong Gajaegol 4,no 2
+yn112,2815,15,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong Gajaegol 4,no 3
+yn113,2845,20,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong Gajaegol 4,no 4
+yn114,2785,12,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong Gajaegol 4,no 5
+yn115,3057,29,Yeongnam,intcal13,Mumun,Ulsan Cheongokdong Gummaeul,Mumun 4
+yn154,2865,20,Yeongnam,intcal13,Mumun,Ulsan Dalcheon,no 5
+yn118,2671,39,Yeongnam,intcal13,Mumun,Ulsan Daundong 436-5,Mumun 6
+yn119,2697,43,Yeongnam,intcal13,Mumun,Ulsan Daundong 436-5,Mumun 7
+yn120,2650,39,Yeongnam,intcal13,Mumun,Ulsan Daundong 436-5,Mumun 8
+yn142,2460,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,I-1
+yn147,2645,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,I-10
+yn148,2500,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,I-12
+yn149,2460,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,I-13
+yn150,2510,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,I-14
+yn151,2755,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,I-15
+yn143,2465,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,I-5
+yn144,2475,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,I-6
+yn145,2745,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,I-8
+yn146,2490,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,I-9
+yn152,2865,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,II-13
+yn153,2555,20,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,III-8
+yn524,2551,29,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,no 1
+yn525,2810,40,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,no 2
+yn526,2540,40,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,no 4
+yn527,2830,40,Yeongnam,intcal13,Mumun,Ulsan Daundong Saegakdan,no 6
+yn158,2720,40,Yeongnam,intcal13,Mumun,Ulsan Dongcheonri,no 13
+yn159,2715,29,Yeongnam,intcal13,Mumun,Ulsan Dongcheonri,no 14
+yn157,2930,60,Yeongnam,intcal13,Mumun,Ulsan Dongcheonri,no 5
+yn488,2490,50,Yeongnam,intcal13,Mumun,Ulsan Dusanri Nokdongri (Dusan),Dusan Mumun 1
+yn485,2760,32,Yeongnam,intcal13,Mumun,Ulsan Dusanri Nokdongri (Dusan),Dusan Mumun 2
+yn486,2641,29,Yeongnam,intcal13,Mumun,Ulsan Dusanri Nokdongri (Dusan),Dusan Mumun 4
+yn487,2810,50,Yeongnam,intcal13,Mumun,Ulsan Dusanri Nokdongri (Dusan),Dusan Mumun 6
+yn491,2730,40,Yeongnam,intcal13,Mumun,Ulsan Dusanri Nokdongri (Nokdong),Nokdong Mumun 11
+yn492,2720,40,Yeongnam,intcal13,Mumun,Ulsan Dusanri Nokdongri (Nokdong),Nokdong Mumun 12
+yn493,2680,40,Yeongnam,intcal13,Mumun,Ulsan Dusanri Nokdongri (Nokdong),Nokdong Mumun 16
+yn494,2770,40,Yeongnam,intcal13,Mumun,Ulsan Dusanri Nokdongri (Nokdong),Nokdong Mumun 17
+yn489,2650,40,Yeongnam,intcal13,Mumun,Ulsan Dusanri Nokdongri (Nokdong),Nokdong Mumun 3
+yn490,2820,40,Yeongnam,intcal13,Mumun,Ulsan Dusanri Nokdongri (Nokdong),Nokdong Mumun 9
+yn193,2740,40,Yeongnam,intcal13,Mumun,Ulsan Duwang-Mugeo road construction site,Duwangdong 1
+yn194,2860,30,Yeongnam,intcal13,Mumun,Ulsan Duwang-Mugeo road construction site,Duwangdong 2
+yn195,2823,25,Yeongnam,intcal13,Mumun,Ulsan Duwang-Mugeo road construction site,Duwangdong 3
+yn196,2620,30,Yeongnam,intcal13,Mumun,Ulsan Duwang-Mugeo road construction site,Duwangdong 4
+yn127,2730,40,Yeongnam,intcal13,Mumun,Ulsan Gacheonri Jinae,no 1
+yn300,2660,100,Yeongnam,intcal13,Mumun,Ulsan Geumdanri,no 101
+yn298,2830,100,Yeongnam,intcal13,Mumun,Ulsan Geumdanri,no 22
+yn299,2880,70,Yeongnam,intcal13,Mumun,Ulsan Geumdanri,no 59
+yn459,2380,40,Yeongnam,intcal13,Mumun,Ulsan Gilcheon,Ma pit house 1
+yn521,2480,40,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Janggueom,Mumun 11
+yn522,2780,50,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Janggueom,Mumun 3
+yn523,2580,36,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Janggueom,Mumun 7
+yn138,2780,50,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Janggueom 2,no 13
+yn139,2850,40,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Janggueom 2,no 15
+yn136,2885,22,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Janggueom 2,no 2
+yn140,3140,80,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Janggueom 2,no 23
+yn141,2650,40,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Janggueom 2,no 24
+yn137,2984,49,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Janggueom 2,no 5
+yn135,2842,12,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Saenggideul,no 1
+yn187,2537,49,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Yulri,pit house 1-1
+yn188,2510,60,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Yulri,pit house 1-2
+yn191,2910,39,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Yulri,pit house 2-15
+yn192,2990,60,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Yulri,pit house 2-17
+yn189,2620,60,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Yulri,pit house 2-4
+yn190,2960,50,Yeongnam,intcal13,Mumun,Ulsan Gulhwari Yulri,pit house 2-9
+yn131,2475,20,Yeongnam,intcal13,Mumun,Ulsan Gusuri 277,no 12
+yn132,2805,20,Yeongnam,intcal13,Mumun,Ulsan Gusuri 277,no 14
+yn133,2560,20,Yeongnam,intcal13,Mumun,Ulsan Gusuri 277,no 18
+yn128,2800,20,Yeongnam,intcal13,Mumun,Ulsan Gusuri 277,no 2
+yn134,2710,20,Yeongnam,intcal13,Mumun,Ulsan Gusuri 277,no 20
+yn129,2685,20,Yeongnam,intcal13,Mumun,Ulsan Gusuri 277,no 3
+yn130,2495,20,Yeongnam,intcal13,Mumun,Ulsan Gusuri 277,no 5
+yn214,2520,80,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,I-1
+yn215,2690,60,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,I-8
+yn218,2810,60,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,II-11
+yn219,2720,60,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,II-12
+yn220,2650,80,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,II-16
+yn221,2760,60,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,II-19
+yn216,2710,80,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,II-2
+yn222,2780,60,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,II-28
+yn217,2610,80,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,II-6
+yn223,2860,60,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,III-1
+yn225,2740,60,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,III-11
+yn226,2690,70,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,III-14
+yn224,2790,40,Yeongnam,intcal13,Mumun,Ulsan Guyeongri,III-7
+yn126,2450,20,Yeongnam,intcal13,Mumun,Ulsan Gyodongri 192-37,no 15
+yn121,2795,20,Yeongnam,intcal13,Mumun,Ulsan Gyodongri 192-37,no 3
+yn122,2650,20,Yeongnam,intcal13,Mumun,Ulsan Gyodongri 192-37,no 4
+yn123,2685,20,Yeongnam,intcal13,Mumun,Ulsan Gyodongri 192-37,no 5
+yn124,2800,20,Yeongnam,intcal13,Mumun,Ulsan Gyodongri 192-37,no 8
+yn125,2825,15,Yeongnam,intcal13,Mumun,Ulsan Gyodongri 192-37,no 9
+yn447,2840,50,Yeongnam,intcal13,Mumun,Ulsan Hwalcheon Seoha Cheonjeonri,Cheonjeonri pit house
+yn446,2860,60,Yeongnam,intcal13,Mumun,Ulsan Hwalcheon Seoha Cheonjeonri,Hwalcheon 1
+yn444,2720,50,Yeongnam,intcal13,Mumun,Ulsan Hwalcheon Seoha Cheonjeonri,Hwalcheon 5
+yn445,2800,60,Yeongnam,intcal13,Mumun,Ulsan Hwalcheon Seoha Cheonjeonri,Hwalcheon 6
+yn443,2550,60,Yeongnam,intcal13,Mumun,Ulsan Hwalcheon Seoha Cheonjeonri,Hwalcheon 7
+yn562,2820,50,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,II-1
+yn563,2370,50,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,II-2
+yn564,2590,60,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,II-3
+yn565,2530,60,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,II-6
+yn566,2350,60,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,II-7
+yn567,2340,60,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,III-2-1
+yn573,2440,50,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,III-2-11
+yn574,2900,50,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,III-2-13
+yn575,2840,50,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,III-2-15
+yn568,5020,80,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,III-2-2
+yn569,2700,80,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,III-2-5
+yn570,2610,50,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,III-2-6
+yn571,2400,60,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,III-2-8
+yn572,2460,50,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,III-2-9
+yn576,2900,50,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,IV-1
+yn577,2930,60,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,IV-2
+yn578,2420,50,Yeongnam,intcal13,Mumun,Ulsan Hyomundong san-68-1,IV-4
+yn340,2500,50,Yeongnam,intcal13,Mumun,Ulsan Hyomundong Yuldong,Yuldong 1
+yn346,2720,80,Yeongnam,intcal13,Mumun,Ulsan Hyomundong Yuldong,Yuldong 10
+yn347,2650,80,Yeongnam,intcal13,Mumun,Ulsan Hyomundong Yuldong,Yuldong 12
+yn348,2764,49,Yeongnam,intcal13,Mumun,Ulsan Hyomundong Yuldong,Yuldong 13
+yn349,2630,80,Yeongnam,intcal13,Mumun,Ulsan Hyomundong Yuldong,Yuldong 15
+yn341,2720,80,Yeongnam,intcal13,Mumun,Ulsan Hyomundong Yuldong,Yuldong 2
+yn342,2770,40,Yeongnam,intcal13,Mumun,Ulsan Hyomundong Yuldong,Yuldong 3
+yn343,2504,49,Yeongnam,intcal13,Mumun,Ulsan Hyomundong Yuldong,Yuldong 4
+yn344,2603,34,Yeongnam,intcal13,Mumun,Ulsan Hyomundong Yuldong,Yuldong 6
+yn345,2790,43,Yeongnam,intcal13,Mumun,Ulsan Hyomundong Yuldong,Yuldong 9
+yn117,2490,20,Yeongnam,intcal13,Mumun,Ulsan Ibamri,no 10
+yn116,2515,20,Yeongnam,intcal13,Mumun,Ulsan Ibamri,no 5
+yn235,2720,50,Yeongnam,intcal13,Mumun,Ulsan Joilri,no 1
+yn236,2670,50,Yeongnam,intcal13,Mumun,Ulsan Joilri,no 2
+yn237,2850,80,Yeongnam,intcal13,Mumun,Ulsan Joilri,no 3
+yn239,2580,60,Yeongnam,intcal13,Mumun,Ulsan Joilri,no 7
+yn240,2830,80,Yeongnam,intcal13,Mumun,Ulsan Joilri,no 8
+yn88,2680,50,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,Gangdong waterpark pit house 2
+yn90,2910,50,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,Gangdong waterpark pit house 22
+yn91,2810,50,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,Gangdong waterpark pit house 25
+yn92,2760,50,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,Gangdong waterpark pit house 31
+yn93,2800,50,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,Gangdong waterpark pit house 42
+yn94,2530,50,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,Gangdong waterpark pit house 45
+yn89,3010,50,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,Gangdong waterpark pit house 9
+yn509,2820,29,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,no 1
+yn506,2740,40,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,no 3
+yn507,2850,40,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,no 4
+yn508,2800,40,Yeongnam,intcal13,Mumun,Ulsan Jungjadong,no 5
+yn99,2780,60,Yeongnam,intcal13,Mumun,Ulsan Jungsandong Yaksu 1,no 1
+yn100,2710,60,Yeongnam,intcal13,Mumun,Ulsan Jungsandong Yaksu 1,no 2
+yn101,2660,60,Yeongnam,intcal13,Mumun,Ulsan Jungsandong Yaksu 1,no 3
+yn102,2590,60,Yeongnam,intcal13,Mumun,Ulsan Jungsandong Yaksu 1,no 4
+yn103,2630,60,Yeongnam,intcal13,Mumun,Ulsan Jungsandong Yaksu 1,no 5
+yn104,2840,60,Yeongnam,intcal13,Mumun,Ulsan Jungsandong Yaksu 1,no 6
+yn106,2715,25,Yeongnam,intcal13,Mumun,Ulsan Jungsandong Yaksu 2,no 11
+yn107,2725,25,Yeongnam,intcal13,Mumun,Ulsan Jungsandong Yaksu 2,no 27
+yn108,2720,25,Yeongnam,intcal13,Mumun,Ulsan Jungsandong Yaksu 2,no 31
+yn105,2775,25,Yeongnam,intcal13,Mumun,Ulsan Jungsandong Yaksu 2,no 6
+yn410,2710,50,Yeongnam,intcal13,Mumun,Ulsan Maegokdong 330-2,no 33
+yn411,2710,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong 330-2,no 37
+yn414,2780,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong 330-2,no 42
+yn412,2760,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong 330-2,no 49
+yn409,2710,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong 330-2,no 5
+yn413,2770,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong 330-2,no 53
+yn338,3060,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 1,no 2
+yn339,2240,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 1,no 9
+yn169,2860,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 2,no 10
+yn170,2690,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 2,no 15
+yn171,2760,80,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 2,no 20
+yn164,2850,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 3,no 2
+yn165,2804,32,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 3,no 3
+yn166,2890,30,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 3,no 6
+yn167,2870,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 3,no 8
+yn168,2870,40,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 3,no 9
+yn162,2820,60,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 4,no 12
+yn163,2850,60,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 4,no 15
+yn160,2800,50,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 4,no 8
+yn161,2730,60,Yeongnam,intcal13,Mumun,Ulsan Maegokdong district 4,no 9
+yn352,2836,43,Yeongnam,intcal13,Mumun,Ulsan Oegwangri Gwiji,Mumun I-1
+yn353,2630,50,Yeongnam,intcal13,Mumun,Ulsan Oegwangri Gwiji,Mumun I-6
+yn350,2787,39,Yeongnam,intcal13,Mumun,Ulsan Oegwangri Gwiji,Mumun III-14
+yn351,2871,39,Yeongnam,intcal13,Mumun,Ulsan Oegwangri Gwiji,Mumun III-34
+yn408,2860,60,Yeongnam,intcal13,Mumun,Ulsan Okdong,no 1
+yn406,2929,34,Yeongnam,intcal13,Mumun,Ulsan Okdong,no 2
+yn407,2828,25,Yeongnam,intcal13,Mumun,Ulsan Okdong,no 4
+yn393,2483,16,Yeongnam,intcal13,Mumun,Ulsan Sangandong,I-3
+yn396,2521,17,Yeongnam,intcal13,Mumun,Ulsan Sangandong,II-1 pit house 5
+yn395,2458,17,Yeongnam,intcal13,Mumun,Ulsan Sangandong,II-1 pit house 8
+yn398,2868,17,Yeongnam,intcal13,Mumun,Ulsan Sangandong,II-13
+yn397,2576,19,Yeongnam,intcal13,Mumun,Ulsan Sangandong,II-3
+yn394,2493,24,Yeongnam,intcal13,Mumun,Ulsan Sangandong,II-6
+yn400,2515,20,Yeongnam,intcal13,Mumun,Ulsan Sangyeonam,I-1
+yn404,2755,20,Yeongnam,intcal13,Mumun,Ulsan Sangyeonam,II-1
+yn402,2700,20,Yeongnam,intcal13,Mumun,Ulsan Sangyeonam,III-1
+yn403,2750,20,Yeongnam,intcal13,Mumun,Ulsan Sangyeonam,IV-17
+yn399,2460,20,Yeongnam,intcal13,Mumun,Ulsan Sangyeonam,IV-9
+yn401,2685,20,Yeongnam,intcal13,Mumun,Ulsan Sangyeonam,V-2
+yn392,2600,30,Yeongnam,intcal13,Mumun,Ulsan Sayeonri Neumne,no 3
+yn391,2220,30,Yeongnam,intcal13,Mumun,Ulsan Sayeonri Neumne,no 4
+yn84,2910,50,Yeongnam,intcal13,Mumun,Ulsan Seobudong Biseokgol,no 1
+yn469,2767,24,Yeongnam,intcal13,Mumun,Ulsan Seodong,E-10
+yn470,2810,40,Yeongnam,intcal13,Mumun,Ulsan Seodong,E-21
+yn471,2880,40,Yeongnam,intcal13,Mumun,Ulsan Seodong,E-26
+yn472,2470,40,Yeongnam,intcal13,Mumun,Ulsan Seodong,E-40
+yn473,2550,40,Yeongnam,intcal13,Mumun,Ulsan Seodong,E-42
+yn210,2417,29,Yeongnam,intcal13,Mumun,Ulsan Seohari Apdeul,no 1
+yn211,2710,40,Yeongnam,intcal13,Mumun,Ulsan Seohari Apdeul,no 2
+yn212,2776,34,Yeongnam,intcal13,Mumun,Ulsan Seohari Apdeul,no 4
+yn213,2690,24,Yeongnam,intcal13,Mumun,Ulsan Seohari Apdeul,no 5
+yn197,2805,40,Yeongnam,intcal13,Mumun,Ulsan Sinhyundong,no 1
+yn359,3010,60,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-1
+yn366,2880,50,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-1-1
+yn368,3050,50,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-1-10
+yn369,2910,50,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-1-15
+yn370,2900,50,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-1-16
+yn371,2760,50,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-1-18
+yn372,2880,50,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-1-23
+yn373,2870,50,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-1-24
+yn367,2740,50,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-1-4
+yn360,2660,60,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-15
+yn361,2840,50,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-29
+yn362,2580,60,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-37
+yn364,2760,60,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-45
+yn363,2620,60,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-51
+yn365,2950,29,Yeongnam,intcal13,Mumun,Ulsan station - Eonyang sinhwari,E-52
+yn296,2450,40,Yeongnam,intcal13,Mumun,Ulsan Yaeumdong,no 1
+yn297,2546,29,Yeongnam,intcal13,Mumun,Ulsan Yaeumdong,no 2
+yn504,2875,20,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Janghyun),II-Mumun 13
+yn505,2690,20,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Janghyun),II-Mumun 16
+yn501,2512,12,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Janghyun),II-Mumun 2
+yn502,2472,12,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Janghyun),II-Mumun 6
+yn503,2475,15,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Janghyun),II-Mumun 7
+yn500,2485,15,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Janghyun),I-Mumun 3
+yn498,2745,20,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Yaksa),II-Mumun 1
+yn499,2845,12,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Yaksa),II-Mumun 2
+yn495,2635,20,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Yaksa),I-Mumun 2
+yn496,2493,11,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Yaksa),I-Mumun 3
+yn497,2673,15,Yeongnam,intcal13,Mumun,Ulsan Yaksadong 393 Janghyundong 53 (Yaksa),I-Mumun 6
+yn474,2688,15,Yeongnam,intcal13,Mumun,Ulsan Yaksadong Pyungsan 1,no 12
+yn475,2768,15,Yeongnam,intcal13,Mumun,Ulsan Yaksadong Pyungsan 1,no 13
+yn476,2567,15,Yeongnam,intcal13,Mumun,Ulsan Yaksadong Pyungsan 1,no 14
+yn477,2621,20,Yeongnam,intcal13,Mumun,Ulsan Yaksadong Pyungsan 1,no 16
+yn478,2730,17,Yeongnam,intcal13,Mumun,Ulsan Yaksadong Pyungsan 1,no 21
+yn442,3030,60,Yeongnam,intcal13,Mumun,Ulsan Yeonamdong,B-2-10
+yn440,2630,50,Yeongnam,intcal13,Mumun,Ulsan Yeonamdong,B-2-13
+yn441,2810,50,Yeongnam,intcal13,Mumun,Ulsan Yeonamdong,B-2-5
+yn439,2540,50,Yeongnam,intcal13,Mumun,Ulsan Yeonamdong,B-2-7
+yn405,2860,50,Yeongnam,intcal13,Mumun,Ulsan Yeonamdong 705,no 1
+yn198,2339,32,Yeongnam,intcal13,Mumun,Ulsan Yugokdong Ujeongdong,Mumun 1
+yn201,2437,36,Yeongnam,intcal13,Mumun,Ulsan Yugokdong Ujeongdong,Mumun 10
+yn202,2640,50,Yeongnam,intcal13,Mumun,Ulsan Yugokdong Ujeongdong,Mumun 13
+yn199,2584,32,Yeongnam,intcal13,Mumun,Ulsan Yugokdong Ujeongdong,Mumun 2
+yn200,2640,50,Yeongnam,intcal13,Mumun,Ulsan Yugokdong Ujeongdong,Mumun 4
+yn421,2540,60,Yeongnam,intcal13,Mumun,Unmun Dam Sunjiri,Mumun pit house
+hn110,2520,50,Honam,intcal13,Mumun,Wanju Sangunri,Ra-2
+hn111,2570,50,Honam,intcal13,Mumun,Wanju Sangunri,Ra-6
+hn112,2446,36,Honam,intcal13,Mumun,Wanju Sangunri,Ra-8
+hn185,2380,50,Honam,intcal13,Mumun,Wanju Sinpung,Ga Mumun 1
+hn186,2404,34,Honam,intcal13,Mumun,Wanju Sinpung,Ga Mumun 2
+hn187,2310,50,Honam,intcal13,Mumun,Wanju Sinpung,Ga Mumun 4
+hn188,2440,50,Honam,intcal13,Mumun,Wanju Sinpung,Ga Mumun 5
+hn118,2450,39,Honam,intcal13,Mumun,Wanju Ungyo,I-6
+hn119,2400,50,Honam,intcal13,Mumun,Wanju Ungyo,I-8
+cc10,2350,40,Chungcheong,intcal13,Mumun,Wolgiri,KC-005
+cc11,2770,40,Chungcheong,intcal13,Mumun,Wolgiri,KC-007
+neo022,4180,29,Gangwon,intcal13,Chulmun,Wonju Bangokdong,Zone 1 Chulmun 1
+neo025,3766,19,Gangwon,intcal13,Chulmun,Wonju Bangokdong,Zone 1 Chulmun 2
+gw76,2684,9,Gangwon,intcal13,Mumun,Wonju Bangokdong,Zone 1 Mumun 1
+gw77,2874,14,Gangwon,intcal13,Mumun,Wonju Bangokdong,Zone 1 Mumun 3
+gw78,2865,14,Gangwon,intcal13,Mumun,Wonju Bangokdong,Zone 1 Mumun 5
+gw64,3015,36,Gangwon,intcal13,Mumun,Wonju Donghwari,Mumun 1
+gw62,2880,50,Gangwon,intcal13,Mumun,Wonju Gahyundong,Mumun 14
+gw63,2830,40,Gangwon,intcal13,Mumun,Wonju Gahyundong,Mumun 4
+gw65,2495,32,Gangwon,intcal13,Mumun,Wonju Munmakri,no 10
+gw66,2930,29,Gangwon,intcal13,Mumun,Wonju Munmakri,no 11
+gw67,2942,32,Gangwon,intcal13,Mumun,Wonju Munmakri,no 12
+gw68,2842,28,Gangwon,intcal13,Mumun,Wonju Munmakri,no 14
+gw69,2805,29,Gangwon,intcal13,Mumun,Wonju Munmakri,no 15
+gw70,2850,29,Gangwon,intcal13,Mumun,Wonju Munmakri,no 16
+gw71,2684,29,Gangwon,intcal13,Mumun,Wonju Munmakri,no 17
+gw72,2880,29,Gangwon,intcal13,Mumun,Wonju Munmakri,no 18
+gw73,2779,32,Gangwon,intcal13,Mumun,Wonju Munmakri,no 3
+gw74,2620,40,Gangwon,intcal13,Mumun,Wonju Munmakri,no 4
+gw75,2585,29,Gangwon,intcal13,Mumun,Wonju Munmakri,no 6
+gw79,2840,50,Gangwon,intcal13,Mumun,Wonju Taejangdong,Mumun 2
+gw80,2915,31,Gangwon,intcal13,Mumun,Wonju Taejangdong,Mumun 3
+gw81,2885,26,Gangwon,intcal13,Mumun,Wonju Taejangdong,Mumun 4
+gw395,2980,50,Gangwon,intcal13,Mumun,Yanggu Haean Mandaeri,no 2
+gw45,2650,50,Gangwon,intcal13,Mumun,Yanggu Hari,YMCC-14
+gg149,3040,50,Gyeonggi,intcal13,Mumun,Yangpyung Samsungri,no 1
+gg148,2580,50,Gyeonggi,intcal13,Mumun,Yangpyung Samsungri,no 2
+gg16,2570,40,Gyeonggi,intcal13,Mumun,Yangpyung Yangsuri Sangsukjung,B-2
+neo010,4482,43,Gangwon,intcal13,Chulmun,Yangyang Gapyungri,Chulmun 1
+gw46,2810,60,Gangwon,intcal13,Mumun,Yangyang Imhojungri,no 11
+gw47,2770,50,Gangwon,intcal13,Mumun,Yangyang Imhojungri,no 2
+gw48,2700,60,Gangwon,intcal13,Mumun,Yangyang Imhojungri,no 3
+gw49,2920,50,Gangwon,intcal13,Mumun,Yangyang Imhojungri,no 4
+gw50,2737,36,Gangwon,intcal13,Mumun,Yangyang Imhojungri,no 5
+neo008,4590,70,Gangwon,intcal13,Chulmun,Yangyang Jigyungri,no 4
+neo014,4420,60,Gangwon,intcal13,Chulmun,Yangyang Jigyungri,no 6
+neo007,4600,80,Gangwon,intcal13,Chulmun,Yangyang Jigyungri,no 7
+neo009,4485,24,Gangwon,intcal13,Chulmun,Yangyang Songjeonri,no 1
+neo005,4632,27,Gangwon,intcal13,Chulmun,Yangyang Songjeonri,no 2
+hn164,2507,41,Honam,intcal13,Mumun,Yeoeuigok,A-1
+hn165,2570,40,Honam,intcal13,Mumun,Yeoeuigok,A-2
+hn166,2395,32,Honam,intcal13,Mumun,Yeoeuigok,A-3
+hn162,2441,32,Honam,intcal13,Mumun,Yeoeuigok,B-1
+hn163,2430,40,Honam,intcal13,Mumun,Yeoeuigok,B-3
+gg150,2622,29,Gyeonggi,intcal13,Mumun,Yeoncheon Gangnaeri,no 4
+gg151,2840,40,Gyeonggi,intcal13,Mumun,Yeoncheon Gangnaeri,no 5
+gg152,2840,40,Gyeonggi,intcal13,Mumun,Yeoncheon Gangnaeri,no 6
+gg153,2478,29,Gyeonggi,intcal13,Mumun,Yeoncheon Hapsuri,Mumun 6
+yn420,2976,43,Yeongnam,intcal13,Mumun,Yeongcheon Sinriri,no 2
+hn113,2470,90,Honam,intcal13,Mumun,Yeonggwang Majeon,Mumun 1
+hn117,2440,80,Honam,intcal13,Mumun,Yeonggwang Majeon,Mumun 10
+hn114,2730,40,Honam,intcal13,Mumun,Yeonggwang Majeon,Mumun 2
+hn115,2740,40,Honam,intcal13,Mumun,Yeonggwang Majeon,Mumun 5
+hn116,2620,40,Honam,intcal13,Mumun,Yeonggwang Majeon,Mumun 6
+hn189,2495,20,Honam,intcal13,Mumun,Yeonggwang Nonsanri Geumjung,no 1
+hn190,2511,15,Honam,intcal13,Mumun,Yeonggwang Nonsanri Geumjung,no 2
+hn191,2470,20,Honam,intcal13,Mumun,Yeonggwang Nonsanri Geumjung,no 3
+hn192,2440,20,Honam,intcal13,Mumun,Yeonggwang Nonsanri Geumjung,no 4
+cc368,2987,43,Chungcheong,intcal13,Mumun,Yeongi Botongri,no 1
+cc369,2790,43,Chungcheong,intcal13,Mumun,Yeongi Botongri,no 2
+cc370,2786,43,Chungcheong,intcal13,Mumun,Yeongi Botongri,no 3
+cc371,2842,43,Chungcheong,intcal13,Mumun,Yeongi Botongri,no 4
+cc372,2816,43,Chungcheong,intcal13,Mumun,Yeongi Botongri,no 5
+cc373,2895,43,Chungcheong,intcal13,Mumun,Yeongi Botongri,no 7
+cc374,2940,43,Chungcheong,intcal13,Mumun,Yeongi Botongri,no 8
+cc375,2875,43,Chungcheong,intcal13,Mumun,Yeongi Botongri,no 9
+cc478,2970,50,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,3-1-C-1
+cc479,2895,36,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,3-1-C-2
+cc484,2930,50,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,3-1-C-27
+cc480,2902,36,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,3-1-C-3-1
+cc481,2810,50,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,3-1-C-3-2
+cc482,2720,50,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,3-1-C-5
+cc483,2930,50,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,3-1-C-6
+cc353,2750,50,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,A Mumun 11
+cc354,3070,50,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,A Mumun 12
+cc352,2950,50,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,A Mumun 5
+cc417,2990,40,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,KC-003
+cc418,2954,32,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,KC-004
+cc419,2885,29,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,KC-005
+cc420,2925,29,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,KC-007
+cc421,2935,29,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,KC-010
+cc422,3069,34,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,KC-012
+cc423,2863,32,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,KC-013
+cc424,2850,60,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,KC-014
+cc425,2930,40,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,KC-017
+cc426,2720,50,Chungcheong,intcal13,Mumun,Yeongi Daepyungri,KC-018
+cc335,2778,39,Chungcheong,intcal13,Mumun,Yeongi Eungamri Gamagol B,CBD-001
+cc384,2890,50,Chungcheong,intcal13,Mumun,Yeongi Songdamri,Zone 28 KC-001
+cc385,2730,50,Chungcheong,intcal13,Mumun,Yeongi Songdamri,Zone 28 KC-012
+cc386,2960,50,Chungcheong,intcal13,Mumun,Yeongi Songdamri,Zone 28 KC-031
+cc387,2840,50,Chungcheong,intcal13,Mumun,Yeongi Songdamri,Zone 29-1 KC-002
+cc388,2880,50,Chungcheong,intcal13,Mumun,Yeongi Songdamri,Zone 29-3 KC-006
+cc389,2860,50,Chungcheong,intcal13,Mumun,Yeongi Songdamri,Zone 29-3 KC-008
+cc390,2870,50,Chungcheong,intcal13,Mumun,Yeongi Songdamri,Zone 30 KC-001
+cc391,2890,50,Chungcheong,intcal13,Mumun,Yeongi Songdamri,Zone 30 KC-005
+cc392,2760,50,Chungcheong,intcal13,Mumun,Yeongi Songdamri,Zone 34 KC-001
+cc396,2740,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-005
+cc397,2590,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-011
+cc398,2700,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-014
+cc399,2760,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-017
+cc400,2930,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-022
+cc401,2870,60,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-025
+cc402,2860,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-030
+cc403,2940,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-032
+cc404,2860,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-033
+cc405,2920,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-034
+cc406,2850,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-035
+cc407,2930,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-036
+cc408,2870,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-038
+cc409,2790,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-041
+cc410,2800,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-042
+cc411,2720,60,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-045
+cc412,2940,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-049
+cc413,2600,80,Chungcheong,intcal13,Mumun,Yeongi Songwonri,KC-076
+cc393,2400,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,Zone 9 KC-001
+cc394,2460,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,Zone 9 KC-002
+cc395,2800,50,Chungcheong,intcal13,Mumun,Yeongi Songwonri,Zone 9 KC-003
+neo081,4508,23,Gyeonggi,intcal13,Chulmun,Yeongjongdo Neundeul,Zone A pit house
+neo004,4670,50,Gangwon,intcal13,Chulmun,Yeongwol Jucheonri,no 1
+gw58,2980,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 10
+gw59,2840,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 11
+gw60,2890,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 12
+gw61,2930,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 13
+neo002,4840,50,Gangwon,intcal13,Chulmun,Yeongwol Jucheonri,no 2
+gw51,2840,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 3
+gw52,2800,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 4
+gw53,2880,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 5
+gw54,2940,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 6
+gw55,2940,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 7
+gw56,2870,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 8
+gw57,2780,40,Gangwon,intcal13,Mumun,Yeongwol Jucheonri,no 9
+gw277,2890,50,Gangwon,intcal13,Mumun,Yeongwol Wasuckri,I-1
+gw278,2900,40,Gangwon,intcal13,Mumun,Yeongwol Wasuckri,I-2
+gw279,2980,40,Gangwon,intcal13,Mumun,Yeongwol Wasuckri,I-3
+gw280,2950,50,Gangwon,intcal13,Mumun,Yeongwol Wasuckri,I-4
+gw281,2920,50,Gangwon,intcal13,Mumun,Yeongwol Wasuckri,I-6
+gw282,2810,40,Gangwon,intcal13,Mumun,Yeongwol Wasuckri,II-1
+hn136,2600,40,Honam,intcal13,Mumun,Yeosu Hwadongri Angol,no 1
+hn137,2535,29,Honam,intcal13,Mumun,Yeosu Hwadongri Angol,no 3
+hn138,2190,60,Honam,intcal13,Mumun,Yeosu Hwadongri Angol,no 3-1
+hn139,2410,40,Honam,intcal13,Mumun,Yeosu Hwadongri Angol,no 4
+hn217,2340,40,Honam,intcal13,Mumun,Yeosu Hwadongri Angol Site,no 4
+hn199,2490,40,Honam,intcal13,Mumun,Yeosu Ungcheondong Ungdong,Songgukri type pit house
+hn86,2720,50,Honam,intcal13,Mumun,Yeosu Wolnaedong Sangchon Dolmen,II-1
+hn87,2738,39,Honam,intcal13,Mumun,Yeosu Wolnaedong Sangchon Dolmen,II-2
+hn90,2446,39,Honam,intcal13,Mumun,Yeosu Wolnaedong Sangchon Dolmen,II-3 middle Mumun
+hn88,2779,32,Honam,intcal13,Mumun,Yeosu Wolnaedong Sangchon Dolmen,III-1
+hn89,2740,50,Honam,intcal13,Mumun,Yeosu Wolnaedong Sangchon Dolmen,III-2
+cc78,2570,39,Chungcheong,intcal13,Mumun,Yesan Sapgyo Duri,no 5
+cc235,2910,35,Chungcheong,intcal13,Mumun,Yesan Singari,I-1
+cc236,3008,43,Chungcheong,intcal13,Mumun,Yesan Singari,I-2
+cc237,2960,50,Chungcheong,intcal13,Mumun,Yesan Singari,I-3
+cc238,2780,60,Chungcheong,intcal13,Mumun,Yesan Singari,II-3
+cc242,2950,50,Chungcheong,intcal13,Mumun,Yesan Singari,II-3
+cc239,2980,60,Chungcheong,intcal13,Mumun,Yesan Singari,II-5
+cc240,2760,50,Chungcheong,intcal13,Mumun,Yesan Singari,II-5
+cc241,2780,50,Chungcheong,intcal13,Mumun,Yesan Singari,II-6
+cc243,2860,60,Chungcheong,intcal13,Mumun,Yesan Singari,III-7
+cc109,2880,50,Chungcheong,intcal13,Mumun,Yesan Yerimri,no 2
+gw247,3010,60,Gangwon,intcal13,Mumun,Yongamri,no 104
+gw248,2560,50,Gangwon,intcal13,Mumun,Yongamri,no 105
+gw249,2450,50,Gangwon,intcal13,Mumun,Yongamri,no 107
+gw250,2590,39,Gangwon,intcal13,Mumun,Yongamri,no 109
+gw231,2681,49,Gangwon,intcal13,Mumun,Yongamri,no 11
+gw251,2544,39,Gangwon,intcal13,Mumun,Yongamri,no 114
+gw252,2827,49,Gangwon,intcal13,Mumun,Yongamri,no 115
+gw253,2648,43,Gangwon,intcal13,Mumun,Yongamri,no 116
+gw254,2530,36,Gangwon,intcal13,Mumun,Yongamri,no 121
+gw255,2659,36,Gangwon,intcal13,Mumun,Yongamri,no 125
+gw256,2860,50,Gangwon,intcal13,Mumun,Yongamri,no 130
+gw257,2800,50,Gangwon,intcal13,Mumun,Yongamri,no 131
+gw258,2570,60,Gangwon,intcal13,Mumun,Yongamri,no 133
+gw259,2520,60,Gangwon,intcal13,Mumun,Yongamri,no 135
+gw260,2580,60,Gangwon,intcal13,Mumun,Yongamri,no 137
+gw261,2570,60,Gangwon,intcal13,Mumun,Yongamri,no 138
+gw232,2657,34,Gangwon,intcal13,Mumun,Yongamri,no 19
+gw229,2577,75,Gangwon,intcal13,Mumun,Yongamri,no 3
+gw233,2725,43,Gangwon,intcal13,Mumun,Yongamri,no 31
+gw234,2701,36,Gangwon,intcal13,Mumun,Yongamri,no 42
+gw235,2715,43,Gangwon,intcal13,Mumun,Yongamri,no 49
+gw230,2740,23,Gangwon,intcal13,Mumun,Yongamri,no 5
+gw236,2670,36,Gangwon,intcal13,Mumun,Yongamri,no 52
+gw237,2644,39,Gangwon,intcal13,Mumun,Yongamri,no 63
+gw238,2650,57,Gangwon,intcal13,Mumun,Yongamri,no 65
+gw239,2474,49,Gangwon,intcal13,Mumun,Yongamri,no 66
+gw240,2553,46,Gangwon,intcal13,Mumun,Yongamri,no 73
+gw241,2396,36,Gangwon,intcal13,Mumun,Yongamri,no 80
+gw242,2451,43,Gangwon,intcal13,Mumun,Yongamri,no 84
+gw243,2510,36,Gangwon,intcal13,Mumun,Yongamri,no 91
+gw244,2930,50,Gangwon,intcal13,Mumun,Yongamri,no 93
+gw245,2650,50,Gangwon,intcal13,Mumun,Yongamri,no 94
+gw246,2707,39,Gangwon,intcal13,Mumun,Yongamri,no 97
+gw197,2590,60,Gangwon,intcal13,Mumun,Yongamri 2,pit house 2-1
+gw198,2540,60,Gangwon,intcal13,Mumun,Yongamri 2,pit house 3-6
+gw199,2770,40,Gangwon,intcal13,Mumun,Yongamri 2,pit house 4-a
+gg157,2810,40,Gyeonggi,intcal13,Mumun,Yongin Mabukri,Mumun 1
+neo062,4670,50,Gyeonggi,intcal13,Chulmun,Yongin Nongseori,no 1
+neo097,4302,28,Gyeonggi,intcal13,Chulmun,Yongin Nongseori,no 2
+neo040,4830,50,Gyeonggi,intcal13,Chulmun,Yongin Nongseori,no 3
+neo086,4436,29,Gyeonggi,intcal13,Chulmun,Yongin Nongseori,no 5
+neo093,4368,27,Gyeonggi,intcal13,Chulmun,Yongin Nongseori,no 8
+gg158,2750,50,Gyeonggi,intcal13,Mumun,Yongin Yeongdeokdong,no 14
+cc187,2837,46,Chungcheong,intcal13,Mumun,Yongsandong,no 1
