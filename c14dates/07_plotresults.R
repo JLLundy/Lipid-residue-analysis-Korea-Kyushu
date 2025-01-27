@@ -54,6 +54,23 @@ posterior.bar <- function(x,y,width=0.4,prob1=0.5,prob2=0.9,fill='grey',lcol='bl
 }
 
 
+# Estimates for in-text mentions
+
+# Arrival time rice in Japan
+HPDinterval(mcmc(post.rice[,'a[1]'])) |> BPtoBCAD()
+# Arrival time rice in Korea
+HPDinterval(mcmc(post.rice[,'a[2]'])) |> BPtoBCAD()
+# Difference arrival time in rice
+HPDinterval(mcmc(post.rice[,'a[2]']-post.rice[,'a[1]']))
+
+# Arrival time millets in Japan
+HPDinterval(mcmc(post.millets[,'a[1]'])) |> BPtoBCAD()
+# Arrival time millets in Korea
+HPDinterval(mcmc(post.millets[,'a[2]'])) |> BPtoBCAD()
+# Difference arrival time in millets
+HPDinterval(mcmc(post.millets[,'a[2]']-post.millets[,'a[1]']))
+
+
 col1='#2081f9'
 col2='#f99820'
 width=0.03
