@@ -97,7 +97,7 @@ runscript <- function(seed,d,inits,constants,nburnin,thin,niter)
 	# Compile and Run model	
 	model <- nimbleModel(model,constants = constants,data=d,inits=inits)
 	cModel <- compileNimble(model)
-	conf <- configureMCMC(model,control=list(adaptInterval=20000,adaptFactorExponent=0.1))
+	conf <- configureMCMC(model,control=list(adaptInterval=30000,adaptFactorExponent=0.1))
 	conf$addMonitors(c('theta','delta','alpha'))
 	MCMC <- buildMCMC(conf)
 	cMCMC <- compileNimble(MCMC)

@@ -13,7 +13,7 @@ load(here('c14dates','04_ricearrival_results.RData'))
 
 # Read and Calibrate Dates
 # From Oh et al 2017 doi:10.1017/RDC.2017.122
-korea.dates.rice  <- read.csv(url('https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0033822217001229/resource/name/S0033822217001229sup001.csv'))
+korea.dates.rice  <- read.csv(url('https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0033822217001229/resource/name/S0033822217001229sup001.csv')) |> select(c14age=date,c14error=error,Site)
 korea.caldates.rice <- calibrate(korea.dates.rice$c14age,korea.dates.rice$c14error)
 # From Kim et al 2021 doi:10.1038/s41598-021-03180-4 
 load(url('https://github.com/ercrema/NeolithicKoreaDemography/raw/master/R_image_files/koreanC14.RData'))
@@ -23,9 +23,9 @@ korea.caldates.millets <- calibrate(korea.dates.millets$c14age,korea.dates.mille
 
 # Extract median estimated arrival time for rice
 (ricearrival.sk <- median(post.rice[,'a[2]']) |> round())
-# 3304
+# 3323
 (milletsarrival.sk <- median(post.millets[,'a[2]']) |> round())
-# 6116
+# 6109
 
 # Subset dates with probability mass over 0.5 after the arrival dates
 i500.rice <- which.CalDates(korea.caldates.rice,BP < ricearrival.sk & BP > (ricearrival.sk-500),p=0.5)
