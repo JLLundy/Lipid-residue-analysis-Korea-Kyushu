@@ -1,0 +1,171 @@
+Category,NDB_NO,Source,Percent_C16_dryweight,Percent_C18_dryweight,Total lipid (weight),Ab_Percent_C16,Ab_Percent_C18,PS ratio,Percent_C16,Percent_C18
+Marine,15001,"Fish, anchovy, european, raw",0.715,0.252,4.84,0.15,0.05,2.84,0.74,0.26
+Marine,15003,"Fish, bass, fresh water, mixed species, raw",0.593,0.1,3.69,0.16,0.03,5.93,0.86,0.14
+Marine,15187,"Fish, bass, freshwater, mixed species, cooked, dry heat",0.761,0.128,4.73,0.16,0.03,5.95,0.86,0.14
+Marine,15188,"Fish, bass, striped, cooked, dry heat",0.486,0.11,2.99,0.16,0.04,4.42,0.82,0.18
+Marine,15004,"Fish, bass, striped, raw",0.379,0.086,2.33,0.16,0.04,4.41,0.82,0.18
+Marine,15005,"Fish, bluefish, raw",0.576,0.16,4.24,0.14,0.04,3.6,0.78,0.22
+Marine,15190,"Fish, burbot, cooked, dry heat",0.154,0.047,1.04,0.15,0.05,3.28,0.77,0.23
+Marine,15006,"Fish, burbot, raw",0.12,0.037,0.81,0.15,0.05,3.24,0.76,0.24
+Marine,15017,"Fish, cod, Atlantic, canned, solids and liquid",0.116,0.038,0.86,0.13,0.04,3.05,0.75,0.25
+Marine,15016,"Fish, cod, Atlantic, cooked, dry heat",0.117,0.038,0.86,0.14,0.04,3.08,0.75,0.25
+Marine,15018,"Fish, cod, Atlantic, dried and salted",0.321,0.106,2.37,0.14,0.04,3.03,0.75,0.25
+Marine,15015,"Fish, cod, Atlantic, raw",0.091,0.03,0.67,0.14,0.04,3.03,0.75,0.25
+Marine,15269,"Fish, cod, Pacific, cooked (not previously frozen)",0.036,0.01,0.25,0.14,0.04,3.6,0.78,0.22
+Marine,15192,"Fish, cod, Pacific, cooked, dry heat (may have been previously frozen)",0.07,0.026,0.5,0.14,0.05,2.69,0.73,0.27
+Marine,15019,"Fish, cod, Pacific, raw (may have been previously frozen)",0.057,0.021,0.41,0.14,0.05,2.71,0.73,0.27
+Marine,15268,"Fish, cod, Pacific, raw (not previously frozen)",0.029,0.008,0.2,0.15,0.04,3.63,0.78,0.22
+Marine,15021,"Fish, croaker, Atlantic, cooked, breaded and fried",2.194,1.193,12.67,0.17,0.09,1.84,0.65,0.35
+Marine,15020,"Fish, croaker, Atlantic, raw",0.836,0.203,3.17,0.26,0.06,4.12,0.8,0.2
+Marine,15195,"Fish, drum, freshwater, cooked, dry heat",1.118,0.182,6.32,0.18,0.03,6.14,0.86,0.14
+Marine,15029,"Fish, flatfish (flounder and sole species), cooked, dry heat",0.346,0.065,2.37,0.15,0.03,5.32,0.84,0.16
+Marine,15028,"Fish, flatfish (flounder and sole species), raw",0.282,0.053,1.93,0.15,0.03,5.32,0.84,0.16
+Marine,15030,"Fish, gefiltefish, commercial, sweet recipe",0.3,0.056,1.73,0.17,0.03,5.36,0.84,0.16
+Marine,15032,"Fish, grouper, mixed species, cooked, dry heat",0.14,0.059,1.3,0.11,0.05,2.37,0.7,0.3
+Marine,15031,"Fish, grouper, mixed species, raw",0.169,0.049,1.02,0.17,0.05,3.45,0.78,0.22
+Marine,15034,"Fish, haddock, cooked, dry heat",0.077,0.025,0.55,0.14,0.05,3.08,0.75,0.25
+Marine,15033,"Fish, haddock, raw",0.063,0.02,0.45,0.14,0.04,3.15,0.76,0.24
+Marine,15035,"Fish, haddock, smoked",0.117,0.044,0.96,0.12,0.05,2.66,0.73,0.27
+Marine,15037,"Fish, halibut, Atlantic and Pacific, cooked, dry heat",0.212,0.065,1.61,0.13,0.04,3.26,0.77,0.23
+Marine,15036,"Fish, halibut, Atlantic and Pacific, raw",0.174,0.054,1.33,0.13,0.04,3.22,0.76,0.24
+Marine,15196,"Fish, halibut, greenland, cooked, dry heat",1.846,0.247,17.74,0.1,0.01,7.47,0.88,0.12
+Marine,15038,"Fish, halibut, Greenland, raw",1.44,0.193,13.84,0.1,0.01,7.46,0.88,0.12
+Marine,15040,"Fish, herring, Atlantic, cooked, dry heat",1.735,0.14,11.59,0.15,0.01,12.39,0.93,0.07
+Marine,15042,"Fish, herring, Atlantic, kippered",1.851,0.149,12.37,0.15,0.01,12.42,0.93,0.07
+Marine,15041,"Fish, herring, Atlantic, pickled",1.555,0.105,18,0.09,0.01,14.81,0.94,0.06
+Marine,15039,"Fish, herring, Atlantic, raw",1.353,0.109,9.04,0.15,0.01,12.41,0.93,0.07
+Marine,15197,"Fish, herring, Pacific, cooked, dry heat",2.593,0.329,17.79,0.15,0.02,7.88,0.89,0.11
+Marine,15043,"Fish, herring, Pacific, raw",2.023,0.257,13.88,0.15,0.02,7.87,0.89,0.11
+Marine,15199,"Fish, lingcod, cooked, dry heat",0.151,0.045,1.36,0.11,0.03,3.36,0.77,0.23
+Marine,15046,"Fish, mackerel, Atlantic, raw",2.125,0.423,13.89,0.15,0.03,5.02,0.83,0.17
+Marine,15048,"Fish, mackerel, jack, canned, drained solids",1.185,0.376,6.3,0.19,0.06,3.15,0.76,0.24
+Marine,15200,"Fish, mackerel, king, cooked, dry heat",0.31,0.05,2.56,0.12,0.02,6.2,0.86,0.14
+Marine,15049,"Fish, mackerel, king, raw",0.242,0.039,2,0.12,0.02,6.21,0.86,0.14
+Marine,83110,"Fish, mackerel, salted",4.418,1.403,25.1,0.18,0.06,3.15,0.76,0.24
+Marine,15052,"Fish, mackerel, spanish, cooked, dry heat",1.155,0.442,6.32,0.18,0.07,2.61,0.72,0.28
+Marine,15051,"Fish, mackerel, spanish, raw",1.239,0.416,6.3,0.2,0.07,2.98,0.75,0.25
+Marine,15194,"Fish, mahimahi, cooked, dry heat",0.154,0.059,0.9,0.17,0.07,2.61,0.72,0.28
+Marine,15023,"Fish, mahimahi, raw",0.12,0.046,0.7,0.17,0.07,2.61,0.72,0.28
+Marine,15056,"Fish, mullet, striped, cooked, dry heat",0.291,0.096,4.86,0.06,0.02,3.03,0.75,0.25
+Marine,15055,"Fish, mullet, striped, raw",0.747,0.1,3.79,0.2,0.03,7.47,0.88,0.12
+Marine,15057,"Fish, ocean perch, Atlantic, raw",0.155,0.046,1.54,0.1,0.03,3.37,0.77,0.23
+Marine,15267,"Fish, pollock, Alaska, cooked (not previously frozen)",0.041,0.008,0.26,0.16,0.03,5.13,0.84,0.16
+Marine,15067,"Fish, pollock, Alaska, cooked, dry heat (may have been previously frozen)",0.101,0.052,1.18,0.09,0.04,1.94,0.66,0.34
+Marine,15066,"Fish, pollock, Alaska, raw (may have been previously frozen)",0.087,0.029,0.41,0.21,0.07,3,0.75,0.25
+Marine,15266,"Fish, pollock, Alaska, raw (not previously frozen)",0.031,0.006,0.19,0.16,0.03,5.17,0.84,0.16
+Marine,15205,"Fish, pollock, Atlantic, cooked, dry heat",0.108,0.055,1.26,0.09,0.04,1.96,0.66,0.34
+Marine,15065,"Fish, pollock, Atlantic, raw",0.084,0.043,0.98,0.09,0.04,1.95,0.66,0.34
+Marine,15069,"Fish, pompano, florida, cooked, dry heat",2.842,1.056,12.14,0.23,0.09,2.69,0.73,0.27
+Marine,15068,"Fish, pompano, florida, raw",2.217,0.824,9.47,0.23,0.09,2.69,0.73,0.27
+Marine,15206,"Fish, pout, ocean, cooked, dry heat",0.226,0.072,1.17,0.19,0.06,3.14,0.76,0.24
+Marine,15059,"Fish, pout, ocean, raw",0.176,0.056,0.91,0.19,0.06,3.14,0.76,0.24
+Marine,15071,"Fish, rockfish, Pacific, mixed species, cooked, dry heat",0.277,0.066,1.62,0.17,0.04,4.2,0.81,0.19
+Marine,15070,"Fish, rockfish, Pacific, mixed species, raw",0.229,0.055,1.34,0.17,0.04,4.16,0.81,0.19
+Marine,15074,"Fish, sablefish, raw",2.054,0.408,15.3,0.13,0.03,5.03,0.83,0.17
+Marine,15075,"Fish, sablefish, smoked",2.703,0.537,20.14,0.13,0.03,5.03,0.83,0.17
+Marine,15237,"Fish, salmon, Atlantic, farmed, cooked, dry heat",1.493,0.315,12.35,0.12,0.03,4.74,0.83,0.17
+Marine,15236,"Fish, salmon, Atlantic, farmed, raw",1.877,0.495,13.42,0.14,0.04,3.79,0.79,0.21
+Marine,15209,"Fish, salmon, Atlantic, wild, cooked, dry heat",0.81,0.272,8.13,0.1,0.03,2.98,0.75,0.25
+Marine,15076,"Fish, salmon, Atlantic, wild, raw",0.632,0.212,6.34,0.1,0.03,2.98,0.75,0.25
+Marine,15210,"Fish, salmon, chinook, cooked, dry heat",2.045,0.714,13.38,0.15,0.05,2.86,0.74,0.26
+Marine,15078,"Fish, salmon, chinook, raw",2.092,0.577,10.43,0.2,0.06,3.63,0.78,0.22
+Marine,15077,"Fish, salmon, chinook, smoked",0.56,0.186,4.32,0.13,0.04,3.01,0.75,0.25
+Marine,15179,"Fish, salmon, chinook, smoked, (lox), regular",0.56,0.186,4.32,0.13,0.04,3.01,0.75,0.25
+Marine,15080,"Fish, salmon, chum, canned, drained solids with bone",0.816,0.188,5.5,0.15,0.03,4.34,0.81,0.19
+Marine,15180,"Fish, salmon, chum, canned, without salt, drained solids with bone",0.816,0.188,5.5,0.15,0.03,4.34,0.81,0.19
+Marine,15211,"Fish, salmon, chum, cooked, dry heat",0.751,0.133,4.83,0.16,0.03,5.65,0.85,0.15
+Marine,15079,"Fish, salmon, chum, raw",0.586,0.104,3.77,0.16,0.03,5.63,0.85,0.15
+Marine,15239,"Fish, salmon, coho, farmed, cooked, dry heat",1.175,0.33,8.23,0.14,0.04,3.56,0.78,0.22
+Marine,15238,"Fish, salmon, coho, farmed, raw",1.09,0.312,7.67,0.14,0.04,3.49,0.78,0.22
+Marine,15247,"Fish, salmon, coho, wild, cooked, dry heat",0.683,0.158,4.3,0.16,0.04,4.32,0.81,0.19
+Marine,15082,"Fish, salmon, coho, wild, cooked, moist heat",0.95,0.262,7.5,0.13,0.03,3.63,0.78,0.22
+Marine,15081,"Fish, salmon, coho, wild, raw",0.751,0.207,5.93,0.13,0.03,3.63,0.78,0.22
+Marine,15260,"Fish, salmon, pink, canned, drained solids",0.55,0.108,5.02,0.11,0.02,5.09,0.84,0.16
+Marine,15265,"Fish, Salmon, pink, canned, drained solids, without skin and bones",0.467,0.094,4.21,0.11,0.02,4.97,0.83,0.17
+Marine,15084,"Fish, salmon, pink, canned, total can contents",0.518,0.1,4.97,0.1,0.02,5.18,0.84,0.16
+Marine,15181,"Fish, salmon, pink, canned, without salt, solids with bone and liquid",1.35,0.135,6.05,0.22,0.02,10,0.91,0.09
+Marine,15212,"Fish, salmon, pink, cooked, dry heat",0.566,0.122,5.28,0.11,0.02,4.64,0.82,0.18
+Marine,15083,"Fish, salmon, pink, raw",0.472,0.102,4.4,0.11,0.02,4.63,0.82,0.18
+Marine,15087,"Fish, salmon, sockeye, canned, drained solids",0.971,0.164,7.39,0.13,0.02,5.92,0.86,0.14
+Marine,15182,"Fish, salmon, sockeye, canned, without salt, drained solids with bone",1.079,0.205,7.31,0.15,0.03,5.26,0.84,0.16
+Marine,15086,"Fish, salmon, sockeye, cooked, dry heat",0.653,0.124,5.57,0.12,0.02,5.27,0.84,0.16
+Marine,15085,"Fish, salmon, sockeye, raw",0.549,0.104,4.69,0.12,0.02,5.28,0.84,0.16
+Marine,15088,"Fish, sardine, Atlantic, canned in oil, drained solids with bone",0.993,0.343,11.45,0.09,0.03,2.9,0.74,0.26
+Marine,15089,"Fish, sardine, Pacific, canned in tomato sauce, drained solids with bone",1.738,0.244,10.45,0.17,0.02,7.12,0.88,0.12
+Marine,15092,"Fish, sea bass, mixed species, cooked, dry heat",0.413,0.177,2.56,0.16,0.07,2.33,0.7,0.3
+Marine,15091,"Fish, sea bass, mixed species, raw",0.322,0.138,2,0.16,0.07,2.33,0.7,0.3
+Marine,15214,"Fish, seatrout, mixed species, cooked, dry heat",0.82,0.214,4.63,0.18,0.05,3.83,0.79,0.21
+Marine,15093,"Fish, seatrout, mixed species, raw",0.64,0.167,3.61,0.18,0.05,3.83,0.79,0.21
+Marine,15094,"Fish, shad, american, raw",2.073,0.167,13.77,0.15,0.01,12.41,0.93,0.07
+Marine,15096,"Fish, shark, mixed species, cooked, batter-dipped and fried",2.008,1.092,13.82,0.15,0.08,1.84,0.65,0.35
+Marine,15095,"Fish, shark, mixed species, raw",0.726,0.117,4.51,0.16,0.03,6.21,0.86,0.14
+Marine,15098,"Fish, sheepshead, cooked, dry heat",0.227,0.089,1.63,0.14,0.05,2.55,0.72,0.28
+Marine,15097,"Fish, sheepshead, raw",0.406,0.114,2.41,0.17,0.05,3.56,0.78,0.22
+Marine,15100,"Fish, smelt, rainbow, cooked, dry heat",0.421,0.053,3.1,0.14,0.02,7.94,0.89,0.11
+Marine,15099,"Fish, smelt, rainbow, raw",0.328,0.041,2.42,0.14,0.02,8,0.89,0.11
+Marine,15102,"Fish, snapper, mixed species, cooked, dry heat",0.19,0.07,1.72,0.11,0.04,2.71,0.73,0.27
+Marine,15101,"Fish, snapper, mixed species, raw",0.162,0.081,1.34,0.12,0.06,2,0.67,0.33
+Marine,15217,"Fish, sucker, white, cooked, dry heat",0.427,0.085,2.97,0.14,0.03,5.02,0.83,0.17
+Marine,15218,"Fish, sunfish, pumpkin seed, cooked, dry heat",0.127,0.036,0.9,0.14,0.04,3.53,0.78,0.22
+Marine,15108,"Fish, sunfish, pumpkin seed, raw",0.099,0.028,0.7,0.14,0.04,3.54,0.78,0.22
+Marine,15109,"Fish, surimi",0.147,0.032,0.9,0.16,0.04,4.59,0.82,0.18
+Marine,15111,"Fish, swordfish, cooked, dry heat",1.208,0.405,7.93,0.15,0.05,2.98,0.75,0.25
+Marine,15128,"Fish, tuna salad",1.28,0.249,9.26,0.14,0.03,5.14,0.84,0.16
+Marine,15118,"Fish, tuna, fresh, bluefin, cooked, dry heat",1.038,0.394,6.28,0.17,0.06,2.63,0.72,0.28
+Marine,15117,"Fish, tuna, fresh, bluefin, raw",0.81,0.307,4.9,0.17,0.06,2.64,0.73,0.27
+Marine,15123,"Fish, tuna, fresh, skipjack, raw",0.233,0.055,1.01,0.23,0.05,4.24,0.81,0.19
+Marine,15127,"Fish, tuna, fresh, yellowfin, raw",0.106,0.045,0.49,0.22,0.09,2.36,0.7,0.3
+Marine,15119,"Fish, tuna, light, canned in oil, drained solids",1.415,0.092,8.21,0.17,0.01,15.38,0.94,0.06
+Marine,15183,"Fish, tuna, light, canned in oil, without salt, drained solids",1.415,0.092,8.21,0.17,0.01,15.38,0.94,0.06
+Marine,15121,"Fish, tuna, light, canned in water, drained solids",0.127,0.052,0.96,0.13,0.05,2.44,0.71,0.29
+Marine,15184,"Fish, tuna, light, canned in water, without salt, drained solids",0.156,0.06,0.82,0.19,0.07,2.6,0.72,0.28
+Marine,15220,"Fish, tuna, skipjack, fresh, cooked, dry heat",0.298,0.07,1.29,0.23,0.05,4.26,0.81,0.19
+Marine,15124,"Fish, tuna, white, canned in oil, drained solids",0.862,0.388,8.08,0.11,0.05,2.22,0.69,0.31
+Marine,15126,"Fish, tuna, white, canned in water, drained solids",0.592,0.118,2.97,0.2,0.04,5.02,0.83,0.17
+Marine,15186,"Fish, tuna, white, canned in water, without salt, drained solids",0.592,0.118,2.97,0.2,0.04,5.02,0.83,0.17
+Marine,15221,"Fish, tuna, yellowfin, fresh, cooked, dry heat",0.127,0.054,0.59,0.22,0.09,2.35,0.7,0.3
+Marine,15130,"Fish, whitefish, mixed species, raw",0.599,0.198,5.86,0.1,0.03,3.03,0.75,0.25
+Marine,15133,"Fish, whiting, mixed species, cooked, dry heat",0.285,0.047,1.69,0.17,0.03,6.06,0.86,0.14
+Marine,15132,"Fish, whiting, mixed species, raw",0.158,0.032,1.31,0.12,0.02,4.94,0.83,0.17
+Marine,15224,"Fish, wolffish, Atlantic, cooked, dry heat",0.324,0.059,3.06,0.11,0.02,5.49,0.85,0.15
+Marine,15134,"Fish, wolffish, Atlantic, raw",0.253,0.046,2.39,0.11,0.02,5.5,0.85,0.15
+Millet,20647,Millet flour,0.393,0.071,4.25,0.09,0.02,5.54,0.85,0.15
+Millet,20032,"Millet, cooked",0.126,0.037,1,0.13,0.04,3.41,0.77,0.23
+Millet,43483,"Millet, puffed",0.49,0.143,3.4,0.14,0.04,3.43,0.77,0.23
+Millet,20031,"Millet, raw",0.528,0.154,4.22,0.13,0.04,3.43,0.77,0.23
+Rice,20090,"Rice flour, brown",0.475,0.05,2.78,0.17,0.02,9.5,0.9,0.1
+Rice,20061,"Rice flour, white, unenriched",0.345,0.026,1.42,0.24,0.02,13.27,0.93,0.07
+Rice,20037,"Rice, brown, long-grain, cooked",0.198,0.022,0.97,0.2,0.02,9,0.9,0.1
+Rice,20036,"Rice, brown, long-grain, raw",0.46,0.056,3.2,0.14,0.02,8.21,0.89,0.11
+Rice,20041,"Rice, brown, medium-grain, cooked",0.141,0.015,0.83,0.17,0.02,9.4,0.9,0.1
+Rice,20040,"Rice, brown, medium-grain, raw",0.457,0.048,2.68,0.17,0.02,9.52,0.9,0.1
+Rice,20651,"Rice, brown, parboiled, cooked, UNCLE BENS",0.161,0.02,0.85,0.19,0.02,8.05,0.89,0.11
+Rice,20042,"Rice, brown, parboiled, dry, UNCLE BEN'S",0.376,0.046,2.75,0.14,0.02,8.17,0.89,0.11
+Rice,20055,"Rice, white, glutinous, unenriched, cooked",0.033,0.003,0.19,0.17,0.02,11,0.92,0.08
+Rice,20054,"Rice, white, glutinous, unenriched, uncooked",0.094,0.01,0.55,0.17,0.02,9.4,0.9,0.1
+Rice,20046,"Rice, white, long-grain, parboiled, enriched, dry",0.277,0.017,1.03,0.27,0.02,16.29,0.94,0.06
+Rice,20446,"Rice, white, long-grain, parboiled, unenriched, dry",0.277,0.017,1.03,0.27,0.02,16.29,0.94,0.06
+Rice,20345,"Rice, white, long-grain, regular, cooked, enriched, with salt",0.069,0.005,0.28,0.25,0.02,13.8,0.93,0.07
+Rice,20545,"Rice, white, long-grain, regular, cooked, unenriched, with salt",0.069,0.005,0.28,0.25,0.02,13.8,0.93,0.07
+Rice,20045,"Rice, white, long-grain, regular, enriched, cooked",0.069,0.005,0.28,0.25,0.02,13.8,0.93,0.07
+Rice,20044,"Rice, white, long-grain, regular, raw, enriched",0.161,0.012,0.66,0.24,0.02,13.42,0.93,0.07
+Rice,20444,"Rice, white, long-grain, regular, raw, unenriched",0.161,0.012,0.66,0.24,0.02,13.42,0.93,0.07
+Rice,20445,"Rice, white, long-grain, regular, unenriched, cooked without salt",0.07,0.01,0.28,0.25,0.02,13.8,0.93,0.07
+Rice,20451,"Rice, white, medium-grain, cooked, unenriched",0.051,0.004,0.21,0.24,0.02,12.75,0.93,0.07
+Rice,20051,"Rice, white, medium-grain, enriched, cooked",0.05,0,0.21,0.24,0.02,12.75,0.93,0.07
+Rice,20050,"Rice, white, medium-grain, raw, enriched",0.141,0.011,0.58,0.24,0.02,12.82,0.93,0.07
+Rice,20450,"Rice, white, medium-grain, raw, unenriched",0.141,0.011,0.58,0.24,0.02,12.82,0.93,0.07
+Rice,20453,"Rice, white, short-grain, cooked, unenriched",0.046,0.003,0.19,0.24,0.02,15.33,0.94,0.06
+Rice,20053,"Rice, white, short-grain, enriched, cooked",0.046,0.003,0.19,0.24,0.02,15.33,0.94,0.06
+Rice,20052,"Rice, white, short-grain, enriched, uncooked",0.125,0.01,0.52,0.24,0.02,12.5,0.93,0.07
+Rice,20452,"Rice, white, short-grain, raw, unenriched",0.125,0.01,0.52,0.24,0.02,12.5,0.93,0.07
+Rice,20089,"Wild rice, cooked",0.046,0.003,0.34,0.14,0.01,15.33,0.94,0.06
+Rice,20088,"Wild rice, raw",0.145,0.011,1.08,0.13,0.01,13.18,0.93,0.07
+Wild ruminant,17165,"Game meat, deer, cooked, roasted",0.54,0.67,3.19,0.17,0.21,0.81,0.45,0.55
+Wild ruminant,17344,"Game meat, deer, ground, cooked, pan-broiled",1.769,1.691,8.22,0.22,0.21,1.05,0.51,0.49
+Wild ruminant,17343,"Game meat, deer, ground, raw",1.33,1.61,7.13,0.19,0.23,0.82,0.45,0.55
+Wild ruminant,17345,"Game meat, deer, loin, separable lean only, 1"" steak, cooked, broiled",0.533,0.647,2.38,0.22,0.27,0.82,0.45,0.55
+Wild ruminant,17164,"Game meat, deer, raw",0.41,0.51,2.42,0.17,0.21,0.8,0.45,0.55
+Wild ruminant,17346,"Game meat, deer, shoulder clod, separable lean only, cooked, braised",0.883,1.073,3.95,0.22,0.27,0.82,0.45,0.55
+Wild ruminant,17347,"Game meat, deer, tenderloin, separable lean only, cooked, broiled",0.506,0.484,2.35,0.22,0.21,1.05,0.51,0.49
+Wild ruminant,17348,"Game meat, deer, top round, separable lean only, 1"" steak, cooked, broiled",0.406,0.494,1.92,0.21,0.26,0.82,0.45,0.55

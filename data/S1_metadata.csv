@@ -1,0 +1,29 @@
+ Header,Description 
+Sherd_ID_original ,Sherd_ID_original
+Sample_ID,Sample_ID
+Vessel_ID,Vessel I.D.
+Site_code,Site 3 letter code
+Site_name,Site name
+Country ,Country
+Region,Region
+Lattitude ,Lattitude (decimal)
+Longitude ,Longitude (decimal)
+Phase,"Period Phase (Late Jomon, Early Yayoi etc"
+Phasse_2,"Broad period phase (Jomon, Yayoi, Mumun)"
+Sample_type,"Sample type (ceramic = ceramic powder, foodcrust = charred surface deposit)"
+Yield_AE,Total lipid yield after AE (μg g-1 )
+d13C16,δ13C16:0 (‰)
+d13C18,δ13C18:0 (‰)
+bigD,Δ13C (‰)
+Miliacin,Miliacin present
+Aquatic,Aquatic biomarkers present
+AE GC-MS Scan Data file ,AE GC-MS Scan Data file
+TMTD,TMTD present
+Pristanic ,Pristanic acid present
+Phytanic,Phytanic acid present
+SRR_RRR ,Phytanic isomeric ratio SRR/RRR %
+APAA_range,ω-( o-alkylphenyl)alkanoic acids (APAAs) range
+APAA_C18_area ,APAA-C18 total area
+APAA_C20_area ,APAA-C20 total area
+APAA_EH,APAA-C18 isomeric E/H ratio
+APAA_20_18,APAA_20/18

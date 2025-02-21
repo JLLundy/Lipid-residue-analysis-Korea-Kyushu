@@ -108,6 +108,7 @@ Fig1 <- ggarrange(map, hum,
                     labels = c("A", "B"),
                     ncol = 2, nrow = 1, widths = c(1, 1))
 ggsave("Fig1.png", width = 17.8, height = 17.8, dpi = 300, units = "cm", device='png')
+ggsave("Fig1.svg", width = 11.4, height = 11.4, dpi = 300, units = "cm", device='svg')
 Fig1
 
 ```
