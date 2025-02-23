@@ -26,11 +26,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="cm"
-     inkscape:zoom="1.0289025"
-     inkscape:cx="391.67948"
-     inkscape:cy="51.025243"
+     inkscape:zoom="1.4550879"
+     inkscape:cx="420.93678"
+     inkscape:cy="216.82539"
      inkscape:window-width="1920"
-     inkscape:window-height="1080"
+     inkscape:window-height="1052"
      inkscape:window-x="1512"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -9412,24 +9412,6 @@
          id="rect462-5" />
     </clipPath>
     <clipPath
-       id="cpMzAyLjY5fDMxOC4xN3wyMDcuNjR8MzM3LjY3-75">
-      <rect
-         x="302.69"
-         y="207.64"
-         width="15.48"
-         height="130.03"
-         id="rect464-7" />
-    </clipPath>
-    <clipPath
-       id="cpMzAyLjY5fDMxOC4xN3wzNDIuNjV8NDcyLjY4-2">
-      <rect
-         x="302.69"
-         y="342.64999"
-         width="15.48"
-         height="130.03"
-         id="rect466-4" />
-    </clipPath>
-    <clipPath
        id="cpMC4wMHwzMjMuMTV8MC4wMHw2MjMuNjI=-4">
       <rect
          x="0"
@@ -9437,6 +9419,34 @@
          width="323.14999"
          height="623.62"
          id="rect2-9" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2">
+      <g
+         id="g8">
+        <rect
+           x="489.07175"
+           y="104.66245"
+           width="9.7145195"
+           height="80.017952"
+           id="rect8"
+           style="stroke-width:0.621437" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9">
+      <g
+         id="g10">
+        <rect
+           x="489.07175"
+           y="187.745"
+           width="9.7145195"
+           height="80.017952"
+           id="rect9"
+           style="stroke-width:0.621437" />
+      </g>
     </clipPath>
   </defs>
   <rect
@@ -14842,14 +14852,7 @@
   <g
      clip-path="url(#cpMzAyLjY5fDMxOC4xN3w3Mi42M3wyMDIuNjY=-1)"
      id="g463-2"
-     transform="matrix(0.62755295,0,0,0.6153807,299.11774,-23.115193)">
-    <rect
-       x="302.69"
-       y="72.629997"
-       width="15.48"
-       height="130.03"
-       style="fill:#d9d9d9;stroke:#333333;stroke-width:0.97;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-       id="rect463-7" />
+     transform="matrix(0.94132943,0,0,0.92307105,201.72893,-65.551154)">
     <text
        transform="rotate(90,84.955,222.605)"
        text-anchor="middle"
@@ -14858,44 +14861,20 @@
        lengthAdjust="spacingAndGlyphs"
        id="text463">Millet</text>
   </g>
-  <g
-     clip-path="url(#cpMzAyLjY5fDMxOC4xN3wyMDcuNjR8MzM3LjY3-75)"
-     id="g465-5"
-     transform="matrix(0.62755295,0,0,0.6153807,299.11774,-23.115193)">
-    <rect
-       x="302.69"
-       y="207.64"
-       width="15.48"
-       height="130.03"
-       style="fill:#d9d9d9;stroke:#333333;stroke-width:0.97;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-       id="rect465-1" />
-    <text
-       transform="rotate(90,17.45,290.11)"
-       text-anchor="middle"
-       style="font-size:8px;font-family:Arial;white-space:pre;fill:#1a1a1a"
-       textLength="24.459999"
-       lengthAdjust="spacingAndGlyphs"
-       id="text465">Marine</text>
-  </g>
-  <g
-     clip-path="url(#cpMzAyLjY5fDMxOC4xN3wzNDIuNjV8NDcyLjY4-2)"
-     id="g467-6"
-     transform="matrix(0.62755295,0,0,0.6153807,299.11774,-23.115193)">
-    <rect
-       x="302.69"
-       y="342.64999"
-       width="15.48"
-       height="130.03"
-       style="fill:#d9d9d9;stroke:#333333;stroke-width:0.97;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-       id="rect467-4" />
-    <text
-       transform="rotate(90,-50.055,357.615)"
-       text-anchor="middle"
-       style="font-size:8px;font-family:Arial;white-space:pre;fill:#1a1a1a"
-       textLength="16.01"
-       lengthAdjust="spacingAndGlyphs"
-       id="text467">Rice</text>
-  </g>
+  <text
+     transform="matrix(0,0.92307105,-0.94132942,0,491.24421,144.63423)"
+     text-anchor="middle"
+     style="font-size:8px;font-family:Arial;white-space:pre;fill:#1a1a1a"
+     textLength="24.459999"
+     lengthAdjust="spacingAndGlyphs"
+     id="text465">Marine</text>
+  <text
+     transform="matrix(0,0.92307105,-0.94132942,0,491.24421,227.71137)"
+     text-anchor="middle"
+     style="font-size:8px;font-family:Arial;white-space:pre;fill:#1a1a1a"
+     textLength="16.01"
+     lengthAdjust="spacingAndGlyphs"
+     id="text467">Rice</text>
   <g
      clip-path="url(#cpMC4wMHwzMjMuMTV8MC4wMHw2MjMuNjI=-4)"
      id="g536-0"
@@ -15389,17 +15368,17 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;white-space:pre;stroke-width:0.75"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';white-space:pre;stroke-width:0.75;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
      x="333.83762"
      y="296.55838"
      id="text1060"><tspan
        sodipodi:role="line"
        id="tspan1060"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000018px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
        x="333.83762"
        y="296.55838">Maximum </tspan><tspan
        sodipodi:role="line"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000018px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
        x="333.83762"
        y="306.55838"
        id="tspan1061">Contribution (95%)</tspan></text>
