@@ -39,6 +39,7 @@ The directory contains an R script file (`isotopes_and_maps.R`) that generates p
 The directory contains a Rmarkdown file (`organicresidues.Rmd`) required to run the Bayesian mixing model of the organic residue data. The script requires the input files `S1.csv`, ` S2.csv`, and `S3.csv` from the _data_ directory, and generates a series of files inside the directory during its execution (not contained in the repository). The final output of the model is stored in the file `S6.csv` in the _data_ directory.
 
 ### figures
+Contains figure panels for the manuscript
 
 # Funding
 This research was funded by the ERC grant _Demography, Cultural Change, and the Diffusion of Rice and Millets during the Jomon-Yayoi transition in prehistoric Japan (ENCOUNTER)_ (Project N. 801953, PI: Enrico Crema).
