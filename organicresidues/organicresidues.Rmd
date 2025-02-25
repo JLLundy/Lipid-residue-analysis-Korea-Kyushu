@@ -27,7 +27,7 @@ Conc_site <- Data %>% dplyr::filter(Sample_type == 'ceramic')%>%
             sd.conc = sd(Yield_AE), n_lipid = sum(Yield_AE >=5))%>%
   mutate("%interp"= n_lipid/n*100)
 Conc_site <- Conc_site %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS','NBK', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
-write.csv (Conc_site,"Site_Preservation.csv")#create csv output 
+write.csv (Conc_site,here('organicresidues','Site_Preservation.csv'))#create csv output 
 ```
   
 #1b. Preservation by region
@@ -39,7 +39,7 @@ Region <-Data %>%filter(Sample_type == 'ceramic') %>%
            mean.conc = mean(Yield_AE),
            sd.conc = sd(Yield_AE), n_lipid = sum(Yield_AE >=5)) %>%
   mutate("%interp"= n_lipid/n*100)
- write.csv (Region,"Region_preservation.csv")#create csv output 
+ write.csv (Region,here('organicresidues','Region_preservation.csv'))#create csv output 
 ```
   
 #1c.Biomarker identification by site by interpretable lipid
@@ -50,7 +50,7 @@ Biomarker <-Inter_lipid %>% group_by(Site_code) %>%
   summarise (n = n(), n_millet = sum (Miliacin == "yes"), n_aquatic = sum (Aquatic == "yes")) %>%
   mutate("%millet"= n_millet/n*100, "%aqatiuc"= n_aquatic/n*100)
 Biomarker <- Biomarker %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'SHC', 'SAS', 'NBK', 'MSR', 'DPR', 'SDR', 'SWR', 'JKR', 'KCR', 'MJR')))
-write.csv (Biomarker,"Biomarker_preservation.csv")#create csv output 
+write.csv (Biomarker,here('organicresidues','Biomarker_preservation.csv'))#create csv output 
 ```
 
 
@@ -319,7 +319,7 @@ points <- c("Mumun" = 21, "Jomon" = 23, "Yayoi" = 21)
 
 ```{r}
 p1 <-p +
-    geom_point(data=subset(Data, Millet=='n/a'), aes(y=d13C18, x=d13C16, shape=Phase_2), size=1.5, fill= "lightgrey", colour ="black")+
+    geom_point(data=subset(Data, Miliacin=='n/a'), aes(y=d13C18, x=d13C16, shape=Phase_2), size=1.5, fill= "lightgrey", colour ="black")+
   geom_point(data=subset(Data, Miliacin=='no'), aes(y=d13C18,x=d13C16, shape= Phase_2), size=1.5, fill= "white",colour ="black")+
   geom_point (data= subset(Data, Miliacin=="yes"), aes(y=d13C18, x=d13C16, shape=Phase_2), fill= "#E69F00", size=1.5, colour="black")+
   scale_shape_manual(values=points)+
@@ -350,7 +350,7 @@ library(ggpubr)
 Fig2a <- ggarrange(p1, p2,
                     labels = c("A", "B"),
                     ncol = 1, nrow = 2, widths = c(1, 2))
-ggsave("Fig2a.svg", width = 11.4, height = 11.5, dpi = 300, units = "cm", device='svg')
+ggsave(here('figures','Fig2a.svg'), width = 11.4, height = 11.5, dpi = 300, units = "cm", device='svg')
 Fig2a
 ```
 
@@ -368,7 +368,7 @@ Fig2b <- p +
   facet_grid (Category ~ Country) +
     scale_shape_manual(values=points)+
     guides(shape = "none")
-ggsave("Fig2b.svg", width =11.4, height = 22, dpi = 300, units = "cm", device='svg')
+ggsave(here('figures','Fig2b.svg'), width =11.4, height = 22, dpi = 300, units = "cm", device='svg')
 Fig2b
 ```
 
