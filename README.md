@@ -29,11 +29,14 @@ The data directory contains CSV files required for all analyses and directly ref
 | S6.csv          | Dataset S6 | Output from mixing model                                                         |
 
 ### c14dates 
+The directory is organised into a series of R script and R image files with the prefix number representing the execution order. Estimates of the arrival date of rice and millet can be computed by running first `01_prepare_arrival_analysis.R` (requiring the input data `S5.csv`), which will produce the R image files `02_millets_run.RData` and `02_rice_data.RData`. The two files are required for the execution of the core Bayesian analyses (`03_run_milletsmodel.R` and `03_run_ricemodel.R`), each producing an R image file (`04_milletsarrival_results.RData` and `04_ricearrival_results.RData`). Bayesian analyses of population growth rates estimated from the time-frequency of radiocarbon dates can be executed with the script `05_korea_growthrates.R` producing the R image file `06_koreagrowth_results.RData`. The script automatically downloads the required data from the web. Finally, the script `07_plotresults.R` combines the output of the two analyses on a single figure (`c14_analysis.pdf`), corresponding to figure 3 in tha main text. 
+
 
 ### isotopesandmap
-The directory contains a single markdown file `
+The directory contains an R script file (`isotopes_and_maps.R`) that generates panels B and C of Figure 1 in the manuscript. The script requires the files `S1.csv` and `S4.csv` from the _data_ directory.
 
 ### organicresidues
+The directory contains a Rmarkdown file (`organicresidues.Rmd`) required to run the Bayesian mixing model of the organic residue data. The script requires the input files `S1.csv`, ` S2.csv`, and `S3.csv` from the _data_ directory, and generates a series of files inside the directory during its execution (not contained in the repository). The final output of the model is stored in the file `S6.csv` in the _data_ directory.
 
 ### figures
 
