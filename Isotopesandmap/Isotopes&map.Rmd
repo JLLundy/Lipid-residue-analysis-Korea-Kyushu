@@ -1,0 +1,121 @@
+---
+title: "Isotopes&map"
+author: "OEC"
+date: "27/02/2024"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+#1 Plot sites spatially
+
+```{r}
+#Plot site location on map. Install packages and draw base map
+#install.packages("sf", type = "source", configure.args = "--with-proj-lib=$(brew --prefix)/lib/")
+library(devtools)
+library(sf)
+library(elevatr)
+library(marmap)
+#devtools::install_github("ropensci/rnaturalearthhires",auth_token = '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', force = TRUE)
+library("rnaturalearth")
+library(ggplot2)
+library(raster)
+library(gridExtra)
+library(progress)
+```
+
+#1a Draw a basemap
+```{r}
+#Draw basemap
+win  <- ne_countries(continent = 'asia',scale=10,returnclass='sf')
+japan <- ne_states(country = "japan",returnclass='sf')
+elevation <- get_elev_raster(locations = win, z = 5,clip = "locations",src='aws')
+dem <- as.data.frame(elevation, xy = T) |> na.omit()
+colnames(dem)[3] <- "elevation"
+dem$elevation[which(dem$elevation < 0)] = 0
+```
+
+#1b Define datasets for plotting
+```{r}
+Map <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="Map_coords") |> as.data.frame()
+Pots <- Map %>% filter (Type == "Pot")
+Bones <- Map %>% filter (Type == "Bone")
+
+pots.sf <- st_as_sf(Pots, coords=c('Long','Lat'),crs=4326)
+bones.sf  <- st_as_sf(Bones, coords=c('Long','Lat'),crs=4326)
+
+```
+
+#1c Create map with site locations
+```{r}
+library("ggrepel")
+library("ggspatial")
+library("ggpp")
+
+map <- ggplot() +
+	geom_tile(data=dem,aes(x=x,y=y,fill=elevation)) +
+	scale_fill_etopo() +
+	geom_sf(data=pots.sf, fill="black", shape=21, colour = "black", size=1) +
+  geom_sf(data=bones.sf, fill="black", shape=21, colour = "black", size=1)+
+  geom_text_repel(data = Map, aes(x = Long, y = Lat, label = Num), min.segment.length = 0, nudge_x =  Map$Nudge_x, nudge_y = Map$Nudge_y, size=2, check_overlap = T) +
+	xlim(124,135) +
+	ylim(30,40) +
+	xlab('Longitude') +
+	ylab('Latitude') +
+  annotation_scale()+
+	theme(axis.ticks = element_blank())+
+  theme_bw(base_size = 8)+
+  theme(strip.text.x = element_blank())+
+theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
+theme(legend.position="none")
+map
+```
+
+
+#2 Plot human isotope data
+
+```{r}
+Data_hum <-read_sheet('https://docs.google.com/spreadsheets/d/1vdw8Osu5heuTHNIOzy9qM8NY-qKUZDM12JsbqVJYS20/edit#gid=0', sheet="hum_isotopes") |> as.data.frame()
+```
+
+```{r}
+points1 <- c("Bronze Age Korea" = 21, "Late Jomon" = 23, "Yayoi" = 21)
+colours <- c("Bronze Age Korea" = "#E69F00", "Late Jomon" = "#0072B2", "Yayoi" = "#56B4E9")
+sites <-c("Ohtomo, Yayoi" = "#0072B2", "Ohtomo, Jomon" = "#56B4E9", "Yoshinogari, Yayoi" = "#009E73","Bronze Age Korea" = "#E69F00") 
+```
+
+
+```{r}
+hum <-ggplot()+
+  labs(y=expression(delta^{15}*N[collagen]*"(\u2030)"), x=expression(delta^{13}*C[collagen]*"(\u2030)"))+
+  scale_x_continuous(limits=c(-25,-10))+
+  scale_y_continuous(limits=c(2,17))+
+  geom_point(data=Data_hum, aes(y=d15N_coll, x=d13C_coll, fill= Group), size=2, pch =21, colour="black")+
+  scale_fill_manual(values=sites)+
+  theme(axis.ticks = element_blank())+
+  theme_bw(base_size = 8)+
+  theme(strip.text.x = element_blank())+
+theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
+theme(legend.position="none")+
+  coord_fixed(ratio = 1)
+hum
+```
+#3.Create Fig 1
+
+```{r}
+library(ggpubr)
+Fig1 <- ggarrange(map, hum,
+                    labels = c("A", "B"),
+                    ncol = 2, nrow = 1, widths = c(1, 1))
+ggsave("Fig1.png", width = 17.8, height = 17.8, dpi = 300, units = "cm", device='png')
+ggsave("Fig1.svg", width = 11.4, height = 11.4, dpi = 300, units = "cm", device='svg')
+Fig1
+
+```
+Make legend
+```{r}
+# Combine first_name and last_name columns
+Map$Num_loc <- paste(Map$Num, Map$Name)
+Map$Num_loc
+```
+
