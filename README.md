@@ -7,7 +7,7 @@ Craig, O.E., Lundy, J., Bondetti, M., Nicholson-Lailey, S., Murakami,N., Szuki ,
 The repository is organised into the following directories:
 
 * _Data_ ... contains all raw data required for analyses
-* _Isotopesandmap_ ... contains R scripts for generating figures pertaining human stable isotope data
+* _isotopesandmap_ ... contains R scripts for generating figures pertaining human stable isotope data
 * _organicresidues_ ... contains R scripts and resulting outputs for analysing organic residues from ceramics
 * _c14dates_ ... contains R scripts and resulting outputs for the analyses of radiocarbon dates.
 * _figures_ ... contains figure outputs used in the manuscript.
@@ -30,7 +30,8 @@ The data directory contains CSV files required for all analyses and directly ref
 
 ### c14dates 
 
-### Isotopesandmap
+### isotopesandmap
+The directory contains a single markdown file `
 
 ### organicresidues
 
