@@ -42,7 +42,7 @@ The directory contains a Rmarkdown file (`organicresidues.Rmd`) required to run 
 Contains figure panels for the manuscript
 
 # Funding
-This research was funded by the ERC grant _Demography, Cultural Change, and the Diffusion of Rice and Millets during the Jomon-Yayoi transition in prehistoric Japan (ENCOUNTER)_ (Project N. 801953, PI: Enrico Crema).
+This work was supported by the European Research Council Starting Grant (ENCOUNTER; project no. 801953) and a Marie Curie International Incoming Fellowship (II7-624467), JSPS KAKENHI Grant no. 21H04370 and 20H05820.
 
 # Licence
 CC-BY 3.0
