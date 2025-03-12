@@ -118,7 +118,6 @@ mix <- load_mix_data (here("organicresidues","pots.csv"),
 
 
 #3b. Create a source data file
-
 ```{r}
 #Select categories for model and index
 Iso_ref1 <- Iso_ref %>% filter(Category == "Rice" | Category == "Millet" | Category == "Wild ruminant" | Category == "Marine") %>% mutate ("Sources"= Category) %>%dplyr::select(Sources, d13C16, d13C18) 
