@@ -1,7 +1,7 @@
 ---
 title: "KyushuKorea_organicresidues"
 author: "OEC"
-date: "27/02/2024"
+date: "07/05/2025"
 output: html_document
 editor_options: 
   chunk_output_type: inline
@@ -56,46 +56,20 @@ write.csv (Biomarker,here('organicresidues','Biomarker_preservation.csv'))#creat
 
 #2. Load and summarise isotope and isotopic reference data
 
-#2a.Isotpic Reference data
-
 Obtain data for isotope references and concentations
 ```{r}
-#Otain data for reference fats
+#Obtain data for reference fats
 library(dplyr)
 Iso_ref <- read.csv(here('data','S2.csv')) %>% filter(Category %in% c('Rice', 'Millet', 'Wild ruminant', 'Marine'))
-
 Conc_ref <- read.csv(here('data','S3.csv')) %>% filter(Category %in% c('Rice', 'Millet', 'Wild ruminant', 'Marine'))
 ```
 
 Find means and ranges of isotope and concentrations values
 ```{r}
 Iso_sum <- Iso_ref %>% group_by(Category) %>% summarise (Meand13C16 = mean(d13C16), SDd13C16 = sd(d13C16), Meand13C18 = mean(d13C18), SDd13C18 = sd(d13C18), n = n())
-
 Conc_sum <- Conc_ref %>% group_by(Category) %>% summarise (MeanC16 = mean(Ab_Percent_C16), SDC16 = sd(Ab_Percent_C16), MeanC18 = mean(Ab_Percent_C18), SDC18 = sd(Ab_Percent_C18), n_conc = n())
-
 ```
 
-#2b Randomly sample  concentration values for each isotope value based on the mean and sd of the concentration 
-
-```{r}
-library(purrr)
-library(tidyr)
-Conc <- inner_join(Iso_sum, Conc_sum, 
-           by = c("Category"))
-# Generate the random values using purrr::map and bind them into a single column
-Conc <- Conc %>%
-  # Use purrr::pmap to generate random numbers based on each row's parameters
-  mutate(
-    Concd13C16 = pmap(list(MeanC16, SDC16, n), function(mean, sd, n) {
-      rnorm(n, mean = mean, sd = sd)
-    }),
-    Concd13C18 = pmap(list(MeanC18, SDC18, n), function(mean, sd, n) {
-      rnorm(n, mean = mean, sd = sd)
-    })
-  ) %>%
-  unnest(cols =c(Concd13C16, Concd13C18))
-  # Unnest the list column to create one long column of generated values
-```
 
 #3. Mixing model
 
@@ -125,15 +99,10 @@ Iso_ref1 <- Iso_ref1 %>%
   arrange(Sources) %>%
   mutate(Observation = row_number()) %>%
   ungroup()
-#Repeat for concentration
-Conc_ref1 <- Conc %>% filter(Category == "Rice" | Category == "Millet" | Category == "Wild ruminant" | Category == "Marine") %>% mutate ("Sources"= Category) %>%dplyr::select(Sources, Concd13C16, Concd13C18) 
-Conc_ref1 <- Conc_ref1 %>%
-  arrange(Sources) %>%
-  mutate(Observation = row_number()) %>%
-  ungroup()
+
 #Join. the data togeter
-Source <- Source <- inner_join(Conc_ref1, Iso_ref1, by = c("Observation"))
-Source <- Source %>% dplyr::select(-c(Sources.y, Observation))#drop unwanted columns
+Source <- Iso_ref1
+Source <- Source %>% dplyr::select(-c(Observation))#drop unwanted columns
 colnames(Source)[1] <- "Sources"
 
 ```
@@ -143,9 +112,12 @@ colnames(Source)[1] <- "Sources"
 write.csv (Source, file=here::here("organicresidues", "source.csv"), row.names=FALSE)
 source <- load_source_data (here::here("organicresidues", "source.csv"), 
                            source_factors=NULL,
-                             conc_dep=TRUE, 
+                             conc_dep=FALSE, 
                            data_type="raw", 
                            mix)
+# Add concentration dependency data
+source$conc <- matrix(c(Conc_sum$MeanC16,Concd13C18=Conc_sum$MeanC18),dimnames=list(1:4,c('Concd13C16','Concd13C18')),nrow=4)
+source$conc_dep <- TRUE
 ```
 
 #3c Load the TDFs if relevant or nill return
@@ -202,7 +174,7 @@ write_JAGS_model(model_filename, resid_err, process_err, mix, source)
 jags.1 <- run_model(run="test", mix, source, discr, model_filename)
 ```
 ```{r, eval=FALSE}
-jags.1 <- run_model(run="long", mix, source, discr, model_filename)
+jags.1 <- run_model(run="extreme", mix, source, discr, model_filename)
 ```
 
 #3f. Obtain the model outputs
@@ -244,6 +216,7 @@ Run diagnostics and create a data frame with some summary stats.
 ```{r}
 diag <- output_diagnostics(jags.1, mix, source, output_options)
 head(diag$gelman)
+any(diag$gelman[,1]>1.01) #Check if any Rhat is above 1.01
 df.stats <- output_stats(jags.1, mix, source, output_options)
 rownames(df.stats)
 df.stats <- as.data.frame(df.stats)
