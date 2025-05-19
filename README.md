@@ -8,7 +8,7 @@ The repository is organised into the following directories:
 
 * _Data_ ... contains all raw data required for analyses
 * _isotopesandmap_ ... contains R scripts for generating figures pertaining human stable isotope data
-* _organicresidues_ ... contains R scripts and resulting outputs for analysing organic residues from ceramics
+* _organicresidues_ ... contains R scripts in markdown format and resulting outputs for analysing organic residues from ceramics
 * _c14dates_ ... contains R scripts and resulting outputs for the analyses of radiocarbon dates.
 * _figures_ ... contains figure outputs used in the manuscript.
 

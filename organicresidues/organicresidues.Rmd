@@ -10,14 +10,13 @@ editor_options:
 
 #1. Preservation and summary statisitcs
 
-
 #Read files 
 ```{r}
 library(here)
 Data  <-  read.csv(here('data','S1.csv'))
 ```
 
-#1a. Preservation by site
+#1a Preservation by site
 ```{r}
 library(dplyr)
 #Grouped by site
@@ -30,7 +29,7 @@ Conc_site <- Conc_site %>% arrange(factor(Site_code, levels = c('OBD', 'RMM', 'S
 write.csv (Conc_site,here('organicresidues','Site_Preservation.csv'))#create csv output 
 ```
   
-#1b. Preservation by region
+#1b Preservation by region
 
 ```{r}
 Region <-Data %>%filter(Sample_type == 'ceramic') %>% 
@@ -54,7 +53,7 @@ write.csv (Biomarker,here('organicresidues','Biomarker_preservation.csv'))#creat
 ```
 
 
-#2. Load and summarise isotope and isotopic reference data
+#2 Summarise isotope and isotopic reference data
 
 Obtain data for isotope references and concentations
 ```{r}
@@ -65,6 +64,7 @@ Conc_ref <- read.csv(here('data','S3.csv')) %>% filter(Category %in% c('Rice', '
 ```
 
 Find means and ranges of isotope and concentrations values
+
 ```{r}
 Iso_sum <- Iso_ref %>% group_by(Category) %>% summarise (Meand13C16 = mean(d13C16), SDd13C16 = sd(d13C16), Meand13C18 = mean(d13C18), SDd13C18 = sd(d13C18), n = n())
 Conc_sum <- Conc_ref %>% group_by(Category) %>% summarise (MeanC16 = mean(Ab_Percent_C16), SDC16 = sd(Ab_Percent_C16), MeanC18 = mean(Ab_Percent_C18), SDC18 = sd(Ab_Percent_C18), n_conc = n())
@@ -91,7 +91,7 @@ mix <- load_mix_data (here("organicresidues","pots.csv"),
 ```
 
 
-#3b. Create a source data file
+#3b Create a source data file
 ```{r}
 #Select categories for model and index
 Iso_ref1 <- Iso_ref %>% filter(Category == "Rice" | Category == "Millet" | Category == "Wild ruminant" | Category == "Marine") %>% mutate ("Sources"= Category) %>%dplyr::select(Sources, d13C16, d13C18) 
@@ -156,7 +156,7 @@ Specify priors
 #plot_prior(alpha.prior=1,source)
 ```
 
-#3e. Create the JAGS file and run the model. Choose process errors only although this needs to be considered carefully depending on the model. https://link.springer.com/article/10.1007/s10816-020-09492-5
+#3e Create the JAGS file and run the model. Choose process errors only although this needs to be considered carefully depending on the model. https://link.springer.com/article/10.1007/s10816-020-09492-5
 
 ```{r, eval=FALSE}
 # Write the JAGS model file
@@ -173,11 +173,12 @@ write_JAGS_model(model_filename, resid_err, process_err, mix, source)
 ```{r, eval=FALSE}
 jags.1 <- run_model(run="test", mix, source, discr, model_filename)
 ```
+
 ```{r, eval=FALSE}
 jags.1 <- run_model(run="extreme", mix, source, discr, model_filename)
 ```
 
-#3f. Obtain the model outputs
+#3f Obtain the model outputs
 ```{r, eval=FALSE}
 output_options <- list(summary_save = TRUE,
                        summary_name = "summary_final",
@@ -227,7 +228,6 @@ Add rownames to outputs
 ```{r}
 df.stats <- cbind(Sample_category = rownames(df.stats), df.stats)
 rownames(df.stats) <- 1:nrow(df.stats)
-df.stats
 ```
 
 Fix column names for visualization
@@ -246,16 +246,16 @@ Data_pots <- inner_join(Iso_data, df.stats,
            by = c("Sample_ID"))
 ```
 
-Output posteriors 
+#3g Output posteriors 
 
 ```{r}
 g.post <- output_posteriors(jags.1, mix, source, output_options)
 ```
 
 
-#4. Create Figure 2
+#4 Create Figure 2
 
-#4a. Create a base plot
+#4a Create a base plot
 
 ```{r}
 library("ggplot2")
@@ -276,13 +276,12 @@ annotate("text", label = "Millet", x = -18, y = -16, size = 3, colour = "black")
   theme(strip.text.x = element_blank())+
 theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
 theme(legend.position="none")
-p
 ```
 
 #4b Create labels for individual plots
 ```{r}
 # A data frame with labels for each facet
-p_labels <- data.frame(Country= c('Korea', 'Japan'), label = c("Bronze Age Korea", "Jomon-Yayoi Japan"))
+p_labels <- data.frame(Country= c('Korea', 'Japan'), label = c("Korea", "Northern Kyushu"))
 points <- c("Mumun" = 21, "Jomon" = 23, "Yayoi" = 21)
 ```
 
@@ -293,29 +292,27 @@ points <- c("Mumun" = 21, "Jomon" = 23, "Yayoi" = 21)
 p1 <-p +
     geom_point(data=subset(Data, Miliacin=='n/a'), aes(y=d13C18, x=d13C16, shape=Phase_2), size=1.5, fill= "lightgrey", colour ="black")+
   geom_point(data=subset(Data, Miliacin=='no'), aes(y=d13C18,x=d13C16, shape= Phase_2), size=1.5, fill= "white",colour ="black")+
-  geom_point (data= subset(Data, Miliacin=="yes"), aes(y=d13C18, x=d13C16, shape=Phase_2), fill= "#E69F00", size=1.5, colour="black")+
+  geom_point (data= subset(Data, Miliacin=="yes"), aes(y=d13C18, x=d13C16, shape=Phase_2), fill= "#a0892c", size=1.5, colour="black")+
   scale_shape_manual(values=points)+
 facet_wrap (~factor(Country, levels=c('Korea', 'Japan')))+
 geom_text(x = -32, y = -16, aes(label = label), data = p_labels, size=3)
 #geom_text(data=subset(Data, Type=='Foodcrust'), aes(y=d13C18,x=d13C16, label = "*"),vjust = 0.2, size=4) 
-p1
 ```
 
 
-#5c Plot aquatic biomarkers by 'culture'. 
+#4d Plot aquatic biomarkers by 'culture'. 
 ```{r}
 p2 <-p +
   geom_point(data=subset(Data, Aquatic=='n/a'), aes(y=d13C18,x=d13C16, shape=Phase_2),  size=1.5, fill= "lightgrey", colour ="black")+ 
     geom_point(data=subset(Data, Aquatic=='no'), aes(y=d13C18,x=d13C16, shape=Phase_2), size=1.5,fill= "white", colour ="black")+ 
-  geom_point (data= subset(Data, Aquatic=="yes"), aes(y=d13C18, x=d13C16, shape=Phase_2), fill= "#56B4E9", size=1.5, colour="black")+
+  geom_point (data= subset(Data, Aquatic=="yes"), aes(y=d13C18, x=d13C16, shape=Phase_2), fill= "#35978f", size=1.5, colour="black")+
   scale_shape_manual(values=points)
 p2 <- p2 + facet_wrap(~factor(Country, levels=c('Korea', 'Japan')))
 p2 +   geom_text(x = -32, y = -16, aes(label = label), data = p_labels, size=3)
 #geom_text(data=subset(Data, Type=='Foodcrust'), aes(y=d13C18,x=d13C16, label = "*"),vjust = 0.2, size=4) 
-
 ```
 
-#5d. Save biomarker plot. 
+#4e Save biomarker plot (Fig2AB) 
 
 ```{r}
 library(ggpubr)
@@ -323,24 +320,23 @@ Fig2a <- ggarrange(p1, p2,
                     labels = c("A", "B"),
                     ncol = 1, nrow = 2, widths = c(1, 2))
 ggsave(here('figures','Fig2a.svg'), width = 11.4, height = 11.5, dpi = 300, units = "cm", device='svg')
-Fig2a
 ```
 
-#5e. Visalise the outputs of the mixing model
+#4f Visalise and save the outputs of the mixing model(Fig 2C)
 
 ```{r}
+library(viridis)
 library("scales")
 Data_pots_dropWR <-Data_pots %>% filter (Category != 'Wild ruminant')#drop Wild Ruminant
 Data_pots_dropWR$Country =  factor(Data_pots_dropWR$Country, levels=c('Korea', 'Japan'))#order country variable
 Data_pots_dropWR$Category =  factor(Data_pots_dropWR$Category, levels=c('Millet', 'Marine', 'Rice'))#order category variable
 Fig2b <- p +
-      geom_point(data = Data_pots_dropWR, aes(y=d13C18, x=d13C16,fill=p95, shape=Phase_2), width=1, size=1)+
-    scale_fill_gradient (low="blue", high ="orange", limits = c(0,1), labels =   label_percent(), name = "maximum\ncontribution(%)")+
-  theme(legend.position = 'bottom', legend.direction = "horizontal")+
+      geom_point(data = Data_pots_dropWR, aes(y=d13C18, x=d13C16,fill=p95, shape=Phase_2), stroke=0.2, size=2)+
+ scale_fill_viridis(limits = c(0,1), labels =   label_percent(), name = "maximum\ncontribution(%)")+
+    theme(legend.position = 'bottom', legend.direction = "horizontal")+
   facet_grid (Category ~ Country) +
     scale_shape_manual(values=points)+
     guides(shape = "none")
 ggsave(here('figures','Fig2b.svg'), width =11.4, height = 22, dpi = 300, units = "cm", device='svg')
-Fig2b
 ```
 
